@@ -47,7 +47,7 @@ Back-end Planning
 
 | Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Alex | Story 10 (8u, hoog) | Story 10 (8u, hoog) | Story 10 (8u, hoog) | Story 10 (8u, hoog) | Story 2 (4u, medium) | Story 2 (4u, medium) | Story 8 (4u, medium) | Story 8 (4u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) |
+| Alex | Pokémon Characteristics Database (6u, hoog) 🟡 | Pokémon Characteristics Database (6u, hoog) 🟡 | Story 10 (8u, hoog) | Story 10 (8u, hoog) | Story 2 (4u, medium) | Story 2 (4u, medium) | Story 8 (4u, medium) | Story 8 (4u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) |
 | Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, hoog) 🟡| Story 7 (4u, hoog) | Story 7 (4u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 4 (2u, laag) | Story 6 (2u, laag) | Story 9 (2u, laag) |  |
 | Caspar | PokéAPI → Firebase Connection(8u, hoog) ✔️ | Pokémon Characteristics Database (6u, hoog) 🟡 | Story 7 (4u, hoog) | Story 7 (4u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 4 (2u, laag) | Story 6 (2u, laag) | Story 9 (2u, laag) |  |
 
