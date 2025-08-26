@@ -24,7 +24,7 @@ Back-end Planning
 | Pokémon Species Documentation     | hoog       | 8 uur            |
 | Pokémon Characteristics Database 🟡  | hoog       | 6 uur            |
 | PokéAPI → Firebase Connection ✔️     | hoog       | 8 uur            |
-| Database Structure Definition     | hoog       | 4 uur            |
+| Database Structure Definition 🟡    | hoog       | 4 uur            |
 | Data Delivery Contract (API Spec) | medium     | 6 uur            |
 | Data Logging & Monitoring         | medium     | 4 uur            |
 | Evolution Chain Analysis          | medium     | 6 uur            |
