@@ -53,10 +53,7 @@ for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
                 'name' => $pokeapi_data['name'],
                 'types' => $types_structured,
                 'abilities' => $abilities_structured,
-
-                'height_decimetres' => $pokeapi_data['height'],
                 'height_meters' => $pokeapi_data['height'] / 10,
-                'weight_hectograms' => $pokeapi_data['weight'], 
                 'weight_kilograms' => $pokeapi_data['weight'] / 10, 
 
                 'image' => $image_url,
