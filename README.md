@@ -4,7 +4,7 @@
 Front-end
 | Taak | Prioriteit | tijdsinschatting |
 | --- | --- | --- |
-| voor elke generatie een maken | hoog | 2 uur |
+| filter so dat je vershilende types kan filteren en van verschilende gens | hoog | 2 uur |
 | voor elke generatie een pokedex maken | medium | 4 uur |
 | een main/world pokedex die je kan aan cliken op de home page | medium | 4 uur |
 | Pokémon Habitat Study | laag | 4 uur |
