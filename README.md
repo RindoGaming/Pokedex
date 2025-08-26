@@ -46,3 +46,9 @@ Planning
 | Pokémon Habitat Study             | Medium   | 4 hrs         | Link habitats from PokéAPI to Pokémon entries in the database                      | Ecological classification of species                           | Supports analysis and filtering based on environment                          |
 | Generation and Version Tracking   | Medium   | 6 hrs         | Tag Pokémon data with generation and version information                           | Historical and game-context data                               | Useful for comparing across gens and filtering content                        |
 | Firebase Security Rules & Auth    | High     | 4 hrs         | Write Firestore security rules and set up Firebase Authentication                  | Data security and access control                               | Ensures only the right users can update their own data                        |
+
+| Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Alex | Story 10 (8u, hoog) | Story 10 (8u, hoog) | Story 10 (8u, hoog) | Story 10 (8u, hoog) | Story 2 (4u, medium) | Story 2 (4u, medium) | Story 8 (4u, medium) | Story 8 (4u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) | Story 5 (8u, medium) |
+| Jay | Story 3 (4u, hoog) | Story 3 (4u, hoog) | Story 7 (4u, hoog) | Story 7 (4u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 4 (2u, laag) | Story 6 (2u, laag) | Story 9 (2u, laag) |  |
+| Caspar | Story 3 (4u, hoog) | Story 3 (4u, hoog) | Story 7 (4u, hoog) | Story 7 (4u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 4 (2u, laag) | Story 6 (2u, laag) | Story 9 (2u, laag) |  |
