@@ -4,16 +4,13 @@
 Front-end
 | Taak | Prioriteit | tijdsinschatting |
 | --- | --- | --- |
-| voor elke generatie een tablad maken | hoog | 2 uur |
+| filter so dat je vershilende types kan filteren en van verschilende gens | hoog | 2 uur |
 | voor elke generatie een pokedex maken | medium | 4 uur |
 | een main/world pokedex die je kan aan cliken op de home page | medium | 4 uur |
-| info over de gymes in elke generatie | laag | 4 uur |
-| voor elke geberatie een gym info tab maken | laag | 2 uur |
-| ... | laag | 2 uur |
-| ... | hoog | 4 uur |
-| ... | medium | 4 uur |
-| ... | laag | 2 uur |
-| ... | hoog | 8 uur |
+| Pokémon Habitat Study | laag | 4 uur |
+| pixel art for the old versions example pixle letters | laag | 2 uur |
+| a info page to make it user friendly just so the user knows where it can do what | hoog | 1 uur |
+| a easy to use place where you can tyoe pokemon typing and then it wil show you what types are super effective or weak against  | laag | 8 uur |
 
 Planning
 
