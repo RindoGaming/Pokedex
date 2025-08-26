@@ -1,6 +1,6 @@
 <?php
 $firebase_url = 'https://pokemondata-565f5-default-rtdb.europe-west1.firebasedatabase.app/pokemon.json';
-$batch_size = 300;
+$batch_size = 10; // till gen 3
 
 for ($start = 1; $start <= 100; $start += $batch_size) {
     $multi_handle = curl_multi_init();
@@ -26,42 +26,69 @@ for ($start = 1; $start <= 100; $start += $batch_size) {
         $pokeapi_data = json_decode($pokeapi_response, true);
 
         if ($pokeapi_data) {
-            $types = array_map(function($type) {
-                return $type['type']['name'];
-            }, $pokeapi_data['types']);
+            // $types = array_map(function($type) {
+            //     return $type['type']['name'];
+            // }, $pokeapi_data['types']);
 
-            $damage_relations = [];
-            foreach ($types as $type_name) {
-                $type_url = "https://pokeapi.co/api/v2/type/$type_name";
-                $type_response = file_get_contents($type_url);
-                $type_data = json_decode($type_response, true);
-                if ($type_data && isset($type_data['damage_relations'])) {
-                    $damage_relations[$type_name] = $type_data['damage_relations'];
-                }
+            // $damage_relations = [];
+            // foreach ($types as $type_name) {
+            //     $type_url = "https://pokeapi.co/api/v2/type/$type_name";
+            //     $type_response = file_get_contents($type_url);
+            //     $type_data = json_decode($type_response, true);
+            //     if ($type_data && isset($type_data['damage_relations'])) {
+            //         $damage_relations[$type_name] = $type_data['damage_relations'];
+            //     }
+            // }
+
+            // $new_pokemon = [
+            //     'name' => $pokeapi_data['name'],
+            //     'types' => $types,
+            //     'weight' => $pokeapi_data['weight'],
+            //     'height' => $pokeapi_data['height'],
+            //     'base_experience' => $pokeapi_data['base_experience'],
+            //     'abilities' => $pokeapi_data['abilities'],
+            //     'image' => $pokeapi_data['sprites']['front_default'],
+            //     'moveset' => $pokeapi_data['moves'],
+            //     'damage_relations' => $damage_relations 
+            // ];
+
+            $abilities_structured = [];
+            foreach ($pokeapi_data['abilities'] as $ability) {
+                $name = $ability['ability']['name'];
+                $abilities_structured[$name] = [
+                    'is_hidden' => $ability['is_hidden'],
+                    'slot' => $ability['slot']
+                ];
             }
 
-            $new_pokemon = [
+            $types_structured = [];
+            foreach ($pokeapi_data['types'] as $type) {
+                $type_name = $type['type']['name'];
+                $types_structured[$type_name] = [
+                    'slot' => $type['slot']
+                ];
+            }
+
+            $filtered_data = [
+                'id' => $pokeapi_data['id'],
                 'name' => $pokeapi_data['name'],
-                'types' => $types,
-                'weight' => $pokeapi_data['weight'],
+                'types' => array_map(fn($t) => $t['type']['name'], $pokeapi_data['types']),
+                'abilities' => array_map(fn($a) => $a['ability']['name'], $pokeapi_data['abilities']),
                 'height' => $pokeapi_data['height'],
-                'base_experience' => $pokeapi_data['base_experience'],
-                'abilities' => $pokeapi_data['abilities'],
-                'image' => $pokeapi_data['sprites']['front_default'],
-                'moveset' => $pokeapi_data['moves'],
-                'damage_relations' => $damage_relations 
+                'weight' => $pokeapi_data['weight']
             ];
 
+            $poke_id = $filtered_data['id'];
             $ch_firebase = curl_init();
-            curl_setopt($ch_firebase, CURLOPT_URL, $firebase_url);
-            curl_setopt($ch_firebase, CURLOPT_POST, true);
+            curl_setopt($ch_firebase, CURLOPT_URL, $firebase_url . '/' . $poke_id . '.json');
+            curl_setopt($ch_firebase, CURLOPT_CUSTOMREQUEST, "PUT");
             curl_setopt($ch_firebase, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch_firebase, CURLOPT_POSTFIELDS, json_encode($new_pokemon));
+            curl_setopt($ch_firebase, CURLOPT_POSTFIELDS, json_encode($filtered_data));
             curl_setopt($ch_firebase, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-            curl_exec($ch_firebase);
+            $response = curl_exec($ch_firebase);
             curl_close($ch_firebase);
 
-            echo "Added: " . $new_pokemon['name'] . "<br>";
+            echo "Added: " . $filtered_data['name'] . "<br>";
         }
 
         curl_multi_remove_handle($multi_handle, $ch);
@@ -70,4 +97,3 @@ for ($start = 1; $start <= 100; $start += $batch_size) {
 
     curl_multi_close($multi_handle);
 }
-?>
