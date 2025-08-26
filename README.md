@@ -51,9 +51,6 @@ Back-end Planning
 | Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, hoog) 🟡| Story 7 (4u, hoog) | Story 7 (4u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 4 (2u, laag) | Story 6 (2u, laag) | Story 9 (2u, laag) |  |
 | Caspar | PokéAPI → Firebase Connection(8u, hoog) ✔️ | Pokémon Characteristics Database (6u, hoog) 🟡 | Story 7 (4u, hoog) | Story 7 (4u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 1 (8u, hoog) | Story 4 (2u, laag) | Story 6 (2u, laag) | Story 9 (2u, laag) |  |
 
-
-To do → ⬜
-
 In progress → 🟡 or 🚧
 
 Done → ✔️
