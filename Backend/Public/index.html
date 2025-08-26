@@ -5,27 +5,34 @@
     <title>Pokédex Display</title>
     <style>
         body { font-family: Arial, sans-serif; }
-        .pokemon { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; width: 200px; }
+        .pokemon { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; width: 200px; vertical-align: top; }
         .pokemon h3 { margin: 0 0 10px 0; }
         #pokedex { border: 2px solid red; min-height: 100px; }
     </style>
 </head>
 <body>
     <h1>Pokédex</h1>
+    <button onclick="location.href='egg.html';">Go to Egg Hatcher</button>
     <div id="pokedex"></div>
+
 <script>
     fetch('https://pokemondata-565f5-default-rtdb.europe-west1.firebasedatabase.app/pokemon.json')
         .then(response => response.json())
         .then(data => {
-            console.log('Fetched data:', data); // Debug line
+            console.log('Fetched data:', data);
             const pokedex = document.getElementById('pokedex');
+
             if (!data || Object.keys(data).length === 0) {
                 pokedex.innerHTML = "<p>No Pokémon found.</p>";
                 return;
             }
-            Object.entries(data).forEach(([id, pokemon]) => {
-                if (!pokemon) return;
-                // Show all keys for debugging
+
+            // Sort by ID numerically
+            const sorted = Object.entries(data)
+                .filter(([id, pokemon]) => pokemon) // remove nulls
+                .sort(([idA], [idB]) => Number(idA) - Number(idB));
+
+            sorted.forEach(([id, pokemon]) => {
                 pokedex.innerHTML += `
                     <div class="pokemon">
                         <img src="${pokemon.image ?? ''}" alt="${pokemon.name}" style="width:96px;height:96px;"><br>
