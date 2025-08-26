@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Egg Hatcher</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #pokemon-img { width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block; }
+        #hatch-btn { padding: 10px 30px; font-size: 1.2em; }
+        #result { font-size: 1.5em; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Pokémon Egg Hatcher</h1>
+    <img id="pokemon-img" src="egg.png" alt="Egg">
+    <br>
+    <button id="hatch-btn">Hatch Egg!</button>
+    <div id="result"></div>
+
+    <script>
+        const hatchBtn = document.getElementById('hatch-btn');
+        const resultDiv = document.getElementById('result');
+        const img = document.getElementById('pokemon-img');
+        const eggImg = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/egg.png";
+
+        hatchBtn.onclick = async function() {
+            img.src = "egg.png";
+            img.alt = "Egg";
+            resultDiv.textContent = "Hatching...";
+
+            const id = Math.floor(Math.random() * 386) + 1;
+            try {
+                const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+                if (!res.ok) throw new Error("Failed to fetch Pokémon");
+                const data = await res.json();
+                const name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
+                const sprite = data.sprites.other['official-artwork'].front_default || data.sprites.front_default;
+
+                img.src = sprite || "egg.png";
+                img.alt = name;
+                resultDiv.textContent = `Congratulations! You hatched a ${name}!`;
+            } catch (e) {
+                img.src = "egg.png";
+                img.alt = "Egg";
+                resultDiv.textContent = "Failed to hatch! Try again.";
+            }
+        };
+    </script>
+</body>
+</html>
