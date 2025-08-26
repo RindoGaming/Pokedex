@@ -26,32 +26,6 @@ for ($start = 1; $start <= 100; $start += $batch_size) {
         $pokeapi_data = json_decode($pokeapi_response, true);
 
         if ($pokeapi_data) {
-            // $types = array_map(function($type) {
-            //     return $type['type']['name'];
-            // }, $pokeapi_data['types']);
-
-            // $damage_relations = [];
-            // foreach ($types as $type_name) {
-            //     $type_url = "https://pokeapi.co/api/v2/type/$type_name";
-            //     $type_response = file_get_contents($type_url);
-            //     $type_data = json_decode($type_response, true);
-            //     if ($type_data && isset($type_data['damage_relations'])) {
-            //         $damage_relations[$type_name] = $type_data['damage_relations'];
-            //     }
-            // }
-
-            // $new_pokemon = [
-            //     'name' => $pokeapi_data['name'],
-            //     'types' => $types,
-            //     'weight' => $pokeapi_data['weight'],
-            //     'height' => $pokeapi_data['height'],
-            //     'base_experience' => $pokeapi_data['base_experience'],
-            //     'abilities' => $pokeapi_data['abilities'],
-            //     'image' => $pokeapi_data['sprites']['front_default'],
-            //     'moveset' => $pokeapi_data['moves'],
-            //     'damage_relations' => $damage_relations 
-            // ];
-
             $abilities_structured = [];
             foreach ($pokeapi_data['abilities'] as $ability) {
                 $name = $ability['ability']['name'];
