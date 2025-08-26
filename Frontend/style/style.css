@@ -25,7 +25,6 @@ header {
 }
 
 .main-background-section {
-    height: 88vh;
     background-image: linear-gradient(135deg,
             #323232 0%,
             #323232 10%,
@@ -92,4 +91,25 @@ header {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.pokemon {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+}
+
+.pokemon h3 {
+    margin: 0 0 10px 0;
+}
+
+#pokedex {
+    min-height: 100px;
+}
+
+.info {
+    color: rgb(10, 142, 111);
+    text-align: center;
 }
