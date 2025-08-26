@@ -13,7 +13,7 @@ switch ($uri) {
         require_once __DIR__ . '/../main.php';
         break;
     
-    default:
+    default:  
         echo "Invalid endpoint.";
         break;
 }
