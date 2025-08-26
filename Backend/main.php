@@ -30,8 +30,8 @@ for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
         if ($pokeapi_data) {
             $abilities_structured = [];
             foreach ($pokeapi_data['abilities'] as $ability) {
-                $name = $ability['ability']['name'];
-                $abilities_structured[$name] = [
+                $ability_name = $ability['ability']['name'];
+                $abilities_structured[$ability_name] = [
                     'is_hidden' => $ability['is_hidden'],
                     'slot' => $ability['slot']
                 ];
@@ -49,25 +49,31 @@ for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
             $cry_url = "https://play.pokemonshowdown.com/audio/cries/" . strtolower($pokeapi_data['name']) . ".mp3";
 
             $filtered_data = [
-                'id' => (string)$pokeapi_data['id'],
+                'id' => $pokeapi_data['id'],
+                'name' => $pokeapi_data['name'],
                 'types' => $types_structured,
                 'abilities' => $abilities_structured,
-                'height' => $pokeapi_data['height'],
-                'weight' => $pokeapi_data['weight'],
+
+                'height_decimetres' => $pokeapi_data['height'],
+                'height_meters' => $pokeapi_data['height'] / 10,
+                'weight_hectograms' => $pokeapi_data['weight'], 
+                'weight_kilograms' => $pokeapi_data['weight'] / 10, 
+
                 'image' => $image_url,
                 'cry' => $cry_url
             ];
 
-            $batch_data[strtolower($pokeapi_data['name'])] = $filtered_data;
+            $key = strtolower($pokeapi_data['name']);
+            $batch_data[$key] = $filtered_data;
         }
 
         curl_multi_remove_handle($multi_handle, $ch);
         curl_close($ch);
     }
 
-    uasort($batch_data, function ($a, $b) {
-        return $a['id'] <=> $b['id'];
-    });
+    $ids = array_map(function($pokemon) {
+        return $pokemon['id'];
+    }, $batch_data);
 
     $ch_firebase = curl_init();
     curl_setopt($ch_firebase, CURLOPT_URL, $firebase_url . '.json');
@@ -80,9 +86,10 @@ for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
     if ($response === false) {
         echo 'Curl error: ' . curl_error($ch_firebase);
     } else {
-        echo "Batch added: IDs " . min(array_column($batch_data, 'id')) . " - " . max(array_column($batch_data, 'id')) . "<br>";
+        echo "Batch added: IDs " . min($ids) . " - " . max($ids) . "<br>";
     }
 
     curl_close($ch_firebase);
     curl_multi_close($multi_handle);
 }
+?>
