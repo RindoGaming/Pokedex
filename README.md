@@ -15,6 +15,8 @@ Front-end
 | User story 9 | laag | 2 uur |
 | User story 10 | hoog | 8 uur |
 
+Planning
+
 Back-end
 
 | Taak | Prioriteit | tijdsinschatting |
@@ -29,3 +31,5 @@ Back-end
 | User story 8 | medium | 4 uur |
 | User story 9 | laag | 2 uur |
 | User story 10 | hoog | 8 uur |
+
+Planning
