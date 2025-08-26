@@ -1,7 +1,7 @@
 <?php
 $firebase_url = 'https://pokemondata-565f5-default-rtdb.europe-west1.firebasedatabase.app/pokemon';
 $batch_size = 10; // Number of Pokémon per batch
-$total_pokemon = 386; // Total Pokémon to fetch, limit to gen 3
+$total_pokemon = 368; // Limit to Gen 3
 
 for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
     $multi_handle = curl_multi_init();
@@ -46,46 +46,44 @@ for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
             }
 
             $image_url = $pokeapi_data['sprites']['front_default'] ?? null;
-            $cry_url = "https://play.pokemonshowdown.com/audio/cries/" . strtolower($pokeapi_data['name']) . ".mp3";
 
             $filtered_data = [
                 'id' => $pokeapi_data['id'],
                 'name' => $pokeapi_data['name'],
                 'types' => $types_structured,
                 'abilities' => $abilities_structured,
-                'height' => $pokeapi_data['height'] / 10,
-                'weight' => $pokeapi_data['weight'] / 10, 
-                'image' => $image_url,
-                'cry' => $cry_url
+                'height' => $pokeapi_data['height'] / 10 . "m",
+                'weight' => $pokeapi_data['weight'] / 10 . "kg",
+                'image' => $image_url
             ];
 
-            $key = strtolower($pokeapi_data['name']);
-            $batch_data[$key] = $filtered_data;
+            $batch_data[$pokeapi_data['id']] = $filtered_data;
         }
 
         curl_multi_remove_handle($multi_handle, $ch);
         curl_close($ch);
     }
 
-    $ids = array_map(function($pokemon) {
-        return $pokemon['id'];
-    }, $batch_data);
+    $ids = array_keys($batch_data);
 
-    $ch_firebase = curl_init();
-    curl_setopt($ch_firebase, CURLOPT_URL, $firebase_url . '.json');
-    curl_setopt($ch_firebase, CURLOPT_CUSTOMREQUEST, "PATCH");
-    curl_setopt($ch_firebase, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch_firebase, CURLOPT_POSTFIELDS, json_encode($batch_data));
-    curl_setopt($ch_firebase, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-    $response = curl_exec($ch_firebase);
+    if (!empty($batch_data)) {
+        $ch_firebase = curl_init();
+        curl_setopt($ch_firebase, CURLOPT_URL, $firebase_url . '.json');
+        curl_setopt($ch_firebase, CURLOPT_CUSTOMREQUEST, "PATCH");
+        curl_setopt($ch_firebase, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch_firebase, CURLOPT_POSTFIELDS, json_encode($batch_data));
+        curl_setopt($ch_firebase, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+        $response = curl_exec($ch_firebase);
 
-    if ($response === false) {
-        echo 'Curl error: ' . curl_error($ch_firebase);
-    } else {
-        echo "Batch added: IDs " . min($ids) . " - " . max($ids) . "<br>";
+        if ($response === false) {
+            echo 'Curl error: ' . curl_error($ch_firebase);
+        } else {
+            echo "Batch added: IDs " . min($ids) . " - " . max($ids) . "<br>";
+        }
+
+        curl_close($ch_firebase);
     }
 
-    curl_close($ch_firebase);
     curl_multi_close($multi_handle);
 }
 ?>
