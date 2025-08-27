@@ -5,7 +5,7 @@ Front-end Planning
 
 | Taak                                      | Prioriteit | tijdsinschatting | Status  |
 | ----------------------------------------- | ---------- | ---------------- | ------- |
-| Filter so you specify generation or type. | High       | 2 hrs            | 🟡 WIP  |
+| Filter so you specify generation or type. | High       | 2 hrs            | ✔️ Done |
 | First 3 generations a pokedex.            | Medium     | 4 hrs            | ✔️ Done |
 | Pixel art for the old versions.           | Low        | 2 hrs            | ✔️ Done |
 | User friendly info page.                  | Medium     | 2 hrs            | 🟡 WIP |
