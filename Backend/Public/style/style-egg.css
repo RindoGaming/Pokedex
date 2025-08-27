@@ -177,4 +177,5 @@ body {
 .btn:hover {
     filter: brightness(90%);
     scale: 1.05;
+    cursor: pointer;
 }
