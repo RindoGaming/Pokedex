@@ -20,6 +20,18 @@ Front-end Planning
 | An info page to make it user friendly just so the user knows where it can do what. | High     | 2 hrs         | Give info for stuff like what you can see. | Info page | To get a bit of an idea of the website. |
 | An easy to use place where you can type pokemon typing and then it wil show you what types are super effective or weak against. | Medium   | 8 hrs         | Type in a type (example grass) and see what types do super effective damage, not very effective damage or have no effect. | Seperate tab for that info (and maybe also on a pokemon his page). | To see type effectiveness. |
 
+
+
+| Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Hendrik | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | All pokemon form support 🟡| All pokemon form support 🟡| Story 2 (4u, Medium) | Story 2 (4u, Medium) | Story 8 (4u, Medium) | Story 8 (4u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) |
+| Jarno | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) 🟡| Cache fix 🟡| Cache fix 🟡| Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
+| Senn | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Story 7 (4u, High) | Story 7 (4u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
+
+
+
+
+
 Back-end Planning
 
 | Taak                              | Prioriteit | tijdsinschatting | Status  |
