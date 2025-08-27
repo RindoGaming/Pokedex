@@ -4,170 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Pokémon Egg Hatcher</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background: #51b400;
-            background: linear-gradient(45deg, rgb(54, 221, 4) 0%, rgba(0, 0, 0, 0.664) 30%, rgb(7, 199, 4) 45%, rgba(0, 0, 0, 0.534) 66%, rgb(1, 209, 5) 83%, rgba(20, 19, 7, 0.767) 94%);
-        }
-
-        #pokemon-img {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-            margin: 20px auto;
-            display: block;
-        }
-
-        #hatch-btn,
-        #test {
-            padding: 10px 30px;
-            font-size: 1.2em;
-            margin: 5px;
-            background: #c70000;
-            background: radial-gradient(circle, rgba(199, 0, 0, 1) 0%, rgba(171, 71, 0, 1) 100%);
-        }
-
-        #result {
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-
-        #counter-container {
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        #hatch-count {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        #history {
-            margin-top: 30px;
-            display: none;
-        }
-
-        .history-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 20px;
-            justify-items: center;
-        }
-
-        .history-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .history-item img {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-        }
-
-        .history-item span {
-            margin-top: 5px;
-            font-weight: bold;
-        }
-
-        .history-item .count {
-            font-size: 0.9em;
-            color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="style/style-egg.css">
+    <script src="scripts/egg.js" defer></script>
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 
 <body>
+<img src="left-icon-background-one.svg" alt="pokeball" class="pokeball">
+
     <h1>Pokémon Egg Hatcher</h1>
 
     <div id="counter-container">
-        <img id="pokemon-img" src="egg.png" alt="Egg">
+        <img id="pokemon-img" src="img/Gebarsten Ei met Groene Vlekken.png" alt="Egg">
         <div id="hatch-count">0</div>
+        <audio id="audio-cry" preload="auto"></audio>
     </div>
-
     <br>
-    <button id="test" onclick="location.href='index.html';">Go to Pokédex</button>
-    <button id="hatch-btn">Hatch Egg!</button>
-
+    <button id="test" onclick="location.href='index.html';" class="btn">Go to Pokédex</button>
+    <button id="hatch-btn" class="btn">Hatch Egg!</button>
     <div id="result"></div>
     <div id="history"></div>
-
-    <script>
-        const hatchBtn = document.getElementById('hatch-btn');
-        const resultDiv = document.getElementById('result');
-        const img = document.getElementById('pokemon-img');
-        const hatchCountDiv = document.getElementById('hatch-count');
-        const historyDiv = document.getElementById('history');
-
-        let hatchCount = 0;
-        const hatchHistory = {};
-
-        hatchBtn.onclick = async function () {
-            img.src = "egg.png";
-            img.alt = "Egg";
-            resultDiv.textContent = "Hatching...";
-
-            const id = Math.floor(Math.random() * 1025) + 1;
-            try {
-                const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-                if (!res.ok) throw new Error("Failed to fetch Pokémon");
-                const data = await res.json();
-                const name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
-                const sprite = data.sprites.other['official-artwork'].front_default || data.sprites.front_default;
-
-                if (!sprite) throw new Error("No sprite available");
-
-                img.src = sprite;
-                img.alt = name;
-                resultDiv.textContent = `🎉 You hatched a ${name}!`;
-
-                hatchCount++;
-                hatchCountDiv.textContent = hatchCount;
-
-                if (!hatchHistory[name]) {
-                    hatchHistory[name] = { count: 1, sprite };
-                } else {
-                    hatchHistory[name].count++;
-                }
-
-                updateHistory();
-            } catch (e) {
-                img.src = "egg.png";
-                img.alt = "Egg";
-                resultDiv.textContent = "❌ Failed to hatch! Try again.";
-            }
-        };
-
-        function updateHistory() {
-            historyDiv.innerHTML = "";
-
-            const hasHistory = Object.keys(hatchHistory).length > 0;
-
-            if (hasHistory) {
-                historyDiv.style.display = "grid";
-                historyDiv.classList.add('history-grid');
-                for (const [name, data] of Object.entries(hatchHistory)) {
-                    const item = document.createElement('div');
-                    item.className = 'history-item';
-
-                    item.innerHTML = `
-                        <img src="${data.sprite}" alt="${name}">
-                        <span>${name}</span>
-                        <div class="count">Hatched ${data.count} time${data.count > 1 ? 's' : ''}</div>
-                    `;
-                    historyDiv.appendChild(item);
-                }
-            } else {
-                historyDiv.style.display = "none";
-                historyDiv.classList.remove('history-grid');
-            }
-        }
-    </script>
+    <img src="img/comic-boom-explosion-2-1-1024x754.png" id="reveal" alt="comic explosion" class="hidden egg">
+    <img src="" id="reveal-pokemon" alt="pokemon" class="hidden reveal-pokemon">
+    
 </body>
 
 </html>
