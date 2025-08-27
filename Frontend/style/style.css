@@ -25,6 +25,8 @@ header {
 }
 
 .main-background-section {
+    display: flex;
+    justify-self: center;
     background-image: linear-gradient(135deg,
             #323232 0%,
             #323232 10%,
@@ -48,7 +50,7 @@ header {
 
 
 .dropbtn {
-    background-image: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 48%, rgba(0, 0, 0, 0.448) 49%, rgba(20, 19, 7, 0.399) 51%, rgb(255, 56, 56) 52%, rgb(255, 56, 56) 100%);
+    background-image: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 48%, rgba(0, 0, 0, 1) 49%, rgba(20, 19, 7, 1) 51%, rgb(255, 56, 56) 52%, rgb(255, 56, 56) 100%);
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -57,6 +59,7 @@ header {
     color: rgba(17, 8, 0, 0.845);
     width: 75px;
     height: 75px;
+    border: 2px black solid;
 }
 
 /* The container <div> - needed to position the dropdown content */
