@@ -30,17 +30,17 @@ Back-end Planning
 | Database Structure Definition     | High       | 4 hrs            | ✔️ Done |
 | Data Delivery Contract (API Spec) | Medium     | 6 hrs            |         |
 | Data Logging & Monitoring         | Medium     | 4 hrs            |         |
-| Evolution Chain Analysis          | Medium     | 6 hrs            |         |
+| Evolution Chain Analysis          | Medium     | 6 hrs            | ✔️ Done|
 | Pokémon Habitat Study             | Medium     | 4 hrs            |         |
 | Generation and Version Tracking   | Medium     | 6 hrs            |         |
 | Firebase Security Rules & Auth    | High       | 4 hrs            |         |
-| Primary/Secondary Type Filtering  | High       | 5 hrs            |         |
-| Caching System for Local Data     | High       | 6 hrs            |         |
-| Egg Hatching Gambling System      | Medium     | 8 hrs            |         |
-| Pokémon Detail Page               | High       | 7 hrs            |         |
-| Improve Frontend Caching          | High       | 6 hrs            |         |
-| Extended Pokémon Details          | High       | 8 hrs            |         |
-| Support All Pokémon Forms         | High       | 10 hrs           |         |
+| Primary/Secondary Type Filtering  | High       | 5 hrs            | ✔️ Done|
+| Caching System for Local Data     | High       | 6 hrs            | ✔️ Done|
+| Egg Hatching Gambling System      | Medium     | 8 hrs            | ✔️ Done|
+| Pokémon Detail Page               | High       | 7 hrs            | ✔️ Done|
+| Improve Frontend Caching          | High       | 6 hrs            | 🟡 WIP |
+| Extended Pokémon Details          | High       | 8 hrs            | 🟡 WIP |
+| Support All Pokémon Forms         | High       | 10 hrs           | 🟡WIP  |
 
 
 
@@ -66,9 +66,9 @@ Back-end Planning
 
 | Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Alex | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Story 10 (8u, High) | Story 10 (8u, High) | Story 2 (4u, Medium) | Story 2 (4u, Medium) | Story 8 (4u, Medium) | Story 8 (4u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) |
-| Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) 🟡| Story 7 (4u, High) | Story 7 (4u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
-| Caspar | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) 🟡 | Story 7 (4u, High) | Story 7 (4u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
+| Alex | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | All pokemon form support 🟡| All pokemon form support 🟡| Story 2 (4u, Medium) | Story 2 (4u, Medium) | Story 8 (4u, Medium) | Story 8 (4u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) |
+| Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) 🟡| Cache fix 🟡| Cache fix 🟡| Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
+| Caspar | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Story 7 (4u, High) | Story 7 (4u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
 
 In progress → 🟡 or 🚧
 
