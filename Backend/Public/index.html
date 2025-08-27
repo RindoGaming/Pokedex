@@ -25,11 +25,16 @@
   <div class="main-background-section">
     <div id="pokedex"></div>
   </div>
-
+  
   <div class="page-mover" style="text-align:center; margin-top:20px;">
     <button id="prev-btn">⬅ Previous</button>
-    <span id="page-info" style="margin: 0 15px; color: white"></span>
+    <span id="page-info" style="margin: 0 15px; color: white;"></span>
     <button id="next-btn">Next ➡</button>
+  </div>
+
+  <div style="text-align:center; margin-top:10px;">
+    <input type="number" id="page-search" min="1" style="width:100px;" placeholder="Page">
+    <button id="search-page-btn">Go</button>
   </div>
 
   <script>
@@ -40,6 +45,8 @@
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
     const pageInfo = document.getElementById('page-info');
+    const pageSearch = document.getElementById('page-search');
+    const goPageBtn = document.getElementById('go-page-btn');
 
     let allPokemon = [];
     let filteredPokemon = [];
@@ -139,6 +146,14 @@
     nextBtn.onclick = () => {
       if ((currentPage * pageSize) < filteredPokemon.length) {
         currentPage++;
+        renderPage();
+      }
+    };
+
+    goPageBtn.onclick = () => {
+      const page = parseInt(pageSearch.value, 10);
+      if (!isNaN(page) && page > 0 && page <= Math.ceil(filteredPokemon.length / pageSize)) {
+        currentPage = page;
         renderPage();
       }
     };
