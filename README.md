@@ -3,13 +3,14 @@
 
 Front-end Planning
 
-| Taak | Prioriteit | tijdsinschatting | Status |
-| --- | --- | --- |
-| Filter so you specify generation or type. | High | 2 hrs ||         |
-| First 3 generations a pokedex. | Medium | 4 hrs ||         |
-| Pixel art for the old versions. | Low | 2 hrs ||         |
-| An info page to make it user friendly just so the user knows where it can do what. | High | 2 hrs ||         |
-| An easy to use place where you can type pokemon typing and then it wil show you what types are super effective or weak against.  | Medium | 8 hrs ||         |
+| Taak                                      | Prioriteit | tijdsinschatting | Status  |
+| ----------------------------------------- | ---------- | ---------------- | ------- |
+| Filter so you specify generation or type. | High       | 2 hrs            | 🟡 WIP  |
+| First 3 generations a pokedex.            | Medium     | 4 hrs            | ✔️ Done |
+| Pixel art for the old versions.           | Low        | 2 hrs            | ✔️ Done |
+| User friendly info page.                  | Medium     | 2 hrs            | 🟡 WIP |
+| Pokemon type chart.                       | Medium     | 8 hrs            |         |
+
 
 | Task                              | Priority | Time Estimate | What I Can Do (X)                                                                  | Need                                                           | Why                                                                           |
 | --------------------------------- | -------- | ------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------- |
