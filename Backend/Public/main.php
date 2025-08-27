@@ -1,15 +1,15 @@
 <?php
 $firebase_url = 'https://pokemondata-565f5-default-rtdb.europe-west1.firebasedatabase.app/pokemon';
-$batch_size = 10; 
-$total_pokemon = 386; 
+$batch_size = 10;
+$total_pokemon = 386;
 $cache_file = __DIR__ . '/pokemon_cache.json';
 
-// Check if cache exists
+// Load or build cache
 if (file_exists($cache_file)) {
     $all_pokemon = json_decode(file_get_contents($cache_file), true);
-    echo "Loaded data from cache: " . count($all_pokemon) . " Pokémon<br>";
 } else {
     $all_pokemon = [];
+
     for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
         $multi_handle = curl_multi_init();
         $curl_handles = [];
@@ -37,8 +37,8 @@ if (file_exists($cache_file)) {
             if ($pokeapi_data) {
                 $abilities_structured = [];
                 foreach ($pokeapi_data['abilities'] as $ability) {
-                    $ability_name = $ability['ability']['name'];
-                    $abilities_structured[$ability_name] = [
+                    $name = $ability['ability']['name'];
+                    $abilities_structured[$name] = [
                         'is_hidden' => $ability['is_hidden'],
                         'slot' => $ability['slot'],
                         'url' => $ability['ability']['url']
@@ -47,14 +47,14 @@ if (file_exists($cache_file)) {
 
                 $types_structured = [];
                 foreach ($pokeapi_data['types'] as $type) {
-                    $type_name = $type['type']['name'];
-                    $types_structured[$type_name] = ['slot' => $type['slot']];
+                    $name = $type['type']['name'];
+                    $types_structured[$name] = ['slot' => $type['slot']];
                 }
 
                 $stats_structured = [];
                 foreach ($pokeapi_data['stats'] as $stat) {
-                    $stat_name = $stat['stat']['name'];
-                    $stats_structured[$stat_name] = [
+                    $name = $stat['stat']['name'];
+                    $stats_structured[$name] = [
                         'base_stat' => $stat['base_stat'],
                         'effort' => $stat['effort'],
                         'url' => $stat['stat']['url']
@@ -63,7 +63,10 @@ if (file_exists($cache_file)) {
 
                 $forms_structured = [];
                 foreach ($pokeapi_data['forms'] as $form) {
-                    $forms_structured[] = ['name' => $form['name'], 'url' => $form['url']];
+                    $forms_structured[] = [
+                        'name' => $form['name'],
+                        'url' => $form['url']
+                    ];
                 }
 
                 $species_data = [
@@ -102,14 +105,13 @@ if (file_exists($cache_file)) {
         }
 
         $all_pokemon = array_merge($all_pokemon, $batch_data);
-
         curl_multi_close($multi_handle);
     }
 
     file_put_contents($cache_file, json_encode($all_pokemon, JSON_PRETTY_PRINT));
-    echo "Saved data to cache: " . count($all_pokemon) . " Pokémon<br>";
 }
 
+// Update Firebase
 $ch_firebase = curl_init();
 curl_setopt($ch_firebase, CURLOPT_URL, $firebase_url . '.json');
 curl_setopt($ch_firebase, CURLOPT_CUSTOMREQUEST, "PATCH");
@@ -117,11 +119,28 @@ curl_setopt($ch_firebase, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch_firebase, CURLOPT_POSTFIELDS, json_encode($all_pokemon));
 curl_setopt($ch_firebase, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
 $response = curl_exec($ch_firebase);
-
-if ($response === false) {
-    echo 'Curl error: ' . curl_error($ch_firebase);
-} else {
-    echo "Firebase updated with cached data.<br>";
-}
 curl_close($ch_firebase);
+
+// Serve individual Pokémon if requested
+header('Content-Type: application/json');
+$id = $_GET['id'] ?? null;
+
+if ($id) {
+    $pokemon = null;
+    foreach ($all_pokemon as $key => $data) {
+        if ((string)$data['id'] === (string)$id || strtolower($data['name']) === strtolower($id)) {
+            $pokemon = $data;
+            break;
+        }
+    }
+
+    if ($pokemon) {
+        echo json_encode($pokemon);
+    } else {
+        http_response_code(404);
+        echo json_encode(['error' => 'Pokémon not found']);
+    }
+} else {
+    echo json_encode(['message' => 'Cache loaded', 'total' => count($all_pokemon)]);
+}
 ?>
