@@ -168,3 +168,14 @@ select {
     .searching:focus {
         box-shadow: 0 0 0 2px #d32f2f33;
     }
+    .high-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pokedex {
+    width: 200px;
+    align-items: center;
+    
+}
