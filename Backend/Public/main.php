@@ -2,7 +2,7 @@
 $firebase_url = 'https://pokemondata-565f5-default-rtdb.europe-west1.firebasedatabase.app/pokemon';
 $batch_size = 10; 
 $total_pokemon = 386; 
-$cache_file = __DIR__ . '/pokemon_cache.json'; // <-- local cache JSON file
+$cache_file = __DIR__ . '/pokemon_cache.json';
 
 // Check if cache exists
 if (file_exists($cache_file)) {
@@ -106,7 +106,6 @@ if (file_exists($cache_file)) {
         curl_multi_close($multi_handle);
     }
 
-    // Save all fetched data to cache JSON
     file_put_contents($cache_file, json_encode($all_pokemon, JSON_PRETTY_PRINT));
     echo "Saved data to cache: " . count($all_pokemon) . " Pokémon<br>";
 }
