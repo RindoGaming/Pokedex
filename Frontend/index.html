@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="header-section"><img src="img/pokeball.png" alt="pokemon icons" class="logo"
+                style="width: 30px; height: 30px;"></div>
+        <div class="header-section" style="justify-content: center;">
+            <h1>pokedex</h1>
+        </div>
+        <div class="header-section">
+            <div class="dropdown">
+                <button class="dropbtn">more</button>
+                <div class="dropdown-content">
+                    <a href="info.html">info page</a>
+                    <a href="egg-gambling.html">egg gambling</a>
+                    <a href="#">login out</a>
+                </div>
+            </div>
+    </header>
+
+    <div class="main-background-section">
+
+        <div id="pokedex"></div>
+        
+
+    </div>
+    <footer></footer>
+</body>
+
+<script>
+            fetch('https://pokemondata-565f5-default-rtdb.europe-west1.firebasedatabase.app/pokemon.json')
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Fetched data:', data); // Debug line
+                    const pokedex = document.getElementById('pokedex');
+                    if (!data || Object.keys(data).length === 0) {
+                        pokedex.innerHTML = "<p>No Pokémon found.</p>";
+                        return;
+                    }
+                    Object.entries(data).forEach(([id, pokemon]) => {
+                        if (!pokemon) return;
+                        // Show all keys for debugging
+                        pokedex.innerHTML += `
+                    <div class="pokemon">
+                        <strong>ID:</strong> ${id}<br>
+                        <strong>Name:</strong> ${pokemon.name ?? 'N/A'}<br>
+                        <strong>Types:</strong> ${pokemon.types ? Object.keys(pokemon.types).join(', ') : 'N/A'}<br>
+                        <strong>Abilities:</strong> ${pokemon.abilities ? Object.keys(pokemon.abilities).join(', ') : 'N/A'}<br>
+                        <strong>Height:</strong> ${pokemon.height ?? 'N/A'}<br>
+                        <strong>Weight:</strong> ${pokemon.weight ?? 'N/A'}
+                    </div>
+                `;
+                    });
+                });
+        </script>
+</html>
