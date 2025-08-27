@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#pokemon-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 20px auto;
+    display: block;
+}
+
+#hatch-btn,
+#test {
+    padding: 10px 30px;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+#result {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#counter-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#hatch-count {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#history {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.history-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.history-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.history-item span {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.history-item .count {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.image-shaking {
+    animation: shake 2s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-6deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(6deg);
+        content: url("/Backend/Public/egg/stage-1.png");
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+        content: url("/Backend/Public/egg/stage-1.png");
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(6deg);
+        content: url("/Backend/Public/egg/stage-1.png");
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-6deg);
+        content: url("/Backend/Public/egg/stage-2.png");
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+        content: url("/Backend/Public/egg/stage-2.png");
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-6deg);
+        content: url("/Backend/Public/egg/stage-2.png");
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(6deg);
+        content: url("/Backend/Public/egg/stage-3.png");
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+        content: url("/Backend/Public/egg/stage-3.png");
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-6deg);
+        content: url("/Backend/Public/egg/stage-3.png");
+    }
+}
+
+
+.egg {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.reveal-pokemon {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    scale: 0.6;
+}
+
+.hidden {
+    display: none;
+}
