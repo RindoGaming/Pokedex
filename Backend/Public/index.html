@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Pokédex Display</title>
-<link rel="stylesheet" href="style/style.css">
-<link rel="stylesheet" href="style/type.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/type.css">
 </head>
 <body>
-<header class="header">
+  <header class="header">
     <h1>Pokédex</h1>
     <button onclick="location.href='egg.html'">Go to Egg Hatcher</button>
 
@@ -15,12 +15,13 @@
       <select id="type1-filter">
         <option value="">-- Primary Type --</option>
       </select>
-      <input type="text" id="searchbar" class="searchbar">
+      <input type="text" id="searchbar" class="searchbar" placeholder="Search by name or ID...">
       <select id="type2-filter">
         <option value="">-- Secondary Type --</option>
       </select>
     </div>
   </header>
+
   <div class="main-background-section">
     <div id="pokedex"></div>
   </div>
@@ -73,6 +74,43 @@
           opt.textContent = t[0].toUpperCase() + t.slice(1);
           sel.appendChild(opt);
         });
+        [...types].sort().forEach(t => {
+          [type1Filter, type2Filter].forEach(sel => {
+            const opt = document.createElement('option');
+            opt.value = t;
+            opt.textContent = t[0].toUpperCase() + t.slice(1);
+            sel.appendChild(opt);
+          });
+        });
+
+        filteredPokemon = [...allPokemon];
+        renderPage();
+
+        type1Filter.onchange = type2Filter.onchange = () => {
+          currentPage = 1;
+          applyFilters();
+        };
+        searchbar.oninput = () => {
+          currentPage = 1;
+          applyFilters();
+        };
+      })
+      .catch(_ => pokedex.innerHTML = '<p>Failed to load Pokédex.</p>');
+
+    function applyFilters() {
+      const t1 = type1Filter.value;
+      const t2 = type2Filter.value;
+      const query = searchbar.value.trim().toLowerCase();
+
+      filteredPokemon = allPokemon.filter(p => {
+        const ts = p.info.types ? Object.keys(p.info.types) : [];
+        const nameMatch = p.info.name?.toLowerCase().includes(query);
+        const idMatch = String(p.id).padStart(3, '0').includes(query) || String(p.id).includes(query);
+
+        if (query && !nameMatch && !idMatch) return false;
+        if (t1 && !ts.includes(t1)) return false;
+        if (t2 && !ts.includes(t2)) return false;
+        return true;
       });
 
       filteredPokemon = [...allPokemon];
