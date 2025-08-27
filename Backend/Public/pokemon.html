@@ -3,152 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Pokémon Details</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      margin: 20px;
-      text-align: center;
-    }
-    .pokemon-details {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: left;
-    }
-    .pokemon-details img {
-      display: block;
-      margin: 0 auto 10px;
-      width: 150px;
-      height: 150px;
-      object-fit: contain;
-    }
-    .pokemon-details h2 {
-      text-align: center;
-      color: #d32f2f;
-      margin-bottom: 10px;
-    }
-    .pokemon-details p {
-      margin: 6px 0;
-      font-size: .95em;
-    }
-    .section {
-      margin-top: 15px;
-    }
-    .section-title {
-      font-weight: bold;
-      margin-bottom: 5px;
-      color: #333;
-    }
-    .stats span {
-      display: inline-block;
-      margin-right: 10px;
-    }
-    #cry-container {
-      margin-top: 20px;
-      text-align: center;
-    }
-    button {
-      padding: 8px 16px;
-      font-size: 1em;
-      border: none;
-      border-radius: 4px;
-      margin: 5px;
-      background: #1976d2;
-      color: #fff;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #115293;
-    }
-    .back-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 16px;
-      background: #d32f2f;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    .back-button:hover {
-      background: #b71c1c;
-    }
-  </style>
+  <link rel="stylesheet" href="style/pokemondetails.css">
+  <script src="scripts/pokemondetails.js" defer></script>
 </head>
+
 <body>
   <h1>Pokémon Details</h1>
   <div id="details" class="pokemon-details"></div>
   <a href="index.html" class="back-button">← Back to Pokédex</a>
 
-<script>
-  (function () {
-    const params = new URLSearchParams(window.location.search);
-    const rawId = params.get('id');
-    const id = parseInt(rawId, 10);
-    const detailsEl = document.getElementById('details');
 
-    if (isNaN(id)) {
-      detailsEl.innerHTML = '<p>Invalid Pokémon ID.</p>';
-      return;
-    }
-
-    fetch('pokemon_cache.json')
-      .then(res => res.json())
-      .then(data => {
-        let poke = data[rawId] || Object.values(data).find(p => p.id === id);
-
-        if (!poke) {
-          detailsEl.innerHTML = '<p>Pokémon not found.</p>';
-          return;
-        }
-
-        const types = poke.types ? Object.keys(poke.types).join(', ') : 'N/A';
-        const abilities = poke.abilities ? Object.keys(poke.abilities).join(', ') : 'N/A';
-        const height = poke.height ?? 'N/A';
-        const weight = poke.weight ?? 'N/A';
-
-        detailsEl.innerHTML = `
-          <img src="${poke.image || ''}" alt="${poke.name || 'Unknown'}">
-          <h2>${poke.name || 'N/A'}</h2>
-          <p><strong>ID:</strong> ${String(id).padStart(3, '0')}</p>
-          <p><strong>Types:</strong> ${types}</p>
-          <p><strong>Abilities:</strong> ${abilities}</p>
-          <p><strong>Height:</strong> ${height}</p>
-          <p><strong>Weight:</strong> ${weight}</p>
-          <div id="cry-container">
-            <button style="padding: 5px;" id="prev-pokemon">Previous Pokémon</button>
-            <button id="play-cry">🔊 Play Cry</button>
-            <button style="padding: 5px;" id="next-pokemon">Next Pokémon</button>
-            <audio id="audio-cry" preload="auto" src="${poke.cry || ''}"></audio>
-          </div>
-        `;
-
-        // Audio playback
-        const audioEl = document.getElementById('audio-cry');
-        const playBtn = document.getElementById('play-cry');
-        playBtn.addEventListener('click', () => {
-          audioEl.currentTime = 0;
-          audioEl.play().catch(err => console.error('Cry failed to play', err));
-        });
-
-        // Navigation buttons
-        document.getElementById('prev-pokemon').addEventListener('click', () => {
-          if (id > 1) window.location.href = `pokemon.html?id=${id - 1}`;
-        });
-
-        document.getElementById('next-pokemon').addEventListener('click', () => {
-          if (id < 1025) window.location.href = `pokemon.html?id=${id + 1}`;
-        });
-      })
-      .catch(err => {
-        console.error(err);
-        detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
-      });
-  })();
-</script>
 </body>
 </html>
