@@ -17,7 +17,7 @@ const hatchBtn = document.getElementById('hatch-btn');
                 hatchBtn.disabled = false;
             }, 2505);
 
-            img.src = "Gebarsten Ei met Groene Vlekken.png";
+            img.src = "img/Gebarsten Ei met Groene Vlekken.png";
             img.alt = "Egg";
             setTimeout(() => {
                 resultDiv.textContent = "Hatching...";
