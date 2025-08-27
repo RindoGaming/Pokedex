@@ -134,17 +134,18 @@ body {
     .team {
         display: flex;
         justify-content: center;
-        padding: 15px 0px 0px 0px
+        gap: 40px;
+        padding: 15px 0 0 0;
     }
-    .team > ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 10vh;
-        margin: 0px;
+    .front-end, .back-end {
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
-    .team > ul > li {
-        margin-left :25px;
+    .front-end li, .back-end li {
+        margin-left: 0;
+        margin-bottom: 8px;
+        text-align: left;
     }
     .searching {
         display: inline-block;
@@ -162,4 +163,9 @@ body {
     }
     .searching:focus {
         box-shadow: 0 0 0 2px #d32f2f33;
+    }
+
+    footer {
+        background-color: #000;
+        color: #fff;
     }
