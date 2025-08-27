@@ -10,7 +10,7 @@
             text-align: center;
             margin-top: 50px;
             background: #51b400;
-            background: linear-gradient(45deg, rgb(44, 190, 0) 0%, rgba(0, 0, 0, 0.525) 30%, rgb(2, 134, 0) 45%, rgba(0, 0, 0, 0.426) 66%, rgb(0, 184, 3) 83%, rgba(20, 19, 7, 0.355) 94%);
+            background: linear-gradient(45deg, rgb(54, 221, 4) 0%, rgba(0, 0, 0, 0.664) 30%, rgb(7, 199, 4) 45%, rgba(0, 0, 0, 0.534) 66%, rgb(1, 209, 5) 83%, rgba(20, 19, 7, 0.767) 94%);
         }
 
         #pokemon-img {
@@ -48,6 +48,10 @@
         #history {
             margin-top: 30px;
             display: none;
+        }
+
+        .history-grid {
+            display: grid;
             grid-template-columns: repeat(7, 1fr);
             gap: 20px;
             justify-items: center;
@@ -143,18 +147,24 @@
             historyDiv.innerHTML = "";
 
             const hasHistory = Object.keys(hatchHistory).length > 0;
-            historyDiv.style.display = hasHistory ? "grid" : "none";
 
-            for (const [name, data] of Object.entries(hatchHistory)) {
-                const item = document.createElement('div');
-                item.className = 'history-item';
+            if (hasHistory) {
+                historyDiv.style.display = "grid";
+                historyDiv.classList.add('history-grid');
+                for (const [name, data] of Object.entries(hatchHistory)) {
+                    const item = document.createElement('div');
+                    item.className = 'history-item';
 
-                item.innerHTML = `
-                    <img src="${data.sprite}" alt="${name}">
-                    <span>${name}</span>
-                    <div class="count">Hatched ${data.count} time${data.count > 1 ? 's' : ''}</div>
-                `;
-                historyDiv.appendChild(item);
+                    item.innerHTML = `
+                        <img src="${data.sprite}" alt="${name}">
+                        <span>${name}</span>
+                        <div class="count">Hatched ${data.count} time${data.count > 1 ? 's' : ''}</div>
+                    `;
+                    historyDiv.appendChild(item);
+                }
+            } else {
+                historyDiv.style.display = "none";
+                historyDiv.classList.remove('history-grid');
             }
         }
     </script>
