@@ -23,7 +23,7 @@
         const abilities = poke.abilities ? Object.keys(poke.abilities).join(', ') : 'N/A';
         const height = poke.height ?? 'N/A';
         const weight = poke.weight ?? 'N/A';
-        
+
         detailsEl.innerHTML = `
           <div class="half">
           <div class="namesection">
@@ -45,14 +45,14 @@
           <div class="chart">
             <canvas id="statsChart"></canvas>
           </div>
-          
           <p><strong>Types:</strong> ${types}</p>
           <p><strong>Abilities:</strong> ${abilities}</p>
           <p><strong>Height:</strong> ${height}</p>
           <p><strong>Weight:</strong> ${weight}</p>
           </div>
         `;
-
+        `
+        `
         // Audio playback
         const audioEl = document.getElementById('audio-cry');
         const playBtn = document.getElementById('play-cry');
@@ -75,3 +75,45 @@
         detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
       });
   })();
+
+  function displayPokemon(pokemon) {
+    const container = document.getElementById("pokemon-list");
+
+    const card = document.createElement("div");
+    card.classList.add("pokemon-card");
+
+    // Pokémon name
+    const name = document.createElement("h3");
+    name.textContent = pokemon.name;
+    card.appendChild(name);
+
+    // Base form button
+    const baseButton = document.createElement("button");
+    baseButton.textContent = "Base Form";
+    baseButton.onclick = () => showPokemonDetails(pokemon);
+    card.appendChild(baseButton);
+
+    // Variant buttons
+    if (pokemon.variants && pokemon.variants.length > 0) {
+        pokemon.variants.forEach(variant => {
+            const variantButton = document.createElement("button");
+            variantButton.textContent = variant.form;
+            variantButton.onclick = () => showPokemonDetails(variant);
+            card.appendChild(variantButton);
+        });
+    }
+
+    container.appendChild(card);
+}
+const ctx = document.getElementById('statsChart').getContext('2d');
+
+const data = {
+  labels:['HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed'],
+  datasets: [{
+    label: 'Base Stats',
+    data: [poke.stats.hp, poke.stats.attack, poke.stats.defense, poke.stats['special-attack'], poke.stats['special-defense'], poke.stats.speed],
+    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+    borderColor: 'rgba(255, 99, 132, 1)',
+    borderWidth: 1
+  }]
+}

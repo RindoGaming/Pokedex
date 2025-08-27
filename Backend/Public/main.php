@@ -1,7 +1,7 @@
 <?php
 $firebase_url = 'https://pokemondata-565f5-default-rtdb.europe-west1.firebasedatabase.app/pokemon';
-$total_pokemon = 1164;
-$batch_size = 100;
+$batch_size = 10;
+$total_pokemon = 386;
 $cache_file = __DIR__ . '/pokemon_cache.json';
 
 // === Firebase GET ===
