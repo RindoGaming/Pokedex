@@ -84,90 +84,71 @@
   <div id="details" class="pokemon-details"></div>
   <a href="index.html" class="back-button">← Back to Pokédex</a>
 
-  <script>
-    (function() {
-      const params = new URLSearchParams(window.location.search);
-      const rawId = params.get('id');
-      const id = parseInt(rawId, 10);
-      const detailsEl = document.getElementById('details');
+<script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const rawId = params.get('id');
+    const id = parseInt(rawId, 10);
+    const detailsEl = document.getElementById('details');
 
-      if (isNaN(id)) {
-        detailsEl.innerHTML = '<p>Invalid Pokémon ID.</p>';
-        return;
-      }
+    if (isNaN(id)) {
+      detailsEl.innerHTML = '<p>Invalid Pokémon ID.</p>';
+      return;
+    }
 
-      fetch('pokemon_cache.json')
-        .then(res => res.json())
-        .then(data => {
-          let poke = data[rawId] || Object.values(data).find(p => p.id === id);
-          if (!poke) {
-            detailsEl.innerHTML = '<p>Pokémon not found.</p>';
-            return;
-          }
+    fetch('pokemon_cache.json')
+      .then(res => res.json())
+      .then(data => {
+        let poke = data[rawId] || Object.values(data).find(p => p.id === id);
 
-          const name = poke.name || 'Unknown';
-          const image = poke.image || '';
-          const baseExp = poke.base_experience ?? 'N/A';
-          const abilities = poke.abilities ? Object.keys(poke.abilities).join(', ') : 'N/A';
-          const types = poke.types ? Object.keys(poke.types).join(', ') : 'N/A';
-          const stats = poke.stats || {};
-          const species = poke.species?.name || 'N/A';
-          const height = poke.height ?? 'N/A';
-          const weight = poke.weight ?? 'N/A';
-          const gameIndices = poke.game_indices?.map(g => g.version?.name).join(', ') || 'N/A';
-          const encounters = typeof poke.location_area_encounters === 'string' ? poke.location_area_encounters : 'N/A';
-          const cry = poke.cry || '';
+        if (!poke) {
+          detailsEl.innerHTML = '<p>Pokémon not found.</p>';
+          return;
+        }
 
-          detailsEl.innerHTML = `
-            <img src="${image}" alt="${name}">
-            <h2>${name}</h2>
-            <p><strong>ID:</strong> ${String(id).padStart(3, '0')}</p>
-            <p><strong>Base Experience:</strong> ${baseExp}</p>
-            <p><strong>Species:</strong> ${species}</p>
-            <p><strong>Types:</strong> ${types}</p>
-            <p><strong>Abilities:</strong> ${abilities}</p>
-            <p><strong>Height:</strong> ${height}</p>
-            <p><strong>Weight:</strong> ${weight}</p>
-            <div class="section stats">
-              <div class="section-title">Stats:</div>
-              ${Object.entries(stats).map(([key, val]) => `<span>${key}: ${val}</span>`).join('')}
-            </div>
-            <div class="section">
-              <div class="section-title">Game Indices:</div>
-              <p>${gameIndices}</p>
-            </div>
-              <div class="section">
-                <div class="section-title">Location Area Encounters:</div>
-                <p><a href="${encounters}" target="_blank">View encounter locations</a></p>
-              </div>
-            <div id="cry-container">
-              <button id="prev-pokemon">Previous Pokémon</button>
-              <button id="play-cry">🔊 Play Cry</button>
-              <button id="next-pokemon">Next Pokémon</button>
-              <audio id="audio-cry" preload="auto" src="${cry}"></audio>
-            </div>
-          `;
+        const types = poke.types ? Object.keys(poke.types).join(', ') : 'N/A';
+        const abilities = poke.abilities ? Object.keys(poke.abilities).join(', ') : 'N/A';
+        const height = poke.height ?? 'N/A';
+        const weight = poke.weight ?? 'N/A';
 
-          const audioEl = document.getElementById('audio-cry');
-          const playBtn = document.getElementById('play-cry');
-          playBtn.addEventListener('click', () => {
-            audioEl.currentTime = 0;
-            audioEl.play().catch(err => console.error('Cry failed to play', err));
-          });
+        detailsEl.innerHTML = `
+          <img src="${poke.image || ''}" alt="${poke.name || 'Unknown'}">
+          <h2>${poke.name || 'N/A'}</h2>
+          <p><strong>ID:</strong> ${String(id).padStart(3, '0')}</p>
+          <p><strong>Types:</strong> ${types}</p>
+          <p><strong>Abilities:</strong> ${abilities}</p>
+          <p><strong>Height:</strong> ${height}</p>
+          <p><strong>Weight:</strong> ${weight}</p>
+          <div id="cry-container">
+            <button style="padding: 5px;" id="prev-pokemon">Previous Pokémon</button>
+            <button id="play-cry">🔊 Play Cry</button>
+            <button style="padding: 5px;" id="next-pokemon">Next Pokémon</button>
+            <audio id="audio-cry" preload="auto" src="${poke.cry || ''}"></audio>
+          </div>
+        `;
 
-          document.getElementById('prev-pokemon').addEventListener('click', () => {
-            if (id > 1) window.location.href = `pokemon.html?id=${id - 1}`;
-          });
-
-          document.getElementById('next-pokemon').addEventListener('click', () => {
-            if (id < 1025) window.location.href = `pokemon.html?id=${id + 1}`;
-          });
-        })
-        .catch(err => {
-          console.error(err);
-          detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
+        // Audio playback
+        const audioEl = document.getElementById('audio-cry');
+        const playBtn = document.getElementById('play-cry');
+        playBtn.addEventListener('click', () => {
+          audioEl.currentTime = 0;
+          audioEl.play().catch(err => console.error('Cry failed to play', err));
         });
-    })();
-  </script>
+
+        // Navigation buttons
+        document.getElementById('prev-pokemon').addEventListener('click', () => {
+          if (id > 1) window.location.href = `pokemon.html?id=${id - 1}`;
+        });
+
+        document.getElementById('next-pokemon').addEventListener('click', () => {
+          if (id < 1025) window.location.href = `pokemon.html?id=${id + 1}`;
+        });
+      })
+      .catch(err => {
+        console.error(err);
+        detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
+      });
+  })();
+</script>
 </body>
 </html>
