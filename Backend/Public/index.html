@@ -15,7 +15,7 @@
       <select id="type1-filter">
         <option value="">-- Primary Type --</option>
       </select>
-      <input type="text" id="searchbar" class="searchbar" placeholder="Search by name or ID...">
+      <input type="text" id="searchbar" style="width:200px; padding: 10px; display: flex; justify-items: center;" class="searchbar" placeholder="Search by name or ID...">
       <select id="type2-filter">
         <option value="">-- Secondary Type --</option>
       </select>
@@ -25,55 +25,49 @@
   <div class="main-background-section">
     <div id="pokedex"></div>
   </div>
+  
+  <div class="page-mover" style="text-align:center; margin-top:20px;">
+    <button id="prev-btn">⬅ Previous</button>
+    <span id="page-info" style="margin: 0 15px; color: white;"></span>
+    <button id="next-btn">Next ➡</button>
+  </div>
+
+  <div style="text-align:center; margin-top:10px;">
+    <input class="searching" type="number" id="page-search" min="1" style="width:100px;" placeholder="Page">
+    <button class="searchgo" id="go-page-btn">Go</button>
+  </div>
+
   <script>
     const pokedex = document.getElementById('pokedex');
     const type1Filter = document.getElementById('type1-filter');
     const type2Filter = document.getElementById('type2-filter');
-    
+    const searchbar = document.getElementById('searchbar');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const pageInfo = document.getElementById('page-info');
+    const pageSearch = document.getElementById('page-search');
+    const goPageBtn = document.getElementById('go-page-btn');
+
     let allPokemon = [];
     let filteredPokemon = [];
     let currentPage = 1;
     const pageSize = 24;
-    
-    const paginationControls = document.createElement('div');
-    paginationControls.style.textAlign = 'center';
-    paginationControls.style.marginTop = '20px';
-    paginationControls.innerHTML = `
-    <div class="page-mover">
-      <button id="prev-btn">⬅ Previous</button>
-    <span id="page-info" style="margin: 0 15px; color: white"></span>
-    <button id="next-btn">Next ➡</button>
-    </div>
-    `;
-  document.body.appendChild(paginationControls);
-  
-  
-  const nextBtn = document.getElementById('next-btn');
-  const pageInfo = document.getElementById('page-info');
-  const prevBtn = document.getElementById('prev-btn');
-  
-  fetch('pokemon_cache.json')
-  .then(r => r.json())
-  .then(data => {
-      allPokemon = Object.entries(data)
-        .map(([key, poke]) => ({
-          id: poke.id ?? parseInt(key, 10),
-          info: poke
-        }))
-        .sort((a, b) => a.id - b.id);
-        
-      // Populate type filters
-      const types = new Set();
-      allPokemon.forEach(p => {
-        if (p.info.types) Object.keys(p.info.types).forEach(t => types.add(t));
-      });
-      [...types].sort().forEach(t => {
-        [type1Filter, type2Filter].forEach(sel => {
-          const opt = document.createElement('option');
-          opt.value = t;
-          opt.textContent = t[0].toUpperCase() + t.slice(1);
-          sel.appendChild(opt);
+
+    fetch('pokemon_cache.json')
+      .then(r => r.json())
+      .then(data => {
+        allPokemon = Object.entries(data)
+          .map(([key, poke]) => ({
+            id: poke.id ?? parseInt(key, 10),
+            info: poke
+          }))
+          .sort((a, b) => a.id - b.id);
+
+        const types = new Set();
+        allPokemon.forEach(p => {
+          if (p.info.types) Object.keys(p.info.types).forEach(t => types.add(t));
         });
+
         [...types].sort().forEach(t => {
           [type1Filter, type2Filter].forEach(sel => {
             const opt = document.createElement('option');
@@ -113,82 +107,77 @@
         return true;
       });
 
-      filteredPokemon = [...allPokemon];
-      renderPage();
-      type1Filter.onchange = type2Filter.onchange = () => {
-        currentPage = 1;
-        applyFilters();
-      };
-    })
-    .catch(_ => pokedex.innerHTML = '<p>Failed to load Pokédex.</p>');
-    
-  function applyFilters() {
-    const t1 = type1Filter.value, t2 = type2Filter.value;
-    filteredPokemon = allPokemon.filter(p => {
-      const ts = p.info.types ? Object.keys(p.info.types) : [];
-      if (t1 && !ts.includes(t1)) return false;
-      if (t2 && !ts.includes(t2)) return false;
-      return true;
-    });
-    renderPage();
-  }
-
-  function renderPage() {
-    pokedex.innerHTML = '';
-    const start = (currentPage - 1) * pageSize;
-    const end = start + pageSize;
-    const pageItems = filteredPokemon.slice(start, end);
-
-    pageItems.forEach(p => {
-      const padded = String(p.id).padStart(3, '0');
-      pokedex.innerHTML += `
-      <div class="pokemon" onclick="goToDetails(${p.id})">
-        <img src="${p.info.image || ''}" alt="${p.info.name || 'Unknown'}">
-        <p><strong>ID:</strong> ${padded}</p>
-          <h3>${p.info.name || 'N/A'}</h3>
-          <div><span class="type ${Object.keys(p.info.types)[0]}">${p.info.types ? Object.keys(p.info.types)[0] : 'N/A'}</span> ${p.info.types && Object.keys(p.info.types)[1]
-            ? `<span class="type ${Object.keys(p.info.types)[1]}">${Object.keys(p.info.types)[1]}</span>`
-            : ''}<div>
-              </div>
-              `;
-            });
-
-            pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredPokemon.length / pageSize)}`;
-            prevBtn.disabled = currentPage === 1;
-            nextBtn.disabled = end >= filteredPokemon.length;
-          }
-          
-          prevBtn.onclick = () => {
-            if (currentPage > 1) {
-              currentPage--;
       renderPage();
     }
-  };
-  
-  nextBtn.onclick = () => {
-    if ((currentPage * pageSize) < filteredPokemon.length) {
-      currentPage++;
-      renderPage();
+
+    function renderPage() {
+      pokedex.innerHTML = '';
+      const start = (currentPage - 1) * pageSize;
+      const end = start + pageSize;
+      const pageItems = filteredPokemon.slice(start, end);
+
+      pageItems.forEach(p => {
+        const padded = String(p.id).padStart(3, '0');
+        const types = p.info.types ? Object.keys(p.info.types) : [];
+        const typeHTML = types.map(t => `<span class="type ${t}">${t}</span>`).join(' ');
+
+        pokedex.innerHTML += `
+          <div class="pokemon" onclick="goToDetails(${p.id})">
+            <img src="${p.info.image || ''}" alt="${p.info.name || 'Unknown'}">
+            <p><strong>ID:</strong> ${padded}</p>
+            <h3>${p.info.name || 'N/A'}</h3>
+            <div>${typeHTML}</div>
+          </div>
+        `;
+      });
+
+      pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredPokemon.length / pageSize)}`;
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = end >= filteredPokemon.length;
     }
-  };
-  
-  function goToDetails(id) {
-    window.location.href = `pokemon.html?id=${id}`;
-  }
-</script>
-<footer>
-<div class="team"> <ul>
-  <li>alex</li>
-  <li>caspar</li>
-  <li>jarno</li>
-  <li>jay</li>
-  <li>hendrik</li>
-  <li>senn</li>
-</ul></div>
-<div class="copyright">🍷🗿 lcc donotsu</div>
-<div class="note">
-  <a href="https://www.pokemon.com/us/pokedex">inspiration</a>
-</div>
-</footer>
+
+    prevBtn.onclick = () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage();
+      }
+    };
+
+    nextBtn.onclick = () => {
+      if ((currentPage * pageSize) < filteredPokemon.length) {
+        currentPage++;
+        renderPage();
+      }
+    };
+
+    goPageBtn.onclick = () => {
+      const page = parseInt(pageSearch.value, 10);
+      if (!isNaN(page) && page > 0 && page <= Math.ceil(filteredPokemon.length / pageSize)) {
+        currentPage = page;
+        renderPage();
+      }
+    };
+
+    function goToDetails(id) {
+      window.location.href = `pokemon.html?id=${id}`;
+    }
+  </script>
+
+  <footer>
+    <div class="team">
+      <ul>
+        <li>alex</li>
+        <li>caspar</li>
+        <li>jarno</li>
+        <li>jay</li>
+        <li>hendrik</li>
+        <li>senn</li>
+      </ul>
+    </div>
+    <div class="copyright">🍷🗿 lcc donotsu</div>
+    <div class="note">
+      <a href="https://www.pokemon.com/us/pokedex">inspiration</a>
+    </div>
+  </footer>
 </body>
 </html>
