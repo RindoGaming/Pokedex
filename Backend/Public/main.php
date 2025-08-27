@@ -88,7 +88,7 @@ function build_variant_entry($var_data) {
         'height'=>$var_data['height']/10 . "m",
         'weight'=>$var_data['weight']/10 . "kg",
         'image'=>$var_data['sprites']['front_default'] ?? null,
-        'cry'=>$var_data['species']['url'] . "audio"
+        'cries'=>$var_data['species']['url'] . "audio"
     ];
 }
 
@@ -155,7 +155,7 @@ if (isset($all_pokemon[$poke_name])) {
         'height'=>$data['height']/10 . "m",
         'weight'=>$data['weight']/10 . "kg",
         'image'=>$data['sprites']['front_default'] ?? null,
-        'cry'=>$data['species']['url'] . "audio",
+        'cries'=>$data['species']['url'] . "audio",
         'variants'=>[]
     ];
 }
