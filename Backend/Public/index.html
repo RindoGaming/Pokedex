@@ -112,12 +112,11 @@
       pokedex.innerHTML += `
         <div class="pokemon" onclick="goToDetails(${p.id})">
           <img src="${p.info.image || ''}" alt="${p.info.name || 'Unknown'}">
-          <h3>${p.info.name || 'N/A'}</h3>
           <p><strong>ID:</strong> ${padded}</p>
-          <p><strong>Types:</strong> ${p.info.types ? Object.keys(p.info.types).join(', ') : 'N/A'}</p>
-          <p><strong>Abilities:</strong> ${p.info.abilities ? Object.keys(p.info.abilities).join(', ') : 'N/A'}</p>
-          <p><strong>Height:</strong> ${p.info.height || 'N/A'}</p>
-          <p><strong>Weight:</strong> ${p.info.weight || 'N/A'}</p>
+          <h3>${p.info.name || 'N/A'}</h3>
+          <div><span class="type ${Object.keys(p.info.types)[0]}">${p.info.types ? Object.keys(p.info.types)[0] : 'N/A'}</span> ${p.info.types && Object.keys(p.info.types)[1]
+            ? `<span class="type ${Object.keys(p.info.types)[1]}">${Object.keys(p.info.types)[1]}</span>`
+            : ''}<div>
         </div>
       `;
     });
