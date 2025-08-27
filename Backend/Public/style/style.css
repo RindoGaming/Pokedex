@@ -102,3 +102,7 @@
                 #2F2F2F 10px,
                 #2F2F2F 20px);
     }
+
+    .searchbar {
+        height: 100%;
+    }
