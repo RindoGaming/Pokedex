@@ -85,8 +85,8 @@ body {
     }
 
     .pokemon img {
-        width: 96px;
-        height: 96px;
+        width: 215px;
+        height: 215px;
         object-fit: contain
     }
 
