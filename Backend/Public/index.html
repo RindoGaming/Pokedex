@@ -3,34 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Pokédex Display</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: #f8f8f8 }
-    h1 { text-align: center; color: #d32f2f }
-    button, select { display: block; margin: 10px auto; padding: 10px 20px; font-size: 1em; border-radius: 5px; border: none }
-    button { background: #d32f2f; color: #fff; cursor: pointer }
-    select { background: #fff; border: 1px solid #ccc }
-    #filter-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 20px }
-    #pokedex { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px }
-    .pokemon {
-      background: #fff; border: 1px solid #ccc; border-radius:8px; padding:10px; width:200px;
-      box-shadow:0 2px 5px rgba(0,0,0,0.1); text-align:center; cursor:pointer; transition:transform .2s
-    }
-    .pokemon:hover { transform:scale(1.05) }
-    .pokemon img { width:96px; height:96px; object-fit:contain }
-    .pokemon h3 { margin:10px 0 5px; font-size:1.2em }
-    .pokemon p { margin:4px 0; font-size:.9em }
-  </style>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/type.css">
 </head>
 <body>
-  <h1>Pokédex</h1>
-  <button onclick="location.href='egg.html'">Go to Egg Hatcher</button>
+<header class="header">
+    <h1>Pokédex</h1>
+    <button onclick="location.href='egg.html'">Go to Egg Hatcher</button>
 
-  <div id="filter-container">
-    <select id="type1-filter"><option value="">-- Primary Type --</option></select>
-    <select id="type2-filter"><option value="">-- Secondary Type --</option></select>
+    <div id="filter-container">
+      <select id="type1-filter">
+        <option value="">-- Primary Type --</option>
+      </select>
+      <input type="text" id="searchbar" class="searchbar">
+      <select id="type2-filter">
+        <option value="">-- Secondary Type --</option>
+      </select>
+    </div>
+  </header>
+  <div class="main-background-section">
+    <div id="pokedex"></div>
   </div>
-
-  <div id="pokedex"></div>
 
 <script>
   const pokedex = document.getElementById('pokedex');
