@@ -24,12 +24,27 @@
         const height = poke.height ?? 'N/A';
         const weight = poke.weight ?? 'N/A';
 
+        // Variant handling
+        const baseName = poke.baseName || poke.name;
+        const variants = data[baseName] && data[baseName].variants ? data[baseName].variants : {};
+        let variantOptions = "";
+        if (Object.keys(variants).length > 0) {
+          variantOptions = `<select id="variant-select">
+            <option value="">Base Form</option>
+            ${Object.entries(variants)
+              .map(([vName, v]) =>
+                `<option value="${vName}"${vName === poke.name ? " selected" : ""}>${v.name.charAt(0).toUpperCase() + v.name.slice(1)}</option>`
+              )
+              .join("")}
+          </select>`;
+        }
+
         detailsEl.innerHTML = `
           <div class="half">
-          <div class="namesection">
-            <h1>${poke.name ? poke.name.charAt(0).toUpperCase() + poke.name.slice(1) : 'N/A'}</h1>
-            <p><strong>ID:</strong> ${String(id).padStart(3, '0')}</p>
-          </div>
+            <div class="namesection">
+              <h1>${poke.name ? poke.name.charAt(0).toUpperCase() + poke.name.slice(1) : 'N/A'}</h1>
+              <p><strong>ID:</strong> ${String(id).padStart(3, '0')}</p>
+            </div>
             
             <div class="pokemon-image-bg">
               <img src="${poke.image || ''}" alt="${poke.name || 'Unknown'}">
@@ -45,6 +60,7 @@
           <div class="chart">
             <canvas id="statsChart"></canvas>
           </div>
+          ${variantOptions}
           <p><strong>Types:</strong> ${types}</p>
           <p><strong>Abilities:</strong> ${abilities}</p>
           <p><strong>Height:</strong> ${height}</p>
@@ -68,22 +84,24 @@
         document.getElementById('next-pokemon').addEventListener('click', () => {
           if (id < 1025) window.location.href = `pokemon.html?id=${id + 1}`;
         });
+
+        // Variant change handling
+        const variantSelect = document.getElementById("variant-select");
+        if (variantSelect) {
+          variantSelect.addEventListener("change", (e) => {
+            const vName = e.target.value;
+            if (!vName) {
+              // Render base form
+              window.location.href = `pokemon.html?id=${data[baseName].id}`;
+            } else {
+              // Render selected variant
+              window.location.href = `pokemon.html?id=${variants[vName].id}`;
+            }
+          });
+        }
       })
       .catch(err => {
         console.error(err);
         detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
       });
   })();
-
-const ctx = document.getElementById('statsChart').getContext('2d');
-
-const data = {
-  labels:['HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed'],
-  datasets: [{
-    label: 'Base Stats',
-    data: [poke.stats.hp, poke.stats.attack, poke.stats.defense, poke.stats['special-attack'], poke.stats['special-defense'], poke.stats.speed],
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgba(255, 99, 132, 1)',
-    borderWidth: 1
-  }]
-}
