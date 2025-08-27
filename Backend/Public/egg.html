@@ -101,7 +101,7 @@
             img.alt = "Egg";
             resultDiv.textContent = "Hatching...";
 
-            const id = Math.floor(Math.random() * 386) + 1;
+            const id = Math.floor(Math.random() * 1025) + 1;
             try {
                 const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
                 if (!res.ok) throw new Error("Failed to fetch Pokémon");
@@ -109,7 +109,9 @@
                 const name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
                 const sprite = data.sprites.other['official-artwork'].front_default || data.sprites.front_default;
 
-                img.src = sprite || "egg.png";
+                if (!sprite) throw new Error("No sprite available");
+
+                img.src = sprite;
                 img.alt = name;
                 resultDiv.textContent = `🎉 You hatched a ${name}!`;
 

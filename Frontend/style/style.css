@@ -96,12 +96,22 @@ header {
     display: block;
 }
 
+.info {
+    color: rgb(10, 142, 111);
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
 .pokemon {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
     display: inline-block;
     width: 200px;
+    vertical-align: top;
 }
 
 .pokemon h3 {
@@ -109,10 +119,85 @@ header {
 }
 
 #pokedex {
+    border: 2px solid red;
     min-height: 100px;
 }
 
-.info {
-    color: rgb(10, 142, 111);
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f8f8f8
+}
+
+h1 {
     text-align: center;
+    color: #d32f2f
+}
+
+button,
+select {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none
+}
+
+button {
+    background: #d32f2f;
+    color: #fff;
+    cursor: pointer
+}
+
+select {
+    background: #fff;
+    border: 1px solid #ccc
+}
+
+#filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px
+}
+
+#pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px
+}
+
+.pokemon {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform .2s
+}
+
+.pokemon:hover {
+    transform: scale(1.05)
+}
+
+.pokemon img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain
+}
+
+.pokemon h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em
+}
+
+.pokemon p {
+    margin: 4px 0;
+    font-size: .9em
 }
