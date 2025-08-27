@@ -2,6 +2,10 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+    background: linear-gradient(350deg,
+            lightblue,
+            rgb(76, 200, 241));
+    height: 125vh;
 }
 
 #pokemon-img {
@@ -35,11 +39,16 @@ body {
 }
 
 #history {
-    margin-top: 30px;
+    margin-top: 5px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 20px;
     justify-items: center;
+    height: 450px;
+    overflow-y: scroll;
+    scrollbar-color: gray rgba(255, 166, 0, 0);
+    scrollbar-width: thin;
+
 }
 
 .history-item {
@@ -152,4 +161,20 @@ body {
 
 .hidden {
     display: none;
+}
+.pokeball {
+    position: fixed;
+    z-index: -1;
+    width: 55%;
+    aspect-ratio: 1/1;
+}
+
+.btn {
+    border-radius: 15px;
+    border: none;
+    transition: all 0.1s ease-in-out;
+}
+.btn:hover {
+    filter: brightness(90%);
+    scale: 1.05;
 }
