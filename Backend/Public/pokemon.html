@@ -113,7 +113,7 @@
 
         detailsEl.innerHTML = `
           <img src="${poke.image || ''}" alt="${poke.name || 'Unknown'}">
-          <h2>${poke.name || 'N/A'}</h2>
+          <h2>${poke.name ? poke.name.charAt(0).toUpperCase() + poke.name.slice(1) : 'N/A'}</h2>
           <p><strong>ID:</strong> ${String(id).padStart(3, '0')}</p>
           <p><strong>Types:</strong> ${types}</p>
           <p><strong>Abilities:</strong> ${abilities}</p>

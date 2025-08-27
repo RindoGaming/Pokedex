@@ -120,12 +120,15 @@
         const padded = String(p.id).padStart(3, '0');
         const types = p.info.types ? Object.keys(p.info.types) : [];
         const typeHTML = types.map(t => `<span class="type ${t}">${t}</span>`).join(' ');
+        const name = p.info.name
+          ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
+          : 'N/A';
 
         pokedex.innerHTML += `
           <div class="pokemon" onclick="goToDetails(${p.id})">
-            <img src="${p.info.image || ''}" alt="${p.info.name || 'Unknown'}">
+            <img src="${p.info.image || ''}" alt="${name}">
             <p><strong>ID:</strong> ${padded}</p>
-            <h3>${p.info.name || 'N/A'}</h3>
+            <h3>${name}</h3>
             <div>${typeHTML}</div>
           </div>
         `;
