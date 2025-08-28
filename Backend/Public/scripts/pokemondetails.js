@@ -28,9 +28,9 @@
 
         // Stats (no bullet points, no effort)
         const statsHTML = poke.stats
-          ? Object.entries(poke.stats).map(([k, v]) => 
-              `<p><strong>${k}:</strong> ${v.base_stat}</p>`
-            ).join('')
+          ? Object.entries(poke.stats).map(([k, v]) =>
+            `<p><strong>${k}:</strong> ${v.base_stat}</p>`
+          ).join('')
           : '';
 
         // Variants dropdown
@@ -40,10 +40,10 @@
           variantOptions = `<select id="variant-select">
             <option value="">Base Form</option>
             ${Object.entries(variants).map(([vName, v]) =>
-              `<option value="${vName}"${vName === poke.name ? ' selected' : ''}>
+            `<option value="${vName}"${vName === poke.name ? ' selected' : ''}>
                 ${v.name.charAt(0).toUpperCase() + v.name.slice(1)}
               </option>`
-            ).join('')}
+          ).join('')}
           </select>`;
         }
 
@@ -110,14 +110,25 @@
         // Audio playback
         const audioEl = document.getElementById('audio-cry');
         const playBtn = document.getElementById('play-cry');
+
+        audioEl.src = poke.cries || '';
+        audioEl.load();
+
         playBtn.addEventListener('click', () => {
           if (audioEl.src) {
-            audioEl.currentTime = 0;
-            audioEl.play().catch(err => console.error('Cry failed to play', err));
+            audioEl.pause();          // Stop if already playing
+            audioEl.currentTime = 0;  // Rewind
+            audioEl.load();           // Reload the audio
+            audioEl.play().then(() => {
+              console.log('Cry playing:', audioEl.src);
+            }).catch(err => {
+              console.error('Cry failed to play', err);
+            });
           } else {
             console.warn('No cry audio available for this Pokémon.');
           }
         });
+
 
         // Navigation buttons
         document.getElementById('prev-pokemon').addEventListener('click', () => {
