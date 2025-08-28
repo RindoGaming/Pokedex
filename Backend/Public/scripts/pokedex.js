@@ -8,9 +8,18 @@ const pageInfo = document.getElementById('page-info');
 const pageSearch = document.getElementById('page-search');
 const goPageBtn = document.getElementById('go-page-btn');
 const searchDropdown = document.getElementById('search-dropdown');
+
 let allPokemon = [];
 let filteredPokemon = [];
-let currentPage = 1;
+
+// --- Restore page from URL (?page=) or localStorage ---
+const urlParams = new URLSearchParams(location.search);
+const urlPage = parseInt(urlParams.get('page'), 10);
+const savedPage = parseInt(localStorage.getItem('lastPokedexPage'), 10);
+let currentPage =
+  !isNaN(urlPage) && urlPage > 0 ? urlPage :
+  (!isNaN(savedPage) && savedPage > 0 ? savedPage : 1);
+
 const pageSize = 24;
 
 fetch('pokemon_cache.json')
@@ -27,9 +36,6 @@ fetch('pokemon_cache.json')
     allPokemon.forEach(p => {
       if (p.info.types) Object.keys(p.info.types).forEach(t => types.add(t));
     });
-
-
-
 
     [...types].sort().forEach(t => {
       [type1Filter, type2Filter].forEach(sel => {
@@ -59,9 +65,6 @@ function applyFilters() {
   const t1 = type1Filter.value;
   const t2 = type2Filter.value;
   const query = searchbar.value.trim().toLowerCase();
-  console.log(
-    `Applying filters: Type1=${t1}, Type2=${t2}, Query='${query}'`
-  );
 
   filteredPokemon = allPokemon.filter(p => {
     const ts = p.info.types ? Object.keys(p.info.types) : [];
@@ -96,18 +99,24 @@ function renderPage() {
       : 'N/A';
 
     pokedex.innerHTML += `
-          <div class="pokemon" onclick="goToDetails(${p.id})">
-            <img src="${p.info.image || ''}" alt="${name}">
-            <p><strong>ID:</strong> ${padded}</p>
-            <h3>${name}</h3>
-            <div>${typeHTML}</div>
-          </div>
-        `;
+      <div class="pokemon" onclick="goToDetails(${p.id})">
+        <img src="${p.info.image || ''}" alt="${name}">
+        <p><strong>ID:</strong> ${padded}</p>
+        <h3>${name}</h3>
+        <div>${typeHTML}</div>
+      </div>
+    `;
   });
 
   pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredPokemon.length / pageSize)}`;
   prevBtn.disabled = currentPage === 1;
   nextBtn.disabled = end >= filteredPokemon.length;
+
+  // Persist current page & reflect it in URL
+  localStorage.setItem('lastPokedexPage', String(currentPage));
+  const params = new URLSearchParams(location.search);
+  params.set('page', String(currentPage));
+  history.replaceState(null, '', `${location.pathname}?${params.toString()}`);
 }
 
 prevBtn.onclick = () => {
@@ -126,15 +135,19 @@ nextBtn.onclick = () => {
 
 goPageBtn.onclick = () => {
   const page = parseInt(pageSearch.value, 10);
-  if (!isNaN(page) && page > 0 && page <= Math.ceil(filteredPokemon.length / pageSize)) {
+  const max = Math.ceil(filteredPokemon.length / pageSize);
+  if (!isNaN(page) && page > 0 && page <= max) {
     currentPage = page;
     renderPage();
   }
 };
 
+// Make it global for inline onclick
 function goToDetails(id) {
-  window.location.href = `pokemon.html?id=${id}`;
+  const page = localStorage.getItem('lastPokedexPage') || String(currentPage) || '1';
+  window.location.href = `pokemon.html?id=${id}&page=${page}`;
 }
+window.goToDetails = goToDetails; // ensure global for inline handlers
 
 document.addEventListener('click', e => {
   if (!searchDropdown.contains(e.target) && e.target !== searchbar) {
@@ -148,53 +161,31 @@ function showDropdown() {
     searchDropdown.innerHTML = '';
     return;
   }
-
-  // (limit to 10 results)
   const results = allPokemon.filter(p =>
     p.info.name?.toLowerCase().includes(query)
-  ).slice(0, 6); 
+  ).slice(0, 10);
 
   if (results.length === 0) {
     searchDropdown.innerHTML = '';
     return;
   }
 
-
-  let wrapper = searchDropdown.querySelector(".dropdown-wrapper");
-  if (!wrapper) {
-    wrapper = document.createElement("div");
-    wrapper.className = "dropdown-wrapper";
-    wrapper.style.cssText = "background:#fff; border:1px solid #ccc; width:100%; z-index:10;";
-    searchDropdown.appendChild(wrapper);
-  } else {
-    wrapper.innerHTML = "";
-  }
-
-  results.forEach(p => {
-    const types = p.info.types ? Object.keys(p.info.types) : [];
-    const typeHTML = types.map(t => `<span class="type ${t}" style="margin-left:4px;">${t}</span>`).join('');
-    const name = p.info.name
-      ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
-      : 'N/A';
-
-    const item = document.createElement("div");
-    item.className = "dropdown-item";
-    item.style.cssText = "display:flex; align-items:center; padding:4px; cursor:pointer;";
-    item.onclick = () => { goToDetails(p.id); searchDropdown.innerHTML = ''; };
-
-    item.innerHTML = `
-      <img src="${p.info.image || ''}" alt="${name}" style="width:40px; height:40px; object-fit:contain; margin-right:8px;">
-      <span style="flex:1;">${name}</span>
-      <span style="margin-left:auto;">${typeHTML}</span>
-    `;
-
-    wrapper.appendChild(item); // 👈 puts new items at the bottom
-  });
-}
-
-function on() {
-  document.getElementById("overlay").style.display = "flex";
-}
-function off() {
-  document.getElementById("overlay").style.display = "none";
+  searchDropdown.innerHTML = `
+    <div style="position:absolute; background:#fff; border:1px solid #ccc; width:100%; z-index:10;">
+      ${results.map(p => {
+        const types = p.info.types ? Object.keys(p.info.types) : [];
+        const typeHTML = types.map(t => `<span class="type ${t}" style="margin-left:4px;">${t}</span>`).join('');
+        const name = p.info.name
+          ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
+          : 'N/A';
+        return `
+          <div class="dropdown-item" style="display:flex; align-items:center; padding:4px; cursor:pointer;" onclick="goToDetails(${p.id}); searchDropdown.innerHTML='';">
+            <img src="${p.info.image || ''}" alt="${name}" style="width:40px; height:40px; object-fit:contain; margin-right:8px;">
+            <span style="flex:1;">${name}</span>
+            <span style="margin-left:auto;">${typeHTML}</span>
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
 }

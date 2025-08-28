@@ -8,7 +8,8 @@ $cache_file = __DIR__ . '/pokemon_cache.json';
 $cry_base_url = "https://play.pokemonshowdown.com/audio/cries/";
 
 // === Firebase GET ===
-function get_from_firebase($url, $key) {
+function get_from_firebase($url, $key)
+{
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url . '/' . strtolower($key) . '.json');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -18,7 +19,8 @@ function get_from_firebase($url, $key) {
 }
 
 // === Firebase PUSH ===
-function push_to_firebase($url, $batch) {
+function push_to_firebase($url, $batch)
+{
     if (empty($batch)) return;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url . '.json');
@@ -32,7 +34,8 @@ function push_to_firebase($url, $batch) {
 }
 
 // === Multi-cURL fetch ===
-function fetch_json_multi($urls) {
+function fetch_json_multi($urls)
+{
     $multi_handle = curl_multi_init();
     $handles = $results = [];
     foreach ($urls as $key => $url) {
@@ -43,7 +46,10 @@ function fetch_json_multi($urls) {
         $handles[$key] = $ch;
     }
     $running = null;
-    do { curl_multi_exec($multi_handle, $running); curl_multi_select($multi_handle); } while ($running > 0);
+    do {
+        curl_multi_exec($multi_handle, $running);
+        curl_multi_select($multi_handle);
+    } while ($running > 0);
     foreach ($handles as $key => $ch) {
         $content = curl_multi_getcontent($ch);
         $results[$key] = $content ? json_decode($content, true) : null;
@@ -55,49 +61,58 @@ function fetch_json_multi($urls) {
 }
 
 // === Variant Builder ===
-function build_variant_entry($var_data) {
-    global $cry_base_url; // Use global variable for local cries folder
+function build_variant_entry($var_data)
+{
+    global $cry_base_url;
 
     $abilities_v = $types_v = $stats_v = $forms_v = [];
 
     foreach ($var_data['abilities'] as $a)
         $abilities_v[$a['ability']['name']] = [
-            'is_hidden'=>$a['is_hidden'],
-            'slot'=>$a['slot'],
-            'url'=>$a['ability']['url']
+            'is_hidden' => $a['is_hidden'],
+            'slot' => $a['slot'],
+            'url' => $a['ability']['url']
         ];
 
     foreach ($var_data['types'] as $t)
-        $types_v[$t['type']['name']] = ['slot'=>$t['slot']];
+        $types_v[$t['type']['name']] = ['slot' => $t['slot']];
 
     foreach ($var_data['stats'] as $s)
         $stats_v[$s['stat']['name']] = [
-            'base_stat'=>$s['base_stat'],
-            'effort'=>$s['effort'],
-            'url'=>$s['stat']['url']
+            'base_stat' => $s['base_stat'],
+            'effort' => $s['effort'],
+            'url' => $s['stat']['url']
         ];
 
     foreach ($var_data['forms'] as $f)
-        $forms_v[] = ['name'=>$f['name'],'url'=>$f['url']];
+        $forms_v[] = ['name' => $f['name'], 'url' => $f['url']];
 
-    // Normalize name for filename (lowercase, remove non-alphanumeric)
-    $cry_file_name = strtolower(preg_replace('/[^a-z0-9]/', '', $var_data['name'])) . ".wav";
+    // Normalize name for Pokémon Showdown cry
+    $name_normalized = strtolower($var_data['name']);
+    $name_normalized = str_replace(' ', '-', $name_normalized);
+    $name_normalized = preg_replace('/[^a-z0-9\-]/', '', $name_normalized);
+
+    $cry_file_name = $name_normalized . ".mp3";
     $cry_url = $cry_base_url . $cry_file_name;
 
+    // Shiny sprite URL
+    $shiny_sprite = $var_data['sprites']['front_shiny'] ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{$var_data['id']}.png";
+
     return [
-        'id'=>$var_data['id'],
-        'name'=>$var_data['name'],
-        'types'=>$types_v,
-        'abilities'=>$abilities_v,
-        'stats'=>$stats_v,
-        'base_experience'=>$var_data['base_experience'],
-        'forms'=>$forms_v,
-        'species'=>['name'=>$var_data['species']['name'],'url'=>$var_data['species']['url']],
-        'is_default'=>false,
-        'height'=>$var_data['height']/10 . " m",
-        'weight'=>$var_data['weight']/10 . " kg",
-        'image'=>$var_data['sprites']['front_default'] ?? null,
-        'cries'=>$cry_url
+        'id' => $var_data['id'],
+        'name' => $var_data['name'],
+        'types' => $types_v,
+        'abilities' => $abilities_v,
+        'stats' => $stats_v,
+        'base_experience' => $var_data['base_experience'],
+        'forms' => $forms_v,
+        'species' => ['name' => $var_data['species']['name'], 'url' => $var_data['species']['url']],
+        'is_default' => false,
+        'height' => $var_data['height'] / 10 . " m",
+        'weight' => $var_data['weight'] / 10 . " kg",
+        'image' => $var_data['sprites']['front_default'] ?? null,
+        'shiny' => $shiny_sprite,
+        'cries' => $cry_url
     ];
 }
 
@@ -136,40 +151,41 @@ for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
             $abilities = $types = $stats = $forms = [];
             foreach ($data['abilities'] as $a)
                 $abilities[$a['ability']['name']] = [
-                    'is_hidden'=>$a['is_hidden'],
-                    'slot'=>$a['slot'],
-                    'url'=>$a['ability']['url']
+                    'is_hidden' => $a['is_hidden'],
+                    'slot' => $a['slot'],
+                    'url' => $a['ability']['url']
                 ];
             foreach ($data['types'] as $t)
-                $types[$t['type']['name']] = ['slot'=>$t['slot']];
+                $types[$t['type']['name']] = ['slot' => $t['slot']];
             foreach ($data['stats'] as $s)
                 $stats[$s['stat']['name']] = [
-                    'base_stat'=>$s['base_stat'],
-                    'effort'=>$s['effort'],
-                    'url'=>$s['stat']['url']
+                    'base_stat' => $s['base_stat'],
+                    'effort' => $s['effort'],
+                    'url' => $s['stat']['url']
                 ];
             foreach ($data['forms'] as $f)
-                $forms[] = ['name'=>$f['name'],'url'=>$f['url']];
+                $forms[] = ['name' => $f['name'], 'url' => $f['url']];
 
             // Showdown cry
             $cry_name = strtolower(preg_replace('/[^a-z0-9]/', '', $data['name']));
             $cry_url = $cry_base_url . $cry_name . ".mp3";
 
             $base_entry = [
-                'id'=>$data['id'],
-                'name'=>$data['name'],
-                'types'=>$types,
-                'abilities'=>$abilities,
-                'stats'=>$stats,
-                'base_experience'=>$data['base_experience'],
-                'forms'=>$forms,
-                'species'=>['name'=>$data['species']['name'],'url'=>$data['species']['url']],
-                'is_default'=>$data['is_default'],
-                'height'=>$data['height']/10 . " m",
-                'weight'=>$data['weight']/10 . " kg",
-                'image'=>$data['sprites']['front_default'] ?? null,
-                'cries'=>$cry_url,
-                'variants'=>[]
+                'id' => $data['id'],
+                'name' => $data['name'],
+                'types' => $types,
+                'abilities' => $abilities,
+                'stats' => $stats,
+                'base_experience' => $data['base_experience'],
+                'forms' => $forms,
+                'species' => ['name' => $data['species']['name'], 'url' => $data['species']['url']],
+                'is_default' => $data['is_default'],
+                'height' => $data['height'] / 10 . " m",
+                'weight' => $data['weight'] / 10 . " kg",
+                'image' => $data['sprites']['front_default'] ?? null,
+                'shiny' => $data['sprites']['front_shiny'] ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{$data['id']}.png",
+                'cries' => $cry_url,
+                'variants' => []
             ];
         }
 
@@ -222,4 +238,3 @@ for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
 }
 
 echo "All Pokémon + variants (including Megas/Gmax) processed.<br>";
-?>
