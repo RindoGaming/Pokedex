@@ -1,7 +1,7 @@
 <?php
 $firebase_url = 'https://pokemondata-565f5-default-rtdb.europe-west1.firebasedatabase.app/pokemon';
-$batch_size = 10;
-$total_pokemon = 386;
+$batch_size = 50;
+$total_pokemon = 1164;
 $cache_file = __DIR__ . '/pokemon_cache.json';
 
 // === Firebase GET ===
@@ -85,8 +85,8 @@ function build_variant_entry($var_data) {
         'forms'=>$forms_v,
         'species'=>['name'=>$var_data['species']['name'],'url'=>$var_data['species']['url']],
         'is_default'=>false,
-        'height'=>$var_data['height']/10 . "m",
-        'weight'=>$var_data['weight']/10 . "kg",
+        'height'=>$var_data['height']/10 . " m",
+        'weight'=>$var_data['weight']/10 . " kg",
         'image'=>$var_data['sprites']['front_default'] ?? null,
         'cries'=>$var_data['species']['url'] . "audio"
     ];
