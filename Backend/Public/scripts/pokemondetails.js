@@ -108,9 +108,9 @@
           plotOptions: {
           radar: {
             polygons: {
-              strokeColors: '#e9e9e9',
+              strokeColors: '#9e9e9eff',
               fill: {
-                colors: ['#b3abffff', '#fff']
+                colors: ['#d2e2ffff', '#d2c7ffff']
               }
             }
           }
@@ -122,8 +122,13 @@
           },
           colors: ['#FF4560'],
           xaxis: {
-            categories: ['HP', 'Attack', 'Defence', 'Speed', 'Sp. Def', 'Sp. Atk']
+            categories: ['HP', 'Attack', 'Defence', 'Speed', 'Sp. Def', 'Sp. Atk'],
+            labels: {
+            style: {
+           colors: ['#000', '#000', '#000', '#000', '#000', '#000'],
           }
+  }
+}
         };
         let chart = new ApexCharts(document.querySelector("#chart"), options);
         chart.render();
