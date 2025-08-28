@@ -10,7 +10,7 @@ Front-end Planning
 | Pixel art for the old versions.           | Low        | 2 hrs            | ✔️ Done |
 | User friendly info page.                  | Medium     | 2 hrs            | 🟡 WIP |
 | Pokemon type chart.                       | Medium     | 8 hrs            |         |
-| showing the stats of all the diffrent pokemon | Medium     | 8 hrs            |         |
+| showing the stats of all the different pokemon | Medium     | 8 hrs            |         |
 
 
 | Task                              | Priority | Time Estimate | What I Can Do (X)                                                                  | Need                                                           | Why                                                                           |
@@ -26,8 +26,8 @@ Front-end Planning
 | Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Hendrik | User friendly info page. 🟡 | User friendly info page. 🟡 | planning| styling| styling | styling | styling | styling | planning | styling | styling | styling |
-| Jarno | read me and priority making ✔️ | styling| styling| styling| styling | styling | styling | styling | planning | showing the stats of all the diffrent pokemon| showing the stats of all the diffrent pokemon | showing the stats of all the diffrent pokemon |
-| Senn | styling | styling | styling | styling | egg animtations | egg animations | egg animantions | styling | styling | styling | styling | styling |
+| Jarno | read me and priority making ✔️ | styling| styling| styling| styling | styling | styling | styling | planning | showing the stats of all the different pokemon| showing the stats of all the different pokemon | showing the stats of all the different pokemon |
+| Senn | styling | styling | styling | styling | egg animations | egg animations | egg animations | styling | styling | styling | styling | styling |
 
 
 
@@ -41,18 +41,15 @@ Back-end Planning
 | Pokémon Characteristics Database  | High       | 6 hrs            | ✔️ Done |
 | PokéAPI → Firebase Connection     | High       | 8 hrs            | 🟡 WIP  |
 | Database Structure Definition     | High       | 4 hrs            | ✔️ Done |
-| Data Delivery Contract (API Spec) | Medium     | 6 hrs            |         |
-| Data Logging & Monitoring         | Medium     | 4 hrs            |         |
 | Evolution Chain Analysis          | Medium     | 6 hrs            | ✔️ Done|
-| Generation and Version Tracking   | Medium     | 6 hrs            |         |
-| Firebase Security Rules & Auth    | High       | 4 hrs            |         |
+| Generation and Version Tracking   | Medium     | 6 hrs            | 🟡 WIP|
 | Primary/Secondary Type Filtering  | High       | 5 hrs            | ✔️ Done|
 | Caching System for Local Data     | High       | 6 hrs            | ✔️ Done|
 | Egg Hatching Gambling System      | Medium     | 8 hrs            | ✔️ Done|
 | Pokémon Detail Page               | High       | 7 hrs            | ✔️ Done|
 | Improve Frontend Caching          | High       | 6 hrs            | 🟡 WIP |
-| Extended Pokémon Details          | High       | 8 hrs            | 🟡 WIP |
-| Support All Pokémon Forms         | High       | 10 hrs           | 🟡WIP  |
+| Extended Pokémon Details          | High       | 8 hrs            | ✔️ Done|
+| Support All Pokémon Forms         | High       | 10 hrs           | ✔️ Done|
 
 
 
@@ -61,13 +58,13 @@ Back-end Planning
 | **Pokémon Species Documentation**                        | High     | 8 hrs         | Fetch data from PokéAPI and store it in Firebase with consistent IDs                              | Complete dataset of all gen 1 - gen 3 Pokémon species          | The frontend can directly load species info without making separate API calls                              |
 | **Pokémon Characteristics Database**                     | High     | 6 hrs         | Create schema for abilities, growth rates, and natures, then link them to species                 | Detailed characteristics per Pokémon                           | Needed for research features and analysis                                                                  |
 | **PokéAPI → Firebase Connection**                        | High     | 8 hrs         | Build a sync function that pushes data from PokéAPI into Firebase                                 | Reliable connection between external API and internal database | Without this connection, no base data is available                                                         |
-| **Database Structure Definition**                        | High     | 4 hrs         | Design Firestore collections and document the schema                                              | Standardized data structure                                    | The frontend can query efficiently and display data correctly                                              |
-| **Data Delivery Contract (via Firebase Schema & Rules)** | Medium   | 6 hrs         | Define Firestore collections, fields, and security rules as the “source of truth” for data access | Clear agreements between backend and frontend                  | Ensures frontend knows exactly how to query data and prevents bugs by using Firebase as live documentation |
-| **Data Logging & Monitoring**                            | Medium   | 4 hrs         | Set up Firebase logging and configure error reporting                                             | Visibility into data flow and errors                           | Important for debugging and ensuring system stability                                                      |
+<<<<<<< HEAD
+| **Database Structure Definition**                        | High     | 4 hrs         | Design Firestore collections and document the schema                                              | Standardized data structure                                    | The frontend can query efficiently and display data correctly                                              |                                                 |
+=======
+| **Database Structure Definition**                        | High     | 4 hrs         | Design Firestore collections and document the schema                                              | Standardized data structure                                    | The frontend can query efficiently and display data correctly
+>>>>>>> 7d54d8476059f4a2263fbe6b42306a18b0623aff
 | **Evolution Chain Analysis**                             | Medium   | 6 hrs         | Parse evolution data from PokéAPI and store it as nested structures in Firebase                   | Insight into Pokémon evolution patterns                        | Needed to visualize Pokémon development and relationships                                                  |
-| **Pokémon Habitat Study**                                | Medium   | 4 hrs         | Link habitats from PokéAPI to Pokémon entries in the database                                     | Ecological classification of species                           | Supports analysis and filtering based on environment                                                       |
 | **Generation and Version Tracking**                      | Medium   | 6 hrs         | Tag Pokémon data with generation and version information                                          | Historical and game-context data                               | Useful for comparing across gens and filtering content                                                     |
-| **Firebase Security Rules & Auth**                       | High     | 4 hrs         | Write Firestore security rules and set up Firebase Authentication                                 | Data security and access control                               | Ensures only the right users can update their own data                                                     |
 | **Primary/Secondary Type Filtering**                 | High     | 5 hrs         | Add dropdown filters for primary and secondary Pokémon types                                      | Users can filter Pokémon by typing combinations                | Helps players quickly find Pokémon like *Fire/Fighting* combinations                                       |
 | **Caching System for Local Data**                    | High     | 6 hrs         | Save fetched API data into JSON and serve cached results                                          | Faster load times and resilience against API/Firebase downtime | Improves user experience, especially when servers are slow or offline                                      |
 | **Egg Hatching Gambling System**                     | Medium   | 8 hrs         | Randomly assign Pokémon from the dataset and track duplicates                                     | Fun, replayable game feature                                   | Adds engagement and progression system for users                                                           |
@@ -78,10 +75,10 @@ Back-end Planning
 
 | Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Alex | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | All pokemon form support 🟡| All pokemon form support 🟡| Pokemon charactaristic database (high, 6h) ✔️ | Pokemon charactaristic database ✔️ (6u, high) | Pokemon habitat study (4u, Medium) | Story 8 (4u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) |
-| Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) ✔️| Cache fix ✔️| Cache fix ✔️| Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️ | Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Database structure definition (2u, Low) ✔️| Data logging and monitoring (2u, Low) 🟡| Story 9 (2u, Low) |  |
-| Caspar | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Story 7 (4u, High) | Story 7 (4u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
+| Alex | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | All pokemon form support ✔️| All pokemon form support ✔️| Pokemon charactaristic database (high, 6h) ✔️ | Pokemon charactaristic database ✔️ (6u, high) | Pokemon habitat study (4u, Medium) | Story 8 (4u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) |
+| Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) ✔️| Cache fix ✔️| Cache fix ✔️| Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️ | Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Database structure definition (2u, Low) ✔️| Data logging and monitoring (2u, Low) 🚧| Generation and version tracking (2u, Low) 🟡|  |
+| Caspar | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Evolution chain analysis (4u, High) ✔️|  Evolution chain analysis (4u, High) ✔️ | Pokemon species documentation (8u, High) ✔️ | Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Database structure definition (2u, Low)🟡 | generation and version tracking (2u, Low) 🟡| egg hatching more (2u, Low) 🟡|  |
 
-In progress → 🟡 or 🚧
-
+In progress → 🟡
+Scrapped -> 🚧
 Done → ✔

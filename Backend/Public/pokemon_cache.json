@@ -17023,5 +17023,4020 @@
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mewtwomegay.wav"
             }
         }
+    },
+    "mew": {
+        "id": 151,
+        "name": "mew",
+        "types": {
+            "psychic": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "synchronize": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/28\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 100,
+                "effort": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 100,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 100,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 100,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 100,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 100,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 270,
+        "forms": [
+            {
+                "name": "mew",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/151\/"
+            }
+        ],
+        "species": {
+            "name": "mew",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/151\/"
+        },
+        "is_default": true,
+        "height": "0.4 m",
+        "weight": "4 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/151.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mew.mp3",
+        "variants": []
+    },
+    "chikorita": {
+        "id": 152,
+        "name": "chikorita",
+        "types": {
+            "grass": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "overgrow": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/65\/"
+            },
+            "leaf-guard": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/102\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 49,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 49,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 65,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 64,
+        "forms": [
+            {
+                "name": "chikorita",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/152\/"
+            }
+        ],
+        "species": {
+            "name": "chikorita",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/152\/"
+        },
+        "is_default": true,
+        "height": "0.9 m",
+        "weight": "6.4 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/152.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/chikorita.mp3",
+        "variants": []
+    },
+    "bayleef": {
+        "id": 153,
+        "name": "bayleef",
+        "types": {
+            "grass": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "overgrow": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/65\/"
+            },
+            "leaf-guard": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/102\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 62,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 80,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 63,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 80,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 142,
+        "forms": [
+            {
+                "name": "bayleef",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/153\/"
+            }
+        ],
+        "species": {
+            "name": "bayleef",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/153\/"
+        },
+        "is_default": true,
+        "height": "1.2 m",
+        "weight": "15.8 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/153.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/bayleef.mp3",
+        "variants": []
+    },
+    "meganium": {
+        "id": 154,
+        "name": "meganium",
+        "types": {
+            "grass": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "overgrow": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/65\/"
+            },
+            "leaf-guard": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/102\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 82,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 100,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 83,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 100,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 236,
+        "forms": [
+            {
+                "name": "meganium",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/154\/"
+            }
+        ],
+        "species": {
+            "name": "meganium",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/154\/"
+        },
+        "is_default": true,
+        "height": "1.8 m",
+        "weight": "100.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/154.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/meganium.mp3",
+        "variants": []
+    },
+    "cyndaquil": {
+        "id": 155,
+        "name": "cyndaquil",
+        "types": {
+            "fire": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "blaze": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/66\/"
+            },
+            "flash-fire": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/18\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 39,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 52,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 43,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 65,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 62,
+        "forms": [
+            {
+                "name": "cyndaquil",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/155\/"
+            }
+        ],
+        "species": {
+            "name": "cyndaquil",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/155\/"
+        },
+        "is_default": true,
+        "height": "0.5 m",
+        "weight": "7.9 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/155.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cyndaquil.mp3",
+        "variants": []
+    },
+    "quilava": {
+        "id": 156,
+        "name": "quilava",
+        "types": {
+            "fire": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "blaze": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/66\/"
+            },
+            "flash-fire": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/18\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 58,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 64,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 58,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 80,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 80,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 142,
+        "forms": [
+            {
+                "name": "quilava",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/156\/"
+            }
+        ],
+        "species": {
+            "name": "quilava",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/156\/"
+        },
+        "is_default": true,
+        "height": "0.9 m",
+        "weight": "19 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/156.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/quilava.mp3",
+        "variants": []
+    },
+    "typhlosion": {
+        "id": 157,
+        "name": "typhlosion",
+        "types": {
+            "fire": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "blaze": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/66\/"
+            },
+            "flash-fire": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/18\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 78,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 84,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 78,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 109,
+                "effort": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 100,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 240,
+        "forms": [
+            {
+                "name": "typhlosion",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/157\/"
+            }
+        ],
+        "species": {
+            "name": "typhlosion",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/157\/"
+        },
+        "is_default": true,
+        "height": "1.7 m",
+        "weight": "79.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/157.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/typhlosion.mp3",
+        "variants": {
+            "typhlosion-hisui": {
+                "id": 10233,
+                "name": "typhlosion-hisui",
+                "types": {
+                    "fire": {
+                        "slot": 1
+                    },
+                    "ghost": {
+                        "slot": 2
+                    }
+                },
+                "abilities": {
+                    "blaze": {
+                        "is_hidden": false,
+                        "slot": 1,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/66\/"
+                    },
+                    "frisk": {
+                        "is_hidden": true,
+                        "slot": 3,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/119\/"
+                    }
+                },
+                "stats": {
+                    "hp": {
+                        "base_stat": 73,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+                    },
+                    "attack": {
+                        "base_stat": 84,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+                    },
+                    "defense": {
+                        "base_stat": 78,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+                    },
+                    "special-attack": {
+                        "base_stat": 119,
+                        "effort": 3,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+                    },
+                    "special-defense": {
+                        "base_stat": 85,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+                    },
+                    "speed": {
+                        "base_stat": 95,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+                    }
+                },
+                "base_experience": 240,
+                "forms": [
+                    {
+                        "name": "typhlosion-hisui",
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/10402\/"
+                    }
+                ],
+                "species": {
+                    "name": "typhlosion",
+                    "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/157\/"
+                },
+                "is_default": false,
+                "height": "1.6 m",
+                "weight": "69.8 kg",
+                "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10233.png",
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/typhlosionhisui.wav"
+            }
+        }
+    },
+    "totodile": {
+        "id": 158,
+        "name": "totodile",
+        "types": {
+            "water": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "torrent": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/67\/"
+            },
+            "sheer-force": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/125\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 65,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 64,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 44,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 48,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 43,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 63,
+        "forms": [
+            {
+                "name": "totodile",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/158\/"
+            }
+        ],
+        "species": {
+            "name": "totodile",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/158\/"
+        },
+        "is_default": true,
+        "height": "0.6 m",
+        "weight": "9.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/158.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/totodile.mp3",
+        "variants": []
+    },
+    "croconaw": {
+        "id": 159,
+        "name": "croconaw",
+        "types": {
+            "water": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "torrent": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/67\/"
+            },
+            "sheer-force": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/125\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 80,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 80,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 59,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 63,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 58,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 142,
+        "forms": [
+            {
+                "name": "croconaw",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/159\/"
+            }
+        ],
+        "species": {
+            "name": "croconaw",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/159\/"
+        },
+        "is_default": true,
+        "height": "1.1 m",
+        "weight": "25 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/159.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/croconaw.mp3",
+        "variants": []
+    },
+    "feraligatr": {
+        "id": 160,
+        "name": "feraligatr",
+        "types": {
+            "water": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "torrent": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/67\/"
+            },
+            "sheer-force": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/125\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 105,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 100,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 79,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 83,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 78,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 239,
+        "forms": [
+            {
+                "name": "feraligatr",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/160\/"
+            }
+        ],
+        "species": {
+            "name": "feraligatr",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/160\/"
+        },
+        "is_default": true,
+        "height": "2.3 m",
+        "weight": "88.8 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/160.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/feraligatr.mp3",
+        "variants": []
+    },
+    "sentret": {
+        "id": 161,
+        "name": "sentret",
+        "types": {
+            "normal": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "run-away": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/50\/"
+            },
+            "keen-eye": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/51\/"
+            },
+            "frisk": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/119\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 46,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 34,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 20,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 43,
+        "forms": [
+            {
+                "name": "sentret",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/161\/"
+            }
+        ],
+        "species": {
+            "name": "sentret",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/161\/"
+        },
+        "is_default": true,
+        "height": "0.8 m",
+        "weight": "6 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/161.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sentret.mp3",
+        "variants": []
+    },
+    "furret": {
+        "id": 162,
+        "name": "furret",
+        "types": {
+            "normal": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "run-away": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/50\/"
+            },
+            "keen-eye": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/51\/"
+            },
+            "frisk": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/119\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 76,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 64,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 90,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 145,
+        "forms": [
+            {
+                "name": "furret",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/162\/"
+            }
+        ],
+        "species": {
+            "name": "furret",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/162\/"
+        },
+        "is_default": true,
+        "height": "1.8 m",
+        "weight": "32.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/162.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/furret.mp3",
+        "variants": []
+    },
+    "hoothoot": {
+        "id": 163,
+        "name": "hoothoot",
+        "types": {
+            "normal": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "insomnia": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/15\/"
+            },
+            "keen-eye": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/51\/"
+            },
+            "tinted-lens": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/110\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 60,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 36,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 56,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 52,
+        "forms": [
+            {
+                "name": "hoothoot",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/163\/"
+            }
+        ],
+        "species": {
+            "name": "hoothoot",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/163\/"
+        },
+        "is_default": true,
+        "height": "0.7 m",
+        "weight": "21.2 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/163.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/hoothoot.mp3",
+        "variants": []
+    },
+    "noctowl": {
+        "id": 164,
+        "name": "noctowl",
+        "types": {
+            "normal": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "insomnia": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/15\/"
+            },
+            "keen-eye": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/51\/"
+            },
+            "tinted-lens": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/110\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 100,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 86,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 96,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 158,
+        "forms": [
+            {
+                "name": "noctowl",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/164\/"
+            }
+        ],
+        "species": {
+            "name": "noctowl",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/164\/"
+        },
+        "is_default": true,
+        "height": "1.6 m",
+        "weight": "40.8 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/164.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/noctowl.mp3",
+        "variants": []
+    },
+    "ledyba": {
+        "id": 165,
+        "name": "ledyba",
+        "types": {
+            "bug": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "swarm": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/68\/"
+            },
+            "early-bird": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/48\/"
+            },
+            "rattled": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/155\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 20,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 80,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 53,
+        "forms": [
+            {
+                "name": "ledyba",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/165\/"
+            }
+        ],
+        "species": {
+            "name": "ledyba",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/165\/"
+        },
+        "is_default": true,
+        "height": "1 m",
+        "weight": "10.8 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/165.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ledyba.mp3",
+        "variants": []
+    },
+    "ledian": {
+        "id": 166,
+        "name": "ledian",
+        "types": {
+            "bug": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "swarm": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/68\/"
+            },
+            "early-bird": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/48\/"
+            },
+            "iron-fist": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/89\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 110,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 137,
+        "forms": [
+            {
+                "name": "ledian",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/166\/"
+            }
+        ],
+        "species": {
+            "name": "ledian",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/166\/"
+        },
+        "is_default": true,
+        "height": "1.4 m",
+        "weight": "35.6 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/166.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ledian.mp3",
+        "variants": []
+    },
+    "spinarak": {
+        "id": 167,
+        "name": "spinarak",
+        "types": {
+            "bug": {
+                "slot": 1
+            },
+            "poison": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "swarm": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/68\/"
+            },
+            "insomnia": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/15\/"
+            },
+            "sniper": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/97\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 60,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 50,
+        "forms": [
+            {
+                "name": "spinarak",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/167\/"
+            }
+        ],
+        "species": {
+            "name": "spinarak",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/167\/"
+        },
+        "is_default": true,
+        "height": "0.5 m",
+        "weight": "8.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/167.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/spinarak.mp3",
+        "variants": []
+    },
+    "ariados": {
+        "id": 168,
+        "name": "ariados",
+        "types": {
+            "bug": {
+                "slot": 1
+            },
+            "poison": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "swarm": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/68\/"
+            },
+            "insomnia": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/15\/"
+            },
+            "sniper": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/97\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 90,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 140,
+        "forms": [
+            {
+                "name": "ariados",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/168\/"
+            }
+        ],
+        "species": {
+            "name": "ariados",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/168\/"
+        },
+        "is_default": true,
+        "height": "1.1 m",
+        "weight": "33.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/168.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ariados.mp3",
+        "variants": []
+    },
+    "crobat": {
+        "id": 169,
+        "name": "crobat",
+        "types": {
+            "poison": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "inner-focus": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/39\/"
+            },
+            "infiltrator": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/151\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 90,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 130,
+                "effort": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 241,
+        "forms": [
+            {
+                "name": "crobat",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/169\/"
+            }
+        ],
+        "species": {
+            "name": "crobat",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/169\/"
+        },
+        "is_default": true,
+        "height": "1.8 m",
+        "weight": "75 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/169.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/crobat.mp3",
+        "variants": []
+    },
+    "chinchou": {
+        "id": 170,
+        "name": "chinchou",
+        "types": {
+            "water": {
+                "slot": 1
+            },
+            "electric": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "volt-absorb": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/10\/"
+            },
+            "illuminate": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/35\/"
+            },
+            "water-absorb": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/11\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 75,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 38,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 38,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 56,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 56,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 67,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 66,
+        "forms": [
+            {
+                "name": "chinchou",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/170\/"
+            }
+        ],
+        "species": {
+            "name": "chinchou",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/170\/"
+        },
+        "is_default": true,
+        "height": "0.5 m",
+        "weight": "12 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/170.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/chinchou.mp3",
+        "variants": []
+    },
+    "lanturn": {
+        "id": 171,
+        "name": "lanturn",
+        "types": {
+            "water": {
+                "slot": 1
+            },
+            "electric": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "volt-absorb": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/10\/"
+            },
+            "illuminate": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/35\/"
+            },
+            "water-absorb": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/11\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 125,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 58,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 58,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 76,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 76,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 67,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 161,
+        "forms": [
+            {
+                "name": "lanturn",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/171\/"
+            }
+        ],
+        "species": {
+            "name": "lanturn",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/171\/"
+        },
+        "is_default": true,
+        "height": "1.2 m",
+        "weight": "22.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/171.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lanturn.mp3",
+        "variants": []
+    },
+    "pichu": {
+        "id": 172,
+        "name": "pichu",
+        "types": {
+            "electric": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "static": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/9\/"
+            },
+            "lightning-rod": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/31\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 20,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 15,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 60,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 41,
+        "forms": [
+            {
+                "name": "pichu",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/172\/"
+            },
+            {
+                "name": "pichu-spiky-eared",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/10065\/"
+            }
+        ],
+        "species": {
+            "name": "pichu",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/172\/"
+        },
+        "is_default": true,
+        "height": "0.3 m",
+        "weight": "2 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/172.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/pichu.mp3",
+        "variants": []
+    },
+    "cleffa": {
+        "id": 173,
+        "name": "cleffa",
+        "types": {
+            "fairy": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "cute-charm": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/56\/"
+            },
+            "magic-guard": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/98\/"
+            },
+            "friend-guard": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/132\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 25,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 28,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 55,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 15,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 44,
+        "forms": [
+            {
+                "name": "cleffa",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/173\/"
+            }
+        ],
+        "species": {
+            "name": "cleffa",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/173\/"
+        },
+        "is_default": true,
+        "height": "0.3 m",
+        "weight": "3 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/173.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cleffa.mp3",
+        "variants": []
+    },
+    "igglybuff": {
+        "id": 174,
+        "name": "igglybuff",
+        "types": {
+            "normal": {
+                "slot": 1
+            },
+            "fairy": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "cute-charm": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/56\/"
+            },
+            "competitive": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/172\/"
+            },
+            "friend-guard": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/132\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 90,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 15,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 20,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 15,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 42,
+        "forms": [
+            {
+                "name": "igglybuff",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/174\/"
+            }
+        ],
+        "species": {
+            "name": "igglybuff",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/174\/"
+        },
+        "is_default": true,
+        "height": "0.3 m",
+        "weight": "1 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/174.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/igglybuff.mp3",
+        "variants": []
+    },
+    "togepi": {
+        "id": 175,
+        "name": "togepi",
+        "types": {
+            "fairy": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "hustle": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/55\/"
+            },
+            "serene-grace": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/32\/"
+            },
+            "super-luck": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/105\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 20,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 65,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 20,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 49,
+        "forms": [
+            {
+                "name": "togepi",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/175\/"
+            }
+        ],
+        "species": {
+            "name": "togepi",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/175\/"
+        },
+        "is_default": true,
+        "height": "0.3 m",
+        "weight": "1.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/175.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/togepi.mp3",
+        "variants": []
+    },
+    "togetic": {
+        "id": 176,
+        "name": "togetic",
+        "types": {
+            "fairy": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "hustle": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/55\/"
+            },
+            "serene-grace": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/32\/"
+            },
+            "super-luck": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/105\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 105,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 142,
+        "forms": [
+            {
+                "name": "togetic",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/176\/"
+            }
+        ],
+        "species": {
+            "name": "togetic",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/176\/"
+        },
+        "is_default": true,
+        "height": "0.6 m",
+        "weight": "3.2 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/176.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/togetic.mp3",
+        "variants": []
+    },
+    "natu": {
+        "id": 177,
+        "name": "natu",
+        "types": {
+            "psychic": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "synchronize": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/28\/"
+            },
+            "early-bird": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/48\/"
+            },
+            "magic-bounce": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/156\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 70,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 64,
+        "forms": [
+            {
+                "name": "natu",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/177\/"
+            }
+        ],
+        "species": {
+            "name": "natu",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/177\/"
+        },
+        "is_default": true,
+        "height": "0.2 m",
+        "weight": "2 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/177.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/natu.mp3",
+        "variants": []
+    },
+    "xatu": {
+        "id": 178,
+        "name": "xatu",
+        "types": {
+            "psychic": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "synchronize": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/28\/"
+            },
+            "early-bird": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/48\/"
+            },
+            "magic-bounce": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/156\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 95,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 95,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 165,
+        "forms": [
+            {
+                "name": "xatu",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/178\/"
+            }
+        ],
+        "species": {
+            "name": "xatu",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/178\/"
+        },
+        "is_default": true,
+        "height": "1.5 m",
+        "weight": "15 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/178.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/xatu.mp3",
+        "variants": []
+    },
+    "mareep": {
+        "id": 179,
+        "name": "mareep",
+        "types": {
+            "electric": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "static": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/9\/"
+            },
+            "plus": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/57\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 65,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 56,
+        "forms": [
+            {
+                "name": "mareep",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/179\/"
+            }
+        ],
+        "species": {
+            "name": "mareep",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/179\/"
+        },
+        "is_default": true,
+        "height": "0.6 m",
+        "weight": "7.8 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/179.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mareep.mp3",
+        "variants": []
+    },
+    "flaaffy": {
+        "id": 180,
+        "name": "flaaffy",
+        "types": {
+            "electric": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "static": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/9\/"
+            },
+            "plus": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/57\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 80,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 128,
+        "forms": [
+            {
+                "name": "flaaffy",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/180\/"
+            }
+        ],
+        "species": {
+            "name": "flaaffy",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/180\/"
+        },
+        "is_default": true,
+        "height": "0.8 m",
+        "weight": "13.3 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/180.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/flaaffy.mp3",
+        "variants": []
+    },
+    "ampharos": {
+        "id": 181,
+        "name": "ampharos",
+        "types": {
+            "electric": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "static": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/9\/"
+            },
+            "plus": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/57\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 90,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 115,
+                "effort": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 90,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 230,
+        "forms": [
+            {
+                "name": "ampharos",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/181\/"
+            }
+        ],
+        "species": {
+            "name": "ampharos",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/181\/"
+        },
+        "is_default": true,
+        "height": "1.4 m",
+        "weight": "61.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/181.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ampharos.mp3",
+        "variants": {
+            "ampharos-mega": {
+                "id": 10045,
+                "name": "ampharos-mega",
+                "types": {
+                    "electric": {
+                        "slot": 1
+                    },
+                    "dragon": {
+                        "slot": 2
+                    }
+                },
+                "abilities": {
+                    "mold-breaker": {
+                        "is_hidden": false,
+                        "slot": 1,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/104\/"
+                    }
+                },
+                "stats": {
+                    "hp": {
+                        "base_stat": 90,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+                    },
+                    "attack": {
+                        "base_stat": 95,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+                    },
+                    "defense": {
+                        "base_stat": 105,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+                    },
+                    "special-attack": {
+                        "base_stat": 165,
+                        "effort": 3,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+                    },
+                    "special-defense": {
+                        "base_stat": 110,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+                    },
+                    "speed": {
+                        "base_stat": 45,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+                    }
+                },
+                "base_experience": 275,
+                "forms": [
+                    {
+                        "name": "ampharos-mega",
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/10145\/"
+                    }
+                ],
+                "species": {
+                    "name": "ampharos",
+                    "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/181\/"
+                },
+                "is_default": false,
+                "height": "1.4 m",
+                "weight": "61.5 kg",
+                "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10045.png",
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ampharosmega.wav"
+            }
+        }
+    },
+    "bellossom": {
+        "id": 182,
+        "name": "bellossom",
+        "types": {
+            "grass": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "chlorophyll": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/34\/"
+            },
+            "healer": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/131\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 95,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 90,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 100,
+                "effort": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 221,
+        "forms": [
+            {
+                "name": "bellossom",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/182\/"
+            }
+        ],
+        "species": {
+            "name": "bellossom",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/182\/"
+        },
+        "is_default": true,
+        "height": "0.4 m",
+        "weight": "5.8 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/182.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/bellossom.mp3",
+        "variants": []
+    },
+    "marill": {
+        "id": 183,
+        "name": "marill",
+        "types": {
+            "water": {
+                "slot": 1
+            },
+            "fairy": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "thick-fat": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/47\/"
+            },
+            "huge-power": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/37\/"
+            },
+            "sap-sipper": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/157\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 70,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 20,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 20,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 88,
+        "forms": [
+            {
+                "name": "marill",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/183\/"
+            }
+        ],
+        "species": {
+            "name": "marill",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/183\/"
+        },
+        "is_default": true,
+        "height": "0.4 m",
+        "weight": "8.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/183.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/marill.mp3",
+        "variants": []
+    },
+    "azumarill": {
+        "id": 184,
+        "name": "azumarill",
+        "types": {
+            "water": {
+                "slot": 1
+            },
+            "fairy": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "thick-fat": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/47\/"
+            },
+            "huge-power": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/37\/"
+            },
+            "sap-sipper": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/157\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 100,
+                "effort": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 189,
+        "forms": [
+            {
+                "name": "azumarill",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/184\/"
+            }
+        ],
+        "species": {
+            "name": "azumarill",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/184\/"
+        },
+        "is_default": true,
+        "height": "0.8 m",
+        "weight": "28.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/184.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/azumarill.mp3",
+        "variants": []
+    },
+    "sudowoodo": {
+        "id": 185,
+        "name": "sudowoodo",
+        "types": {
+            "rock": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "sturdy": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/5\/"
+            },
+            "rock-head": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/69\/"
+            },
+            "rattled": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/155\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 100,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 115,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 144,
+        "forms": [
+            {
+                "name": "sudowoodo",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/185\/"
+            }
+        ],
+        "species": {
+            "name": "sudowoodo",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/185\/"
+        },
+        "is_default": true,
+        "height": "1.2 m",
+        "weight": "38 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/185.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sudowoodo.mp3",
+        "variants": []
+    },
+    "politoed": {
+        "id": 186,
+        "name": "politoed",
+        "types": {
+            "water": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "water-absorb": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/11\/"
+            },
+            "damp": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/6\/"
+            },
+            "drizzle": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/2\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 90,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 90,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 100,
+                "effort": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 225,
+        "forms": [
+            {
+                "name": "politoed",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/186\/"
+            }
+        ],
+        "species": {
+            "name": "politoed",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/186\/"
+        },
+        "is_default": true,
+        "height": "1.1 m",
+        "weight": "33.9 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/186.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/politoed.mp3",
+        "variants": []
+    },
+    "hoppip": {
+        "id": 187,
+        "name": "hoppip",
+        "types": {
+            "grass": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "chlorophyll": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/34\/"
+            },
+            "leaf-guard": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/102\/"
+            },
+            "infiltrator": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/151\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 55,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 50,
+        "forms": [
+            {
+                "name": "hoppip",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/187\/"
+            }
+        ],
+        "species": {
+            "name": "hoppip",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/187\/"
+        },
+        "is_default": true,
+        "height": "0.4 m",
+        "weight": "0.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/187.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/hoppip.mp3",
+        "variants": []
+    },
+    "skiploom": {
+        "id": 188,
+        "name": "skiploom",
+        "types": {
+            "grass": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "chlorophyll": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/34\/"
+            },
+            "leaf-guard": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/102\/"
+            },
+            "infiltrator": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/151\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 50,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 80,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 119,
+        "forms": [
+            {
+                "name": "skiploom",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/188\/"
+            }
+        ],
+        "species": {
+            "name": "skiploom",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/188\/"
+        },
+        "is_default": true,
+        "height": "0.6 m",
+        "weight": "1 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/188.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/skiploom.mp3",
+        "variants": []
+    },
+    "jumpluff": {
+        "id": 189,
+        "name": "jumpluff",
+        "types": {
+            "grass": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "chlorophyll": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/34\/"
+            },
+            "leaf-guard": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/102\/"
+            },
+            "infiltrator": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/151\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 95,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 110,
+                "effort": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 207,
+        "forms": [
+            {
+                "name": "jumpluff",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/189\/"
+            }
+        ],
+        "species": {
+            "name": "jumpluff",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/189\/"
+        },
+        "is_default": true,
+        "height": "0.8 m",
+        "weight": "3 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/189.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/jumpluff.mp3",
+        "variants": []
+    },
+    "aipom": {
+        "id": 190,
+        "name": "aipom",
+        "types": {
+            "normal": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "run-away": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/50\/"
+            },
+            "pickup": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/53\/"
+            },
+            "skill-link": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/92\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 70,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 40,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 85,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 72,
+        "forms": [
+            {
+                "name": "aipom",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/190\/"
+            }
+        ],
+        "species": {
+            "name": "aipom",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/190\/"
+        },
+        "is_default": true,
+        "height": "0.8 m",
+        "weight": "11.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/190.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/aipom.mp3",
+        "variants": []
+    },
+    "sunkern": {
+        "id": 191,
+        "name": "sunkern",
+        "types": {
+            "grass": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "chlorophyll": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/34\/"
+            },
+            "solar-power": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/94\/"
+            },
+            "early-bird": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/48\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 30,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 36,
+        "forms": [
+            {
+                "name": "sunkern",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/191\/"
+            }
+        ],
+        "species": {
+            "name": "sunkern",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/191\/"
+        },
+        "is_default": true,
+        "height": "0.3 m",
+        "weight": "1.8 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/191.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sunkern.mp3",
+        "variants": []
+    },
+    "sunflora": {
+        "id": 192,
+        "name": "sunflora",
+        "types": {
+            "grass": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "chlorophyll": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/34\/"
+            },
+            "solar-power": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/94\/"
+            },
+            "early-bird": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/48\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 55,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 105,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 149,
+        "forms": [
+            {
+                "name": "sunflora",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/192\/"
+            }
+        ],
+        "species": {
+            "name": "sunflora",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/192\/"
+        },
+        "is_default": true,
+        "height": "0.8 m",
+        "weight": "8.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/192.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sunflora.mp3",
+        "variants": []
+    },
+    "yanma": {
+        "id": 193,
+        "name": "yanma",
+        "types": {
+            "bug": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "speed-boost": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/3\/"
+            },
+            "compound-eyes": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/14\/"
+            },
+            "frisk": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/119\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 95,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 78,
+        "forms": [
+            {
+                "name": "yanma",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/193\/"
+            }
+        ],
+        "species": {
+            "name": "yanma",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/193\/"
+        },
+        "is_default": true,
+        "height": "1.2 m",
+        "weight": "38 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/193.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/yanma.mp3",
+        "variants": []
+    },
+    "wooper": {
+        "id": 194,
+        "name": "wooper",
+        "types": {
+            "water": {
+                "slot": 1
+            },
+            "ground": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "damp": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/6\/"
+            },
+            "water-absorb": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/11\/"
+            },
+            "unaware": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/109\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 55,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 45,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 25,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 25,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 15,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 42,
+        "forms": [
+            {
+                "name": "wooper",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/194\/"
+            }
+        ],
+        "species": {
+            "name": "wooper",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/194\/"
+        },
+        "is_default": true,
+        "height": "0.4 m",
+        "weight": "8.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/194.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/wooper.mp3",
+        "variants": {
+            "wooper-paldea": {
+                "id": 10253,
+                "name": "wooper-paldea",
+                "types": {
+                    "poison": {
+                        "slot": 1
+                    },
+                    "ground": {
+                        "slot": 2
+                    }
+                },
+                "abilities": {
+                    "poison-point": {
+                        "is_hidden": false,
+                        "slot": 1,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/38\/"
+                    },
+                    "water-absorb": {
+                        "is_hidden": false,
+                        "slot": 2,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/11\/"
+                    },
+                    "unaware": {
+                        "is_hidden": true,
+                        "slot": 3,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/109\/"
+                    }
+                },
+                "stats": {
+                    "hp": {
+                        "base_stat": 55,
+                        "effort": 1,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+                    },
+                    "attack": {
+                        "base_stat": 45,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+                    },
+                    "defense": {
+                        "base_stat": 45,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+                    },
+                    "special-attack": {
+                        "base_stat": 25,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+                    },
+                    "special-defense": {
+                        "base_stat": 25,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+                    },
+                    "speed": {
+                        "base_stat": 15,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+                    }
+                },
+                "base_experience": 42,
+                "forms": [
+                    {
+                        "name": "wooper-paldea",
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/10422\/"
+                    }
+                ],
+                "species": {
+                    "name": "wooper",
+                    "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/194\/"
+                },
+                "is_default": false,
+                "height": "0.4 m",
+                "weight": "11 kg",
+                "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10253.png",
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/wooperpaldea.wav"
+            }
+        }
+    },
+    "quagsire": {
+        "id": 195,
+        "name": "quagsire",
+        "types": {
+            "water": {
+                "slot": 1
+            },
+            "ground": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "damp": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/6\/"
+            },
+            "water-absorb": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/11\/"
+            },
+            "unaware": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/109\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 95,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 35,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 151,
+        "forms": [
+            {
+                "name": "quagsire",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/195\/"
+            }
+        ],
+        "species": {
+            "name": "quagsire",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/195\/"
+        },
+        "is_default": true,
+        "height": "1.4 m",
+        "weight": "75 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/195.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/quagsire.mp3",
+        "variants": []
+    },
+    "espeon": {
+        "id": 196,
+        "name": "espeon",
+        "types": {
+            "psychic": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "synchronize": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/28\/"
+            },
+            "magic-bounce": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/156\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 130,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 95,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 110,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 184,
+        "forms": [
+            {
+                "name": "espeon",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/196\/"
+            }
+        ],
+        "species": {
+            "name": "espeon",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/196\/"
+        },
+        "is_default": true,
+        "height": "0.9 m",
+        "weight": "26.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/196.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/espeon.mp3",
+        "variants": []
+    },
+    "umbreon": {
+        "id": 197,
+        "name": "umbreon",
+        "types": {
+            "dark": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "synchronize": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/28\/"
+            },
+            "inner-focus": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/39\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 95,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 110,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 130,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 65,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 184,
+        "forms": [
+            {
+                "name": "umbreon",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/197\/"
+            }
+        ],
+        "species": {
+            "name": "umbreon",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/197\/"
+        },
+        "is_default": true,
+        "height": "1 m",
+        "weight": "27 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/197.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/umbreon.mp3",
+        "variants": []
+    },
+    "murkrow": {
+        "id": 198,
+        "name": "murkrow",
+        "types": {
+            "dark": {
+                "slot": 1
+            },
+            "flying": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "insomnia": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/15\/"
+            },
+            "super-luck": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/105\/"
+            },
+            "prankster": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/158\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 42,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 42,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 91,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 81,
+        "forms": [
+            {
+                "name": "murkrow",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/198\/"
+            }
+        ],
+        "species": {
+            "name": "murkrow",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/198\/"
+        },
+        "is_default": true,
+        "height": "0.5 m",
+        "weight": "2.1 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/198.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/murkrow.mp3",
+        "variants": []
+    },
+    "slowking": {
+        "id": 199,
+        "name": "slowking",
+        "types": {
+            "water": {
+                "slot": 1
+            },
+            "psychic": {
+                "slot": 2
+            }
+        },
+        "abilities": {
+            "oblivious": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/12\/"
+            },
+            "own-tempo": {
+                "is_hidden": false,
+                "slot": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/20\/"
+            },
+            "regenerator": {
+                "is_hidden": true,
+                "slot": 3,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/144\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 95,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 75,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 80,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 100,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 110,
+                "effort": 2,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 30,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 172,
+        "forms": [
+            {
+                "name": "slowking",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/199\/"
+            }
+        ],
+        "species": {
+            "name": "slowking",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/199\/"
+        },
+        "is_default": true,
+        "height": "2 m",
+        "weight": "79.5 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/199.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/slowking.mp3",
+        "variants": {
+            "slowking-galar": {
+                "id": 10172,
+                "name": "slowking-galar",
+                "types": {
+                    "poison": {
+                        "slot": 1
+                    },
+                    "psychic": {
+                        "slot": 2
+                    }
+                },
+                "abilities": {
+                    "curious-medicine": {
+                        "is_hidden": false,
+                        "slot": 1,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/261\/"
+                    },
+                    "own-tempo": {
+                        "is_hidden": false,
+                        "slot": 2,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/20\/"
+                    },
+                    "regenerator": {
+                        "is_hidden": true,
+                        "slot": 3,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/144\/"
+                    }
+                },
+                "stats": {
+                    "hp": {
+                        "base_stat": 95,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+                    },
+                    "attack": {
+                        "base_stat": 65,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+                    },
+                    "defense": {
+                        "base_stat": 80,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+                    },
+                    "special-attack": {
+                        "base_stat": 110,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+                    },
+                    "special-defense": {
+                        "base_stat": 110,
+                        "effort": 2,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+                    },
+                    "speed": {
+                        "base_stat": 30,
+                        "effort": 0,
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+                    }
+                },
+                "base_experience": 172,
+                "forms": [
+                    {
+                        "name": "slowking-galar",
+                        "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/10331\/"
+                    }
+                ],
+                "species": {
+                    "name": "slowking",
+                    "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/199\/"
+                },
+                "is_default": false,
+                "height": "1.8 m",
+                "weight": "79.5 kg",
+                "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10172.png",
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/slowkinggalar.wav"
+            }
+        }
+    },
+    "misdreavus": {
+        "id": 200,
+        "name": "misdreavus",
+        "types": {
+            "ghost": {
+                "slot": 1
+            }
+        },
+        "abilities": {
+            "levitate": {
+                "is_hidden": false,
+                "slot": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/ability\/26\/"
+            }
+        },
+        "stats": {
+            "hp": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/1\/"
+            },
+            "attack": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/2\/"
+            },
+            "defense": {
+                "base_stat": 60,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/3\/"
+            },
+            "special-attack": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/4\/"
+            },
+            "special-defense": {
+                "base_stat": 85,
+                "effort": 1,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/5\/"
+            },
+            "speed": {
+                "base_stat": 85,
+                "effort": 0,
+                "url": "https:\/\/pokeapi.co\/api\/v2\/stat\/6\/"
+            }
+        },
+        "base_experience": 87,
+        "forms": [
+            {
+                "name": "misdreavus",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-form\/200\/"
+            }
+        ],
+        "species": {
+            "name": "misdreavus",
+            "url": "https:\/\/pokeapi.co\/api\/v2\/pokemon-species\/200\/"
+        },
+        "is_default": true,
+        "height": "0.7 m",
+        "weight": "1 kg",
+        "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/200.png",
+        "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/misdreavus.mp3",
+        "variants": []
     }
 }
