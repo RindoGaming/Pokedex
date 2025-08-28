@@ -18,7 +18,7 @@ hatchBtn.onclick = async function () {
         hatchBtn.disabled = false;
     }, 2505);
 
-    img.src = "egg/stage-1.png";
+    img.src = "/backend/public/egg/stage-1.png";
     img.alt = "Egg";
     setTimeout(() => {
         resultDiv.textContent = "Hatching...";
