@@ -252,9 +252,20 @@ select {
     height: 5vh;
 }
 .close {
-    width: 5%;
-    height: 10vh;
     position: fixed;
-    top: 5vh;
-    right: 5vh;
+    top: 43.5vh;
+    right: 84vh;
+}
+.circlebg {
+    background: #d32f2f;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1.5em;
+    font-weight: bold;
 }
