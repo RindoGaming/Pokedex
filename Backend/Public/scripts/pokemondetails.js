@@ -86,7 +86,7 @@
               <p><strong>ID:</strong> ${String(poke.id).padStart(3, '0')}</p>
             </div>
             <div class="pokemon-image-bg">
-              <img src="${poke.image || ''}" alt="${poke.name}">
+              <img src="${poke.image || 'img/Spr_3r_000.png'}" alt="${poke.name}">
             </div>
             <div id="cry-container">
               <button id="prev-pokemon">⬅ Previous Pokémon</button>
