@@ -14,8 +14,14 @@
 </head>
 
 <body>
-
-
+<img src="pokedex.png" style="
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+    height: auto;
+  "
+>" >
   <div class="main-background-section">
     <div id="pokedex"></div>
   </div>
@@ -57,9 +63,9 @@
 
 <audio id="bg-music" src="Pokemon.mp3" loop style="display:none;"></audio>
 
-<div style="text-align:center; margin:15px;">
+<div style="text-align:center; margin:15px;" class="volume-mixer">
   <label for="volume-slider" style="color:white;">🔊 Volume:</label>
-  <input type="range" id="volume-slider" min="0" max="1" step="0.01" style="width:200px;">
+  <input type="range" id="volume-slider" min="0" max="1" step="0.01" style="width:150px;">
 </div>
 
 <div class="go-to" id="go-to">
