@@ -118,7 +118,10 @@
         pokeImg.addEventListener('click', () => {
           if (!poke.shiny) return;
           isShiny = !isShiny;
-          pokeImg.src = isShiny ? poke.shiny : poke.image;
+          pokeImg.src = "img/9201ca103be3621c2b032f2151ff210e_w200.gif"
+          setTimeout(() => {
+            pokeImg.src = isShiny ? poke.shiny : poke.image;
+          }, 400);
           if (isShiny) {
             shinyAudio.currentTime = 0;
             shinyAudio.play().catch(() => {});
@@ -174,7 +177,11 @@
           variantSelect.addEventListener('change', (e) => {
             const vName = e.target.value;
             let newPoke = !vName ? basePoke : basePoke.variants[vName];
-            if (newPoke) renderPokemon(newPoke);
+            setTimeout(() => {
+              
+              if (newPoke) renderPokemon(newPoke);
+            }, 200);
+            pokeImg.src = "img/9201ca103be3621c2b032f2151ff210e_w200.gif"
           });
         }
       }
