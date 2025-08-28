@@ -28,6 +28,9 @@ const pokedex = document.getElementById('pokedex');
           if (p.info.types) Object.keys(p.info.types).forEach(t => types.add(t));
         });
 
+     
+
+
         [...types].sort().forEach(t => {
           [type1Filter, type2Filter].forEach(sel => {
             const opt = document.createElement('option');
@@ -55,15 +58,22 @@ const pokedex = document.getElementById('pokedex');
       const t1 = type1Filter.value;
       const t2 = type2Filter.value;
       const query = searchbar.value.trim().toLowerCase();
-
+      console.log(
+        `Applying filters: Type1=${t1}, Type2=${t2}, Query='${query}'`
+      );
+      
       filteredPokemon = allPokemon.filter(p => {
         const ts = p.info.types ? Object.keys(p.info.types) : [];
         const nameMatch = p.info.name?.toLowerCase().includes(query);
+        const abilityMatch = Object.keys(p.info.abilities || {}).some(a =>
+            a.toLowerCase().includes(query)
+        );
         const idMatch = String(p.id).padStart(3, '0').includes(query) || String(p.id).includes(query);
 
-        if (query && !nameMatch && !idMatch) return false;
+        if (query && !nameMatch && !idMatch && !abilityMatch) return false;
         if (t1 && !ts.includes(t1)) return false;
         if (t2 && !ts.includes(t2)) return false;
+
         return true;
       });
 
