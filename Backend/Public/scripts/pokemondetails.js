@@ -187,3 +187,59 @@
       detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
     });
 })();
+(function(){
+  const audio       = document.getElementById('bg-music');
+  const STORAGE_KEY = 'bg-music-currentTime';
+  const VOLUME_KEY  = 'bg-music-volume';
+  let autoPlayBlocked = false;
+
+  // --- Volume Mixer Setup ---
+  const volumeSlider = document.getElementById('volume-slider');
+  // Restore volume from storage or default to 0.5
+  const savedVol = parseFloat(localStorage.getItem(VOLUME_KEY));
+  audio.volume = !isNaN(savedVol) ? savedVol : 0.5;
+  if (volumeSlider) volumeSlider.value = audio.volume;
+
+  // Handle volume changes
+  if (volumeSlider) {
+    volumeSlider.addEventListener('input', () => {
+      audio.volume = parseFloat(volumeSlider.value);
+      localStorage.setItem(VOLUME_KEY, audio.volume);
+    });
+  }
+
+  // --- Audio Position Restore & Save ---
+  audio.addEventListener('loadedmetadata', () => {
+    const saved = parseFloat(localStorage.getItem(STORAGE_KEY)) || 0;
+    if (saved < audio.duration) {
+      audio.currentTime = saved;
+    }
+    audio.play().catch(_ => {
+      autoPlayBlocked = true;
+      console.log('Autoplay blocked; will resume when you interact.');
+    });
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    localStorage.setItem(STORAGE_KEY, audio.currentTime);
+  });
+
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem(STORAGE_KEY, audio.currentTime);
+  });
+
+  // --- Resume on User Interaction if Blocked ---
+  function resumeOnFirstInteraction() {
+    if (autoPlayBlocked && audio.paused) {
+      audio.play().catch(_=>{});
+      autoPlayBlocked = false;
+      document.removeEventListener('click',      resumeOnFirstInteraction);
+      document.removeEventListener('keydown',    resumeOnFirstInteraction);
+      document.removeEventListener('touchstart', resumeOnFirstInteraction);
+    }
+  }
+  document.addEventListener('click',      resumeOnFirstInteraction);
+  document.addEventListener('keydown',    resumeOnFirstInteraction);
+  document.addEventListener('touchstart', resumeOnFirstInteraction);
+
+})();
