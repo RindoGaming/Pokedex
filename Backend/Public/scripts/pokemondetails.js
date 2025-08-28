@@ -47,8 +47,8 @@
         }
         const abilities = poke.abilities
           ? Object.keys(poke.abilities)
-              .map(a => a.charAt(0).toUpperCase() + a.slice(1))
-              .join(', ')
+            .map(a => a.charAt(0).toUpperCase() + a.slice(1))
+            .join(', ')
           : 'N/A';
 
         // Variants dropdown
@@ -58,10 +58,10 @@
           variantOptions = `<select id="variant-select">
             <option value="">Base Form</option>
             ${Object.entries(variants).map(([vName, v]) =>
-              `<option value="${vName}"${vName === poke.name ? ' selected' : ''}>
+            `<option value="${vName}"${vName === poke.name ? ' selected' : ''}>
                 ${v.name.charAt(0).toUpperCase() + v.name.slice(1)}
               </option>`
-            ).join('')}
+          ).join('')}
           </select>`;
         }
 
@@ -124,7 +124,7 @@
           }, 400);
           if (isShiny) {
             shinyAudio.currentTime = 0;
-            shinyAudio.play().catch(() => {});
+            shinyAudio.play().catch(() => { });
           }
         });
 
@@ -178,7 +178,7 @@
             const vName = e.target.value;
             let newPoke = !vName ? basePoke : basePoke.variants[vName];
             setTimeout(() => {
-              
+
               if (newPoke) renderPokemon(newPoke);
             }, 200);
             pokeImg.src = "img/9201ca103be3621c2b032f2151ff210e_w200.gif"
@@ -194,10 +194,10 @@
       detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
     });
 })();
-(function(){
-  const audio       = document.getElementById('bg-music');
+(function () {
+  const audio = document.getElementById('bg-music');
   const STORAGE_KEY = 'bg-music-currentTime';
-  const VOLUME_KEY  = 'bg-music-volume';
+  const VOLUME_KEY = 'bg-music-volume';
   let autoPlayBlocked = false;
 
   // --- Volume Mixer Setup ---
@@ -238,15 +238,15 @@
   // --- Resume on User Interaction if Blocked ---
   function resumeOnFirstInteraction() {
     if (autoPlayBlocked && audio.paused) {
-      audio.play().catch(_=>{});
+      audio.play().catch(_ => { });
       autoPlayBlocked = false;
-      document.removeEventListener('click',      resumeOnFirstInteraction);
-      document.removeEventListener('keydown',    resumeOnFirstInteraction);
+      document.removeEventListener('click', resumeOnFirstInteraction);
+      document.removeEventListener('keydown', resumeOnFirstInteraction);
       document.removeEventListener('touchstart', resumeOnFirstInteraction);
     }
   }
-  document.addEventListener('click',      resumeOnFirstInteraction);
-  document.addEventListener('keydown',    resumeOnFirstInteraction);
+  document.addEventListener('click', resumeOnFirstInteraction);
+  document.addEventListener('keydown', resumeOnFirstInteraction);
   document.addEventListener('touchstart', resumeOnFirstInteraction);
 
 })();

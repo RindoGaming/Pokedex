@@ -101,9 +101,23 @@ select {
   bottom: 10px;
   right: 10px;
   z-index: 9999;
-  width: 200px;     /* shrink size */
-  height: 30px;     /* cleaner look */
+  width: 200px;
+  height: 30px;
 }
+
+.number-bar {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+  background: rgba(255,255,255,0.9);
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
 
 .pokemon p {
     margin: 4px 0;
