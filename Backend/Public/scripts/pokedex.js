@@ -1,90 +1,90 @@
 const pokedex = document.getElementById('pokedex');
-    const type1Filter = document.getElementById('type1-filter');
-    const type2Filter = document.getElementById('type2-filter');
-    const searchbar = document.getElementById('searchbar');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const pageInfo = document.getElementById('page-info');
-    const pageSearch = document.getElementById('page-search');
-    const goPageBtn = document.getElementById('go-page-btn');
+const type1Filter = document.getElementById('type1-filter');
+const type2Filter = document.getElementById('type2-filter');
+const searchbar = document.getElementById('searchbar');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const pageInfo = document.getElementById('page-info');
+const pageSearch = document.getElementById('page-search');
+const goPageBtn = document.getElementById('go-page-btn');
 
-    let allPokemon = [];
-    let filteredPokemon = [];
-    let currentPage = 1;
-    const pageSize = 24;
+let allPokemon = [];
+let filteredPokemon = [];
+let currentPage = 1;
+const pageSize = 24;
 
-    fetch('pokemon_cache.json')
-      .then(r => r.json())
-      .then(data => {
-        allPokemon = Object.entries(data)
-          .map(([key, poke]) => ({
-            id: poke.id ?? parseInt(key, 10),
-            info: poke
-          }))
-          .sort((a, b) => a.id - b.id);
+fetch('pokemon_cache.json')
+  .then(r => r.json())
+  .then(data => {
+    allPokemon = Object.entries(data)
+      .map(([key, poke]) => ({
+        id: poke.id ?? parseInt(key, 10),
+        info: poke
+      }))
+      .sort((a, b) => a.id - b.id);
 
-        const types = new Set();
-        allPokemon.forEach(p => {
-          if (p.info.types) Object.keys(p.info.types).forEach(t => types.add(t));
-        });
+    const types = new Set();
+    allPokemon.forEach(p => {
+      if (p.info.types) Object.keys(p.info.types).forEach(t => types.add(t));
+    });
 
-        [...types].sort().forEach(t => {
-          [type1Filter, type2Filter].forEach(sel => {
-            const opt = document.createElement('option');
-            opt.value = t;
-            opt.textContent = t[0].toUpperCase() + t.slice(1);
-            sel.appendChild(opt);
-          });
-        });
-
-        filteredPokemon = [...allPokemon];
-        renderPage();
-
-        type1Filter.onchange = type2Filter.onchange = () => {
-          currentPage = 1;
-          applyFilters();
-        };
-        searchbar.oninput = () => {
-          currentPage = 1;
-          applyFilters();
-        };
-      })
-      .catch(_ => pokedex.innerHTML = '<p>Failed to load Pokédex.</p>');
-
-    function applyFilters() {
-      const t1 = type1Filter.value;
-      const t2 = type2Filter.value;
-      const query = searchbar.value.trim().toLowerCase();
-
-      filteredPokemon = allPokemon.filter(p => {
-        const ts = p.info.types ? Object.keys(p.info.types) : [];
-        const nameMatch = p.info.name?.toLowerCase().includes(query);
-        const idMatch = String(p.id).padStart(3, '0').includes(query) || String(p.id).includes(query);
-
-        if (query && !nameMatch && !idMatch) return false;
-        if (t1 && !ts.includes(t1)) return false;
-        if (t2 && !ts.includes(t2)) return false;
-        return true;
+    [...types].sort().forEach(t => {
+      [type1Filter, type2Filter].forEach(sel => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t[0].toUpperCase() + t.slice(1);
+        sel.appendChild(opt);
       });
+    });
 
-      renderPage();
-    }
+    filteredPokemon = [...allPokemon];
+    renderPage();
 
-    function renderPage() {
-      pokedex.innerHTML = '';
-      const start = (currentPage - 1) * pageSize;
-      const end = start + pageSize;
-      const pageItems = filteredPokemon.slice(start, end);
+    type1Filter.onchange = type2Filter.onchange = () => {
+      currentPage = 1;
+      applyFilters();
+    };
+    searchbar.oninput = () => {
+      currentPage = 1;
+      applyFilters();
+    };
+  })
+  .catch(_ => pokedex.innerHTML = '<p>Failed to load Pokédex.</p>');
 
-      pageItems.forEach(p => {
-        const padded = String(p.id).padStart(3, '0');
-        const types = p.info.types ? Object.keys(p.info.types) : [];
-        const typeHTML = types.map(t => `<span class="type ${t}">${t}</span>`).join(' ');
-        const name = p.info.name
-          ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
-          : 'N/A';
+function applyFilters() {
+  const t1 = type1Filter.value;
+  const t2 = type2Filter.value;
+  const query = searchbar.value.trim().toLowerCase();
 
-        pokedex.innerHTML += `
+  filteredPokemon = allPokemon.filter(p => {
+    const ts = p.info.types ? Object.keys(p.info.types) : [];
+    const nameMatch = p.info.name?.toLowerCase().includes(query);
+    const idMatch = String(p.id).padStart(3, '0').includes(query) || String(p.id).includes(query);
+
+    if (query && !nameMatch && !idMatch) return false;
+    if (t1 && !ts.includes(t1)) return false;
+    if (t2 && !ts.includes(t2)) return false;
+    return true;
+  });
+
+  renderPage();
+}
+
+function renderPage() {
+  pokedex.innerHTML = '';
+  const start = (currentPage - 1) * pageSize;
+  const end = start + pageSize;
+  const pageItems = filteredPokemon.slice(start, end);
+
+  pageItems.forEach(p => {
+    const padded = String(p.id).padStart(3, '0');
+    const types = p.info.types ? Object.keys(p.info.types) : [];
+    const typeHTML = types.map(t => `<span class="type ${t}">${t}</span>`).join(' ');
+    const name = p.info.name
+      ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
+      : 'N/A';
+
+    pokedex.innerHTML += `
           <div class="pokemon" onclick="goToDetails(${p.id})">
             <img src="${p.info.image || ''}" alt="${name}">
             <p><strong>ID:</strong> ${padded}</p>
@@ -92,35 +92,43 @@ const pokedex = document.getElementById('pokedex');
             <div>${typeHTML}</div>
           </div>
         `;
-      });
+  });
 
-      pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredPokemon.length / pageSize)}`;
-      prevBtn.disabled = currentPage === 1;
-      nextBtn.disabled = end >= filteredPokemon.length;
-    }
+  pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredPokemon.length / pageSize)}`;
+  prevBtn.disabled = currentPage === 1;
+  nextBtn.disabled = end >= filteredPokemon.length;
+}
 
-    prevBtn.onclick = () => {
-      if (currentPage > 1) {
-        currentPage--;
-        renderPage();
-      }
-    };
+prevBtn.onclick = () => {
+  if (currentPage > 1) {
+    currentPage--;
+    renderPage();
+  }
+};
 
-    nextBtn.onclick = () => {
-      if ((currentPage * pageSize) < filteredPokemon.length) {
-        currentPage++;
-        renderPage();
-      }
-    };
+nextBtn.onclick = () => {
+  if ((currentPage * pageSize) < filteredPokemon.length) {
+    currentPage++;
+    renderPage();
+  }
+};
 
-    goPageBtn.onclick = () => {
-      const page = parseInt(pageSearch.value, 10);
-      if (!isNaN(page) && page > 0 && page <= Math.ceil(filteredPokemon.length / pageSize)) {
-        currentPage = page;
-        renderPage();
-      }
-    };
+goPageBtn.onclick = () => {
+  const page = parseInt(pageSearch.value, 10);
+  if (!isNaN(page) && page > 0 && page <= Math.ceil(filteredPokemon.length / pageSize)) {
+    currentPage = page;
+    renderPage();
+  }
+};
 
-    function goToDetails(id) {
-      window.location.href = `pokemon.html?id=${id}`;
-    }
+function goToDetails(id) {
+  window.location.href = `pokemon.html?id=${id}`;
+}
+
+function on() {
+  document.getElementById("overlay").style.display = "flex";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
