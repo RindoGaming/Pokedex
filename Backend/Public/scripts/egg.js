@@ -13,7 +13,7 @@ const hatchHistory = {};
 
 hatchBtn.onclick = async function () {
     img.classList.toggle("image-shaking")
-    // hatchBtn.disabled = true;
+    hatchBtn.disabled = true;
     setTimeout(() => {
         hatchBtn.disabled = false;
     }, 2505);
@@ -150,3 +150,9 @@ function updateHistory() {
   document.addEventListener('touchstart', resumeOnFirstInteraction);
 
 })();
+const egghatch = document.getElementById('go-to');
+egghatch.addEventListener("click", () => {
+  location.href = 'index.html'
+  console.log(`hi`);
+  
+})
