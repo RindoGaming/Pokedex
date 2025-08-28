@@ -10,6 +10,7 @@ Front-end Planning
 | Pixel art for the old versions.           | Low        | 2 hrs            | ✔️ Done |
 | User friendly info page.                  | Medium     | 2 hrs            | 🟡 WIP |
 | Pokemon type chart.                       | Medium     | 8 hrs            |         |
+| showing the stats of all the diffrent pokemon | Medium     | 8 hrs            |         |
 
 
 | Task                              | Priority | Time Estimate | What I Can Do (X)                                                                  | Need                                                           | Why                                                                           |
@@ -24,9 +25,9 @@ Front-end Planning
 
 | Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Hendrik | User friendly info page. 🟡 | User friendly info page. 🟡 | planning| styling| styling | styling | styling | styling | styling | styling | styling | styling |
-| Jarno | read me and priority making ✔️ | styling| styling| styling| styling | styling | styling | styling | planning | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
-| Senn | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Story 7 (4u, High) | Story 7 (4u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
+| Hendrik | User friendly info page. 🟡 | User friendly info page. 🟡 | planning| styling| styling | styling | styling | styling | planning | styling | styling | styling |
+| Jarno | read me and priority making ✔️ | styling| styling| styling| styling | styling | styling | styling | planning | showing the stats of all the diffrent pokemon| showing the stats of all the diffrent pokemon | showing the stats of all the diffrent pokemon |
+| Senn | styling | styling | styling | styling | egg animtations | egg animations | egg animantions | styling | styling | styling | styling | styling |
 
 
 
@@ -43,7 +44,6 @@ Back-end Planning
 | Data Delivery Contract (API Spec) | Medium     | 6 hrs            |         |
 | Data Logging & Monitoring         | Medium     | 4 hrs            |         |
 | Evolution Chain Analysis          | Medium     | 6 hrs            | ✔️ Done|
-| Pokémon Habitat Study             | Medium     | 4 hrs            |         |
 | Generation and Version Tracking   | Medium     | 6 hrs            |         |
 | Firebase Security Rules & Auth    | High       | 4 hrs            |         |
 | Primary/Secondary Type Filtering  | High       | 5 hrs            | ✔️ Done|
@@ -78,10 +78,10 @@ Back-end Planning
 
 | Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Alex | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | All pokemon form support 🟡| All pokemon form support 🟡| Story 2 (4u, Medium) | Story 2 (4u, Medium) | Story 8 (4u, Medium) | Story 8 (4u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) |
-| Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) 🟡| Cache fix 🟡| Cache fix 🟡| Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
+| Alex | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | All pokemon form support 🟡| All pokemon form support 🟡| Pokemon charactaristic database (high, 6h) ✔️ | Pokemon charactaristic database ✔️ (6u, high) | Pokemon habitat study (4u, Medium) | Story 8 (4u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) |
+| Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) ✔️| Cache fix ✔️| Cache fix ✔️| Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️ | Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Database structure definition (2u, Low) ✔️| Data logging and monitoring (2u, Low) 🟡| Story 9 (2u, Low) |  |
 | Caspar | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Story 7 (4u, High) | Story 7 (4u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
 
 In progress → 🟡 or 🚧
 
-Done → ✔️
+Done → ✔
