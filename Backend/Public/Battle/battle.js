@@ -1,4 +1,3 @@
-// === Load Teams from LocalStorage ===
 let team1 = JSON.parse(localStorage.getItem('playerTeam')) || [];
 let team2 = JSON.parse(localStorage.getItem('enemyTeam')) || [];
 let active1 = 0;
@@ -75,7 +74,6 @@ function updateTurn() {
   document.getElementById("battle-text").textContent = turn === "player" ? "Player 1's Turn" : "Player 2's Turn";
 }
 
-// === Buttons and Actions ===
 document.getElementById("fight-btn").onclick = chooseMove;
 document.getElementById("swap-btn").onclick = swapPokemon;
 document.getElementById("run-btn").onclick = runAway;
@@ -190,19 +188,14 @@ function endGame(winner) {
 
 const music = document.getElementById("bg-music");
 const slider = document.getElementById("volume-slider");
-
-// Default volume
 music.volume = 0.5;
 slider.value = 0.5;
-
-// Play only after user clicks somewhere
 document.body.addEventListener("click", () => {
   if (music.paused) {
     music.play().catch(err => console.log("Autoplay blocked:", err));
   }
 });
 
-// Volume control
 slider.addEventListener("input", () => {
   music.volume = slider.value;
 });

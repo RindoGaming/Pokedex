@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pokémon Battle</title>
   <link rel="stylesheet" href="battle.css" />
 </head>
+
 <body>
   <div id="battle-container">
     <!-- Enemy side -->
@@ -32,7 +34,6 @@
       </div>
     </div>
 
-    <!-- Message + controls -->
     <div id="message-box">
       <p id="battle-text">It's Player 1's turn!</p>
       <div id="controls">
@@ -43,10 +44,7 @@
       <div id="move-options"></div>
     </div>
 
-    <!-- Background Music -->
     <audio id="bg-music" src="trainer-battle-music-hq.mp3" loop></audio>
-
-    <!-- Volume Controls -->
     <div id="volume-container">
       <label for="volume-slider">🔊</label>
       <input type="range" id="volume-slider" min="0" max="1" step="0.01" />
@@ -55,16 +53,13 @@
 
   <script src="battle.js"></script>
   <script>
-    // Volume + Auto Play Script
     const music = document.getElementById("bg-music");
     const slider = document.getElementById("volume-slider");
 
     music.volume = 0.5;
     slider.value = 0.5;
 
-    // Try autoplay first
     music.play().catch(() => {
-      // Start on first click if blocked
       document.body.addEventListener("click", () => {
         if (music.paused) music.play();
       }, { once: true });
@@ -76,4 +71,5 @@
     });
   </script>
 </body>
+
 </html>

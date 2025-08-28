@@ -1,53 +1,45 @@
-// SELECT PAGE — adds move/ability & generation filters, ID search, AND pagination.
-// 24 per page; grid shows 5 per row on desktop (last row will naturally have 4 with 24 items).
-
-// ---- Generation ranges by National Dex ID (for mapping only) ----
 const GEN_RANGES = [
-  { key: "gen1",  label: "Gen 1 (Kanto)",        min: 1,   max: 151 },
-  { key: "gen2",  label: "Gen 2 (Johto)",        min: 152, max: 251 },
-  { key: "gen3",  label: "Gen 3 (Hoenn)",        min: 252, max: 386 },
-  { key: "gen4",  label: "Gen 4 (Sinnoh)",       min: 387, max: 493 },
-  { key: "gen5",  label: "Gen 5 (Unova)",        min: 494, max: 649 },
-  { key: "gen6",  label: "Gen 6 (Kalos)",        min: 650, max: 721 },
-  { key: "gen7",  label: "Gen 7 (Alola)",        min: 722, max: 809 },
-  { key: "gen8",  label: "Gen 8 (Galar/Hisui)",  min: 810, max: 905 },
-  { key: "gen9",  label: "Gen 9 (Paldea+)",      min: 906, max: 20000 }
+  { key: "gen1", label: "Gen 1 (Kanto)", min: 1, max: 151 },
+  { key: "gen2", label: "Gen 2 (Johto)", min: 152, max: 251 },
+  { key: "gen3", label: "Gen 3 (Hoenn)", min: 252, max: 386 },
+  { key: "gen4", label: "Gen 4 (Sinnoh)", min: 387, max: 493 },
+  { key: "gen5", label: "Gen 5 (Unova)", min: 494, max: 649 },
+  { key: "gen6", label: "Gen 6 (Kalos)", min: 650, max: 721 },
+  { key: "gen7", label: "Gen 7 (Alola)", min: 722, max: 809 },
+  { key: "gen8", label: "Gen 8 (Galar/Hisui)", min: 810, max: 905 },
+  { key: "gen9", label: "Gen 9 (Paldea+)", min: 906, max: 20000 }
 ];
 
-// ---- DOM ----
-const listEl       = document.getElementById("pokemon-list");
-const searchEl     = document.getElementById("search");
-const type1El      = document.getElementById("type-filter-1");
-const type2El      = document.getElementById("type-filter-2");
-const idEl         = document.getElementById("id-search");
-const moveEl       = document.getElementById("move-search");
-const moveListEl   = document.getElementById("move-list");
-const genEl        = document.getElementById("gen-filter");
+const listEl = document.getElementById("pokemon-list");
+const searchEl = document.getElementById("search");
+const type1El = document.getElementById("type-filter-1");
+const type2El = document.getElementById("type-filter-2");
+const idEl = document.getElementById("id-search");
+const moveEl = document.getElementById("move-search");
+const moveListEl = document.getElementById("move-list");
+const genEl = document.getElementById("gen-filter");
 const playerTeamEl = document.getElementById("player-team");
-const enemyTeamEl  = document.getElementById("enemy-team");
-const startBtn     = document.getElementById("start-battle");
-const errorEl      = document.getElementById("error-message");
+const enemyTeamEl = document.getElementById("enemy-team");
+const startBtn = document.getElementById("start-battle");
+const errorEl = document.getElementById("error-message");
 
 const paginationEl = document.getElementById("pagination");
 
-// ---- State ----
-let ALL = [];          // flattened Pokémon list
+let ALL = [];
 let TYPES = new Set();
 let ABILS = new Set();
-let GENS  = new Set();
+let GENS = new Set();
 
 let playerTeam = JSON.parse(localStorage.getItem("playerTeam") || "[]");
-let enemyTeam  = JSON.parse(localStorage.getItem("enemyTeam")  || "[]");
+let enemyTeam = JSON.parse(localStorage.getItem("enemyTeam") || "[]");
 
-// Pagination
 let currentPage = 1;
 const pageSize = 25;
 let filteredList = [];
 
-// ---- Helpers ----
-const toTitle   = s => (s ? s.charAt(0).toUpperCase() + s.slice(1) : "");
+const toTitle = s => (s ? s.charAt(0).toUpperCase() + s.slice(1) : "");
 const normalize = s => (s || "").toString().trim().toLowerCase();
-const slugify   = s => normalize(s).replace(/\s+/g, "-");
+const slugify = s => normalize(s).replace(/\s+/g, "-");
 
 function idToGenKey(id) {
   for (const g of GEN_RANGES) {
@@ -68,7 +60,6 @@ function getAbilitiesArray(obj) {
   return Object.keys(obj || {}).map(normalize);
 }
 
-// Flatten base + variants
 function flattenDex(raw) {
   const out = [];
   for (const key of Object.keys(raw)) {
@@ -143,15 +134,13 @@ function renderAbilityDatalist() {
     moveListEl.appendChild(opt);
   }
 }
-
-// ---- Filters ----
 function matchesFilters(p) {
   const qName = normalize(searchEl.value);
-  const qId   = normalize(idEl.value);
+  const qId = normalize(idEl.value);
   const qMove = slugify(moveEl.value);
-  const t1    = normalize(type1El.value);
-  const t2    = normalize(type2El.value);
-  const gSel  = normalize(genEl.value);
+  const t1 = normalize(type1El.value);
+  const t2 = normalize(type2El.value);
+  const gSel = normalize(genEl.value);
 
   if (qName && !normalize(p.name).includes(qName)) return false;
 
@@ -173,21 +162,17 @@ function matchesFilters(p) {
   return true;
 }
 
-// ---- Rendering ----
 function renderList() {
   // Filter first
   filteredList = ALL.filter(matchesFilters);
 
-  // Page bounds
   const totalPages = Math.ceil(filteredList.length / pageSize) || 1;
   if (currentPage > totalPages) currentPage = totalPages;
   if (currentPage < 1) currentPage = 1;
 
-  // Slice by page
   const start = (currentPage - 1) * pageSize;
   const items = filteredList.slice(start, start + pageSize);
 
-  // Render grid
   listEl.innerHTML = "";
   if (!items.length) {
     listEl.innerHTML = `<p style="text-align:center; opacity:.8;">No Pokémon match your filters.</p>`;
@@ -294,14 +279,12 @@ function renderPagination(totalPages) {
 
   paginationEl.appendChild(row);
 
-  // Info row
   const info = document.createElement("div");
   info.className = "page-info";
   info.textContent = `Page ${currentPage} of ${totalPages}`;
   paginationEl.appendChild(info);
 }
 
-// ---- Teams ----
 function addToTeam(p, which) {
   const team = which === "player" ? playerTeam : enemyTeam;
   if (team.length >= 6) {
@@ -326,7 +309,7 @@ function removeFromTeam(idx, which) {
 
 function renderTeams() {
   playerTeamEl.innerHTML = "";
-  enemyTeamEl.innerHTML  = "";
+  enemyTeamEl.innerHTML = "";
 
   playerTeam.forEach((p, i) => {
     const row = document.createElement("div");
@@ -358,7 +341,6 @@ function persistTeams() {
   localStorage.setItem("enemyTeam", JSON.stringify(enemyTeam));
 }
 
-// ---- UX helpers ----
 let errorTimer = null;
 function flashError(msg) {
   clearTimeout(errorTimer);
@@ -367,7 +349,6 @@ function flashError(msg) {
   errorTimer = setTimeout(() => (errorEl.style.opacity = "0"), 2200);
 }
 
-// ---- Init ----
 async function init() {
   try {
     const res = await fetch("pokemon_cache.json");
@@ -382,8 +363,6 @@ async function init() {
     renderAbilityDatalist();
 
     renderTeams();
-
-    // When any filter changes, reset to page 1 and re-render
     [searchEl, idEl, moveEl, type1El, type2El, genEl].forEach(el => {
       el.addEventListener("input", () => { currentPage = 1; renderList(); });
       el.addEventListener("change", () => { currentPage = 1; renderList(); });

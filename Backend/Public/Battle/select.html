@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Select Pokémon</title>
   <link rel="stylesheet" href="select.css" />
 </head>
+
 <body>
   <div class="container">
     <h1>Select Your Pokémon Teams</h1>
-
-    <!-- Existing search box (kept) -->
     <div class="search-box">
       <input type="text" id="search" placeholder="Search Pokémon by name..." />
     </div>
-
-    <!-- Added filters (nothing removed) -->
     <div class="filter-box" title="Filters">
       <select id="type-filter-1" title="Primary Type">
         <option value="">All Types</option>
       </select>
-
       <select id="type-filter-2" title="Secondary Type">
         <option value="">All Types</option>
       </select>
-
       <input type="number" id="id-search" placeholder="ID…" min="1" title="Search by National Dex ID" />
-
-      <input id="move-search" list="move-list" placeholder="Search by move/ability…" title="Search by ability (from cache)" />
+      <input id="move-search" list="move-list" placeholder="Search by move/ability…"
+        title="Search by ability (from cache)" />
       <datalist id="move-list"></datalist>
 
       <select id="gen-filter" title="Generation">
         <option value="">All Generations</option>
-        <!-- JS will populate available generations dynamically -->
       </select>
     </div>
 
-    <!-- Pokémon Grid -->
     <div class="pokemon-list" id="pokemon-list"></div>
-
-    <!-- Pagination -->
     <div id="pagination"></div>
-
-    <!-- Teams (kept) -->
     <div class="team-container">
       <div class="team">
         <h2>Your Team</h2>
@@ -67,4 +57,5 @@
 
   <script src="select.js"></script>
 </body>
+
 </html>
