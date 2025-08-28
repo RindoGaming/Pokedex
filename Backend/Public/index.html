@@ -49,10 +49,13 @@
       </select>
     </div>
   </div>
-  <div id="overlay" onclick="off()">
-    <input type="text" id="searchbar" style=" width:200px; padding: 10px" class="searchbar"
+  <div id="overlay">
+    <input type="text" id="searchbar" autocomplete="off" style=" width:260px; padding: 10px" class="searchbar"
       placeholder="Search by name or ID...">
-    <div id="search-dropdown"></div>
+    <div id="search-dropdown" style="position: fixed;top: 55vh;"></div>
+    <div class="close" onclick="off()">
+      <h1>x</h1>
+    </div>
   </div>
   <footer>
     <div class="team">
