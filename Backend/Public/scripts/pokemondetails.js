@@ -184,6 +184,92 @@
             pokeImg.src = "img/9201ca103be3621c2b032f2151ff210e_w200.gif"
           });
         }
+
+        // Type effectiveness display with multipliers
+        function getMultipliers(defendingTypes) {
+          const allTypes = Object.keys(typeChart);
+          const multipliers = {};
+          allTypes.forEach(attackingType => {
+            let multiplier = 1;
+            defendingTypes.forEach(defType => {
+              if (typeChart[defType].immune.includes(attackingType)) {
+                multiplier *= 0;
+              } else if (typeChart[defType].weak.includes(attackingType)) {
+                multiplier *= 2;
+              } else if (typeChart[defType].resist.includes(attackingType)) {
+                multiplier *= 0.5;
+              }
+            });
+            multipliers[attackingType] = multiplier;
+          });
+          return multipliers;
+        }
+
+        function showTypeEffectiveness(pokemonTypes) {
+          const multipliers = getMultipliers(pokemonTypes);
+          // Group types by multiplier
+          const quadEffective = Object.entries(multipliers).filter(([type, mult]) => mult === 4);
+          const superEffective = Object.entries(multipliers).filter(([type, mult]) => mult === 2);
+          const quadResistant = Object.entries(multipliers).filter(([type, mult]) => mult === 0.25);
+          const resistant = Object.entries(multipliers).filter(([type, mult]) => mult === 0.5);
+          const immune = Object.entries(multipliers).filter(([type, mult]) => mult === 0);
+
+          let html = `<h3>Type Effectiveness</h3>`;
+          html += `<div><strong>4x Weak to:</strong> `;
+          if (quadEffective.length) {
+            quadEffective.forEach(([type, mult]) => {
+              html += `<span class="type ${type}">${type.charAt(0).toUpperCase() + type.slice(1)} <strong>${mult}x</strong></span> `;
+            });
+          } else {
+            html += `None`;
+          }
+          html += `</div>`;
+
+          html += `<div><strong>2x Weak to:</strong> `;
+          if (superEffective.length) {
+            superEffective.forEach(([type, mult]) => {
+              html += `<span class="type ${type}">${type.charAt(0).toUpperCase() + type.slice(1)} <strong>${mult}x</strong></span> `;
+            });
+          } else {
+            html += `None`;
+          }
+          html += `</div>`;
+
+          html += `<div><strong>0.5x Resistant to:</strong> `;
+          if (resistant.length) {
+            resistant.forEach(([type, mult]) => {
+              html += `<span class="type ${type}">${type.charAt(0).toUpperCase() + type.slice(1)} <strong>${mult}x</strong></span> `;
+            });
+          } else {
+            html += `None`;
+          }
+          html += `</div>`;
+
+          html += `<div><strong>0.25x Resistant to:</strong> `;
+          if (quadResistant.length) {
+            quadResistant.forEach(([type, mult]) => {
+              html += `<span class="type ${type}">${type.charAt(0).toUpperCase() + type.slice(1)} <strong>${mult}x</strong></span> `;
+            });
+          } else {
+            html += `None`;
+          }
+          html += `</div>`;
+
+          html += `<div><strong>Immune to:</strong> `;
+          if (immune.length) {
+            immune.forEach(([type]) => {
+              html += `<span class="type ${type}">${type.charAt(0).toUpperCase() + type.slice(1)} <strong>0x</strong></span> `;
+            });
+          } else {
+            html += `None`;
+          }
+          html += `</div>`;
+
+          document.getElementById('type-effectiveness').innerHTML = html;
+          document.getElementById('type-effectiveness').innerHTML = html;
+        }
+
+        showTypeEffectiveness(Object.keys(poke.types));
       }
 
       // Initial render
@@ -250,3 +336,58 @@
   document.addEventListener('touchstart', resumeOnFirstInteraction);
 
 })();
+
+// Defensive type chart: for each defending type, what attacking types are 2x, 0.5x, 0x
+const typeChart = {
+  normal:   { weak: ["fighting"], resist: [], immune: ["ghost"] },
+  fire:     { weak: ["water", "ground", "rock"], resist: ["fire", "grass", "ice", "bug", "steel", "fairy"], immune: [] },
+  water:    { weak: ["electric", "grass"], resist: ["fire", "water", "ice", "steel"], immune: [] },
+  electric: { weak: ["ground"], resist: ["electric", "flying", "steel"], immune: [] },
+  grass:    { weak: ["fire", "ice", "poison", "flying", "bug"], resist: ["water", "grass", "electric", "ground"], immune: [] },
+  ice:      { weak: ["fire", "fighting", "rock", "steel"], resist: ["ice"], immune: [] },
+  fighting: { weak: ["flying", "psychic", "fairy"], resist: ["bug", "rock", "dark"], immune: [] },
+  poison:   { weak: ["ground", "psychic"], resist: ["grass", "fighting", "poison", "bug", "fairy"], immune: [] },
+  ground:   { weak: ["water", "grass", "ice"], resist: ["poison", "rock"], immune: ["electric"] },
+  flying:   { weak: ["electric", "ice", "rock"], resist: ["grass", "fighting", "bug"], immune: ["ground"] },
+  psychic:  { weak: ["bug", "ghost", "dark"], resist: ["fighting", "psychic"], immune: [] },
+  bug:      { weak: ["fire", "flying", "rock"], resist: ["grass", "fighting", "ground"], immune: [] },
+  rock:     { weak: ["water", "grass", "fighting", "ground", "steel"], resist: ["normal", "fire", "poison", "flying"], immune: [] },
+  ghost:    { weak: ["ghost", "dark"], resist: ["poison", "bug"], immune: ["normal", "fighting"] },
+  dragon:   { weak: ["ice", "dragon", "fairy"], resist: ["fire", "water", "electric", "grass"], immune: [] },
+  dark:     { weak: ["fighting", "bug", "fairy"], resist: ["ghost", "dark"], immune: ["psychic"] },
+  steel:    { weak: ["fire", "fighting", "ground"], resist: ["normal", "grass", "ice", "flying", "psychic", "bug", "rock", "dragon", "steel", "fairy"], immune: ["poison"] },
+  fairy:    { weak: ["poison", "steel"], resist: ["fighting", "bug", "dark"], immune: ["dragon"] }
+};
+
+// Returns an object: { type: multiplier }
+function getMultipliers(defendingTypes) {
+  const allTypes = Object.keys(typeChart);
+  const multipliers = {};
+
+  allTypes.forEach(attackingType => {
+    let multiplier = 1;
+    defendingTypes.forEach(defType => {
+      if (typeChart[defType].immune.includes(attackingType)) {
+        multiplier *= 0;
+      } else if (typeChart[defType].weak.includes(attackingType)) {
+        multiplier *= 2;
+      } else if (typeChart[defType].resist.includes(attackingType)) {
+        multiplier *= 0.5;
+      }
+    });
+    multipliers[attackingType] = multiplier;
+  });
+
+  return multipliers;
+}
+
+// Example usage:
+const defendingTypes = ['rock', 'dark']; // Tyranitar
+const multipliers = getMultipliers(defendingTypes);
+
+// To display super effective types (multiplier >= 2)
+const superEffective = Object.entries(multipliers)
+  .filter(([type, mult]) => mult >= 2)
+  .map(([type, mult]) => `${type} (${mult}x)`);
+
+console.log('Super effective:', superEffective.join(', '));
