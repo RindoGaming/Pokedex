@@ -14,26 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1>Pokédex</h1>
-    <button onclick="location.href='egg.html'">Go to Egg Hatcher</button>
 
-    <div id="filter-container">
-      <!-- <select id="type1-filter" style="width:250px">
-        <option value="">-- Primary Type --</option>
-      </select>
-
-<div style="position:relative; display:inline-block;">
-    
-  <input type="text" id="searchbar" style="width:200px; padding:10px" class="searchbar"
-  placeholder="Search by name or ID...">
-  <div id="search-dropdown"></div>
-</div>
-      <select id="type2-filter" style="width:250px;">
-        <option value="">-- Secondary Type --</option>
-      </select> -->
-    </div>
-  </header>
 
   <div class="main-background-section">
     <div id="pokedex"></div>
@@ -73,54 +54,12 @@
       <h1>x</h1>
     </div>
   </div>
+
 <audio id="bg-music" src="Pokemon.mp3" loop style="display:none;"></audio>
 
-<script>
-(function(){
-  const audio      = document.getElementById('bg-music');
-  const STORAGE_KEY = 'bg-music-currentTime';
-  let autoPlayBlocked = false;
-
-  // 1) Restore position and try to start as soon as metadata is ready
-  audio.addEventListener('loadedmetadata', () => {
-    const saved = parseFloat(localStorage.getItem(STORAGE_KEY)) || 0;
-    if (saved < audio.duration) {
-      audio.currentTime = saved;
-    }
-    audio.play().catch(_ => {
-      // Autoplay was blocked, we'll resume on user gesture
-      autoPlayBlocked = true;
-      console.log('Autoplay blocked; will resume when you interact.');
-    });
-  });
-
-  // 2) Keep saving currentTime as it plays
-  audio.addEventListener('timeupdate', () => {
-    localStorage.setItem(STORAGE_KEY, audio.currentTime);
-  });
-
-  // 3) Save one more time if they close/refresh mid-audio
-  window.addEventListener('beforeunload', () => {
-    localStorage.setItem(STORAGE_KEY, audio.currentTime);
-  });
-
-  // 4) If autoplay was blocked, resume on any user interaction
-  function resumeOnFirstInteraction() {
-    if (autoPlayBlocked && audio.paused) {
-      audio.play().catch(_=>{});  // silent fail if still blocked
-      autoPlayBlocked = false;
-      // clean up listeners
-      document.removeEventListener('click',      resumeOnFirstInteraction);
-      document.removeEventListener('keydown',    resumeOnFirstInteraction);
-      document.removeEventListener('touchstart', resumeOnFirstInteraction);
-    }
-  }
-  document.addEventListener('click',      resumeOnFirstInteraction);
-  document.addEventListener('keydown',    resumeOnFirstInteraction);
-  document.addEventListener('touchstart', resumeOnFirstInteraction);
-
-})();
-</script>
+<div class="go-to" id="go-to">
+<img src="img/egg.png" alt="egggg">
+</div>
 
 
   <footer>
