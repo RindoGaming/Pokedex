@@ -41,18 +41,15 @@ Back-end Planning
 | Pokémon Characteristics Database  | High       | 6 hrs            | ✔️ Done |
 | PokéAPI → Firebase Connection     | High       | 8 hrs            | 🟡 WIP  |
 | Database Structure Definition     | High       | 4 hrs            | ✔️ Done |
-| Data Delivery Contract (API Spec) | Medium     | 6 hrs            |         |
-| Data Logging & Monitoring         | Medium     | 4 hrs            |         |
 | Evolution Chain Analysis          | Medium     | 6 hrs            | ✔️ Done|
-| Generation and Version Tracking   | Medium     | 6 hrs            |         |
-| Firebase Security Rules & Auth    | High       | 4 hrs            |         |
+| Generation and Version Tracking   | Medium     | 6 hrs            | 🟡 WIP|
 | Primary/Secondary Type Filtering  | High       | 5 hrs            | ✔️ Done|
 | Caching System for Local Data     | High       | 6 hrs            | ✔️ Done|
 | Egg Hatching Gambling System      | Medium     | 8 hrs            | ✔️ Done|
 | Pokémon Detail Page               | High       | 7 hrs            | ✔️ Done|
 | Improve Frontend Caching          | High       | 6 hrs            | 🟡 WIP |
-| Extended Pokémon Details          | High       | 8 hrs            | 🟡 WIP |
-| Support All Pokémon Forms         | High       | 10 hrs           | 🟡WIP  |
+| Extended Pokémon Details          | High       | 8 hrs            | ✔️ Done|
+| Support All Pokémon Forms         | High       | 10 hrs           | ✔️ Done|
 
 
 
