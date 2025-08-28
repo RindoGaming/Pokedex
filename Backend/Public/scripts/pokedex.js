@@ -7,6 +7,7 @@ const pokedex = document.getElementById('pokedex');
     const pageInfo = document.getElementById('page-info');
     const pageSearch = document.getElementById('page-search');
     const goPageBtn = document.getElementById('go-page-btn');
+    const searchDropdown = document.getElementById('search-dropdown');
 
     let allPokemon = [];
     let filteredPokemon = [];
@@ -50,6 +51,7 @@ const pokedex = document.getElementById('pokedex');
         searchbar.oninput = () => {
           currentPage = 1;
           applyFilters();
+          showDropdown();
         };
       })
       .catch(_ => pokedex.innerHTML = '<p>Failed to load Pokédex.</p>');
@@ -133,4 +135,46 @@ const pokedex = document.getElementById('pokedex');
 
     function goToDetails(id) {
       window.location.href = `pokemon.html?id=${id}`;
+    }
+
+    document.addEventListener('click', e => {
+      if (!searchDropdown.contains(e.target) && e.target !== searchbar) {
+        searchDropdown.innerHTML = '';
+      }
+    });
+
+    function showDropdown() {
+      const query = searchbar.value.trim().toLowerCase();
+      if (!query) {
+        searchDropdown.innerHTML = '';
+        return;
+      }
+      // Filter for dropdown (limit to 10 results)
+      const results = allPokemon.filter(p => 
+        p.info.name?.toLowerCase().includes(query)
+      ).slice(0, 10);
+
+      if (results.length === 0) {
+        searchDropdown.innerHTML = '';
+        return;
+      }
+
+      searchDropdown.innerHTML = `
+        <div style="position:absolute; background:#fff; border:1px solid #ccc; width:100%; z-index:10;">
+          ${results.map(p => {
+            const types = p.info.types ? Object.keys(p.info.types) : [];
+            const typeHTML = types.map(t => `<span class="type ${t}" style="margin-left:4px;">${t}</span>`).join('');
+            const name = p.info.name
+              ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
+              : 'N/A';
+            return `
+              <div class="dropdown-item" style="display:flex; align-items:center; padding:4px; cursor:pointer;" onclick="goToDetails(${p.id}); searchDropdown.innerHTML='';">
+                <img src="${p.info.image || ''}" alt="${name}" style="width:40px; height:40px; object-fit:contain; margin-right:8px;">
+                <span style="flex:1;">${name}</span>
+                <span style="margin-left:auto;">${typeHTML}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
     }
