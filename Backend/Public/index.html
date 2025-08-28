@@ -14,26 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1>Pokédex</h1>
-    <button onclick="location.href='egg.html'">Go to Egg Hatcher</button>
 
-    <div id="filter-container">
-      <!-- <select id="type1-filter" style="width:250px">
-        <option value="">-- Primary Type --</option>
-      </select>
-
-<div style="position:relative; display:inline-block;">
-    
-  <input type="text" id="searchbar" style="width:200px; padding:10px" class="searchbar"
-  placeholder="Search by name or ID...">
-  <div id="search-dropdown"></div>
-</div>
-      <select id="type2-filter" style="width:250px;">
-        <option value="">-- Secondary Type --</option>
-      </select> -->
-    </div>
-  </header>
 
   <div class="main-background-section">
     <div id="pokedex"></div>
@@ -73,6 +54,7 @@
       <h1 class="circlebg">x</h1>
     </div>
   </div>
+
 <audio id="bg-music" src="Pokemon.mp3" loop style="display:none;"></audio>
 
 <div style="text-align:center; margin:15px;" class="volume-mixer">
@@ -80,60 +62,6 @@
   <input type="range" id="volume-slider" min="0" max="1" step="0.01" style="width:200px;">
 </div>
 
-<script>
-(function(){
-  const audio       = document.getElementById('bg-music');
-  const STORAGE_KEY = 'bg-music-currentTime';
-  const VOLUME_KEY  = 'bg-music-volume';
-  let autoPlayBlocked = false;
-
-  const volumeSlider = document.getElementById('volume-slider');
-  // Restore volume from storage or default to 0.5
-  const savedVol = parseFloat(localStorage.getItem(VOLUME_KEY));
-  audio.volume = !isNaN(savedVol) ? savedVol : 0.5;
-  volumeSlider.value = audio.volume;
-
-  // Handle volume changes
-  volumeSlider.addEventListener('input', () => {
-    audio.volume = parseFloat(volumeSlider.value);
-    localStorage.setItem(VOLUME_KEY, audio.volume);
-  });
-
-  // 1) Restore position and try to start
-  audio.addEventListener('loadedmetadata', () => {
-    const saved = parseFloat(localStorage.getItem(STORAGE_KEY)) || 0;
-    if (saved < audio.duration) {
-      audio.currentTime = saved;
-    }
-    audio.play().catch(_ => {
-      autoPlayBlocked = true;
-      console.log('Autoplay blocked; will resume when you interact.');
-    });
-  });
-
-  // 2) Save current time
-  audio.addEventListener('timeupdate', () => {
-    localStorage.setItem(STORAGE_KEY, audio.currentTime);
-  });
-
-  // 3) Save on unload
-  window.addEventListener('beforeunload', () => {
-    localStorage.setItem(STORAGE_KEY, audio.currentTime);
-  });
-
-  // 4) Resume on interaction if blocked
-  function resumeOnFirstInteraction() {
-    if (autoPlayBlocked && audio.paused) {
-      audio.play().catch(_=>{});
-      autoPlayBlocked = false;
-      document.removeEventListener('click', resumeOnFirstInteraction);
-      document.removeEventListener('keydown', resumeOnFirstInteraction);
-      document.removeEventListener('touchstart', resumeOnFirstInteraction);
-    }
-  }
-  document.addEventListener('click',      resumeOnFirstInteraction);
-  document.addEventListener('keydown',    resumeOnFirstInteraction);
-  document.addEventListener('touchstart', resumeOnFirstInteraction);
-
-})();
-</script>
+<div class="go-to" id="go-to">
+<img src="img/egg.png" alt="egggg">
+</div>
