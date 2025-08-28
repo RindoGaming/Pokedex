@@ -3,8 +3,15 @@ body {
       background: #f0f0f0;
       margin: 20px;
       text-align: center;
+      background: repeating-linear-gradient(45deg, #323232,
+                #323232 10px,
+                #2F2F2F 10px,
+                #2F2F2F 20px);
       
     }
+body h1 {
+    color: #fff;
+}
     .pokemon-details {
       display: flex;
       flex-direction: row-reverse;
@@ -18,6 +25,10 @@ body {
       max-width: 1500px;
       margin: 0 auto;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: repeating-linear-gradient(45deg, #FFFFFF,
+                #FFFFFF 10px,
+                #F5F5F5 10px,
+                #F5F5F5 20px);
     }
     .pokemon-details img {
       display: block;
@@ -35,8 +46,24 @@ body {
       color: #fff;
       background-color: #ee4d4d;
       margin-bottom: 30px;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-left: 1px solid #ee4d4d;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ee4d4d;
+      border-bottom: 1px solid #ccc;
+    }
+    .typesection {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+      color: #fff;
+      background-color: #ee4d4d;
+      padding: 23.9px 0px;
+      border-left: 1px solid #ee4d4d;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ee4d4d;
+      border-bottom: 1px solid #ccc;
     }
     .pokemon-details p {
       margin: 6px 0;
@@ -90,12 +117,15 @@ body {
   background-position: center;
   display: inline-block;
   position: relative;
+  padding: 25px;
 }
 .pokemon-image-bg img {
   display: block;
   margin: 0 auto;
   z-index: 1;
   position: relative;
+  width: 300px;
+  height: 300px;
 }
 .half {
   width: 50%;
@@ -106,4 +136,20 @@ body {
   position: relative;
   width: 50%;
   height: 50%;
+}
+#variant-select {
+    display: block;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    text-align: center;
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+#variant-select:focus {
+    box-shadow: 0 0 0 2px #d32f2f33;
 }
