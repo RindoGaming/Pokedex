@@ -8,7 +8,7 @@ const pageInfo = document.getElementById('page-info');
 const pageSearch = document.getElementById('page-search');
 const goPageBtn = document.getElementById('go-page-btn');
 const searchDropdown = document.getElementById('search-dropdown');
-
+const egghatch = document.getElementById('go-to')
 let allPokemon = [];
 let filteredPokemon = [];
 
@@ -18,7 +18,7 @@ const urlPage = parseInt(urlParams.get('page'), 10);
 const savedPage = parseInt(localStorage.getItem('lastPokedexPage'), 10);
 let currentPage =
   !isNaN(urlPage) && urlPage > 0 ? urlPage :
-  (!isNaN(savedPage) && savedPage > 0 ? savedPage : 1);
+    (!isNaN(savedPage) && savedPage > 0 ? savedPage : 1);
 
 const pageSize = 24;
 
@@ -165,7 +165,7 @@ function showDropdown() {
   // (limit to 10 results)
   const results = allPokemon.filter(p =>
     p.info.name?.toLowerCase().includes(query)
-  ).slice(0, 6); 
+  ).slice(0, 6);
 
   if (results.length === 0) {
     searchDropdown.innerHTML = '';
@@ -211,3 +211,51 @@ function on() {
 function off() {
   document.getElementById("overlay").style.display = "none";
 }
+(function () {
+  const audio = document.getElementById('bg-music');
+  const STORAGE_KEY = 'bg-music-currentTime';
+  let autoPlayBlocked = false;
+
+  // 1) Restore position and try to start as soon as metadata is ready
+  audio.addEventListener('loadedmetadata', () => {
+    const saved = parseFloat(localStorage.getItem(STORAGE_KEY)) || 0;
+    if (saved < audio.duration) {
+      audio.currentTime = saved;
+    }
+    audio.play().catch(_ => {
+      // Autoplay was blocked, we'll resume on user gesture
+      autoPlayBlocked = true;
+      console.log('Autoplay blocked; will resume when you interact.');
+    });
+  });
+
+  // 2) Keep saving currentTime as it plays
+  audio.addEventListener('timeupdate', () => {
+    localStorage.setItem(STORAGE_KEY, audio.currentTime);
+  });
+
+  // 3) Save one more time if they close/refresh mid-audio
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem(STORAGE_KEY, audio.currentTime);
+  });
+
+  // 4) If autoplay was blocked, resume on any user interaction
+  function resumeOnFirstInteraction() {
+    if (autoPlayBlocked && audio.paused) {
+      audio.play().catch(_ => { });  // silent fail if still blocked
+      autoPlayBlocked = false;
+      // clean up listeners
+      document.removeEventListener('click', resumeOnFirstInteraction);
+      document.removeEventListener('keydown', resumeOnFirstInteraction);
+      document.removeEventListener('touchstart', resumeOnFirstInteraction);
+    }
+  }
+  document.addEventListener('click', resumeOnFirstInteraction);
+  document.addEventListener('keydown', resumeOnFirstInteraction);
+  document.addEventListener('touchstart', resumeOnFirstInteraction);
+
+})();
+
+egghatch.addEventListener("click", () => {
+  location.href='egg.html'
+})

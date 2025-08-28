@@ -20,41 +20,57 @@
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <audio id="bg-music" src="Centre.mp3" loop style="display:none;"></audio>
 
+<div style="text-align:center; margin:15px;" class="volume-mixer">
+  <label for="volume-slider" style="color:white;">🔊 Volume:</label>
+  <input type="range" id="volume-slider" min="0" max="1" step="0.01" style="width:200px;">
+</div>
 <script>
 (function(){
-  const audio      = document.getElementById('bg-music');
+  const audio       = document.getElementById('bg-music');
   const STORAGE_KEY = 'bg-music-currentTime';
+  const VOLUME_KEY  = 'bg-music-volume';
   let autoPlayBlocked = false;
 
-  // 1) Restore position and try to start as soon as metadata is ready
+  // --- Volume Mixer Setup ---
+  const volumeSlider = document.getElementById('volume-slider');
+  // Restore volume from storage or default to 0.5
+  const savedVol = parseFloat(localStorage.getItem(VOLUME_KEY));
+  audio.volume = !isNaN(savedVol) ? savedVol : 0.5;
+  if (volumeSlider) volumeSlider.value = audio.volume;
+
+  // Handle volume changes
+  if (volumeSlider) {
+    volumeSlider.addEventListener('input', () => {
+      audio.volume = parseFloat(volumeSlider.value);
+      localStorage.setItem(VOLUME_KEY, audio.volume);
+    });
+  }
+
+  // --- Audio Position Restore & Save ---
   audio.addEventListener('loadedmetadata', () => {
     const saved = parseFloat(localStorage.getItem(STORAGE_KEY)) || 0;
     if (saved < audio.duration) {
       audio.currentTime = saved;
     }
     audio.play().catch(_ => {
-      // Autoplay was blocked, we'll resume on user gesture
       autoPlayBlocked = true;
       console.log('Autoplay blocked; will resume when you interact.');
     });
   });
 
-  // 2) Keep saving currentTime as it plays
   audio.addEventListener('timeupdate', () => {
     localStorage.setItem(STORAGE_KEY, audio.currentTime);
   });
 
-  // 3) Save one more time if they close/refresh mid-audio
   window.addEventListener('beforeunload', () => {
     localStorage.setItem(STORAGE_KEY, audio.currentTime);
   });
 
-  // 4) If autoplay was blocked, resume on any user interaction
+  // --- Resume on User Interaction if Blocked ---
   function resumeOnFirstInteraction() {
     if (autoPlayBlocked && audio.paused) {
-      audio.play().catch(_=>{});  // silent fail if still blocked
+      audio.play().catch(_=>{});
       autoPlayBlocked = false;
-      // clean up listeners
       document.removeEventListener('click',      resumeOnFirstInteraction);
       document.removeEventListener('keydown',    resumeOnFirstInteraction);
       document.removeEventListener('touchstart', resumeOnFirstInteraction);
@@ -66,6 +82,7 @@
 
 })();
 </script>
+
 
 
 </body>
