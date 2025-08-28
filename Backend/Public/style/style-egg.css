@@ -181,3 +181,26 @@ body {
     scale: 1.05;
     cursor: pointer;
 }
+
+
+.go-to {
+    background-color: beige;
+    position: fixed;
+    top: 20vh;
+    left: 0vh;
+    width: 15vh;
+    height: 22vh;
+    border-radius: 0px 7.5vh 7.5vh 0px ;
+    transition: all 0.5s ease-in-out;
+}
+.go-to > img {
+    position: relative;
+    top: 3vh;
+    right: 2vh;
+    width: 15vh;
+}
+.go-to:hover {
+ width: 20vh;
+ filter: brightness(0.9);
+ cursor: pointer;
+}
