@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Battle</title>
+  <link rel="stylesheet" href="battle.css" />
+</head>
+<body>
+  <div id="battle-container">
+    <!-- Enemy side -->
+    <div id="top-side">
+      <div class="info" id="top-info">
+        <p id="top-name"></p>
+        <p id="top-level"></p>
+        <div class="hp-bar">
+          <div id="top-hp" class="hp-fill"></div>
+        </div>
+      </div>
+      <img id="top-sprite" class="sprite" alt="Enemy Pokémon" />
+    </div>
+
+    <!-- Player side -->
+    <div id="bottom-side">
+      <img id="bottom-sprite" class="sprite" alt="Player Pokémon" />
+      <div class="info" id="bottom-info">
+        <p id="bottom-name"></p>
+        <p id="bottom-level"></p>
+        <div class="hp-bar">
+          <div id="bottom-hp" class="hp-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message + controls -->
+    <div id="message-box">
+      <p id="battle-text">It's Player 1's turn!</p>
+      <div id="controls">
+        <button id="fight-btn" class="control-btn red">FIGHT</button>
+        <button id="swap-btn" class="control-btn yellow">SWAP POKÉMON</button>
+        <button id="run-btn" class="control-btn gray">RUN</button>
+      </div>
+      <div id="move-options"></div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" src="trainer-battle-music-hq.mp3" loop></audio>
+
+    <!-- Volume Controls -->
+    <div id="volume-container">
+      <label for="volume-slider">🔊</label>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.01" />
+    </div>
+  </div>
+
+  <script src="battle.js"></script>
+  <script>
+    // Volume + Auto Play Script
+    const music = document.getElementById("bg-music");
+    const slider = document.getElementById("volume-slider");
+
+    music.volume = 0.5;
+    slider.value = 0.5;
+
+    // Try autoplay first
+    music.play().catch(() => {
+      // Start on first click if blocked
+      document.body.addEventListener("click", () => {
+        if (music.paused) music.play();
+      }, { once: true });
+    });
+
+    // Volume Control
+    slider.addEventListener("input", () => {
+      music.volume = slider.value;
+    });
+  </script>
+</body>
+</html>

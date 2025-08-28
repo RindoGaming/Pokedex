@@ -1,0 +1,160 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url("battle.png") no-repeat center center;
+  background-size: cover;
+}
+
+#battle-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* === SPRITE POSITIONS === */
+#top-sprite {
+  position: absolute;
+  top: 35%;   /* ← Change Y position for enemy sprite */
+  right: 30%; /* ← Change X position for enemy sprite */
+  width: 200px;
+  height: 200px;
+  image-rendering: pixelated;
+}
+
+#bottom-sprite {
+  position: absolute;
+  bottom: 10%; /* ← Change Y position for player sprite */
+  left: 25%;   /* ← Change X position for player sprite */
+  width: 200px;
+  height: 200px;
+  image-rendering: pixelated;
+}
+
+/* Info boxes for HP and name */
+#top-info {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  background: rgba(255,255,255,0.9);
+  padding: 8px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#bottom-info {
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  background: rgba(255,255,255,0.9);
+  padding: 8px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* HP Bars */
+.hp-bar {
+  width: 100%;
+  height: 12px;
+  background: #555;
+  margin-top: 4px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.hp-fill {
+  height: 100%;
+  width: 100%;
+}
+
+.hp-green { background: green; }
+.hp-yellow { background: yellow; }
+.hp-red { background: red; }
+
+#message-box {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#battle-text {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.control-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid black;
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.control-btn.red { background: #f66; }
+.control-btn.yellow { background: #ffeb3b; }
+.control-btn.gray { background: #ddd; }
+
+/* Move/Swap popup */
+#move-options {
+  display: none;
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.95);
+  border: 2px solid black;
+  padding: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+  z-index: 100;
+}
+
+#move-options.show {
+  display: flex;
+}
+
+#move-options button {
+  padding: 6px 12px;
+  border: 1px solid black;
+  background: #f0f0f0;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+#volume-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+#volume-container label {
+  color: white;
+  font-size: 18px;
+}
+
+#volume-slider {
+  width: 120px;
+}
