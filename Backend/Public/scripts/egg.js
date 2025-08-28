@@ -13,7 +13,7 @@ const hatchHistory = {};
 
 hatchBtn.onclick = async function () {
     img.classList.toggle("image-shaking")
-    hatchBtn.disabled = true;
+    // hatchBtn.disabled = true;
     setTimeout(() => {
         hatchBtn.disabled = false;
     }, 2505);
