@@ -1,70 +1,78 @@
 (function () {
-    const params = new URLSearchParams(window.location.search);
-    const rawId = params.get('id');
-    const id = parseInt(rawId, 10);
-    const detailsEl = document.getElementById('details');
+  const params = new URLSearchParams(window.location.search);
+  const rawId = params.get('id'); // can be numeric ID or string key
+  const detailsEl = document.getElementById('details');
 
-    if (isNaN(id)) {
-      detailsEl.innerHTML = '<p>Invalid Pokémon ID.</p>';
-      return;
-    }
+  if (!rawId) {
+    detailsEl.innerHTML = '<p>Invalid Pokémon ID.</p>';
+    return;
+  }
 
-    fetch('pokemon_cache.json')
-      .then(res => res.json())
-      .then(data => {
-        let poke = data[rawId] || Object.values(data).find(p => p.id === id);
+  fetch('pokemon_cache.json')
+    .then(res => res.json())
+    .then(data => {
+      // Lookup by key or numeric ID
+      let poke = data[rawId] || Object.values(data).find(p => String(p.id) === rawId);
+      if (!poke) {
+        detailsEl.innerHTML = '<p>Pokémon not found.</p>';
+        return;
+      }
 
-        if (!poke) {
-          detailsEl.innerHTML = '<p>Pokémon not found.</p>';
-          return;
-        }
+      // Keep track of base Pokémon (for prev/next buttons and base form)
+      const basePoke = data[poke.baseName?.toLowerCase() || poke.name.toLowerCase()] || poke;
 
+      function renderPokemon(poke) {
+        // Types and abilities
         const types = poke.types ? Object.keys(poke.types).join(', ') : 'N/A';
         const abilities = poke.abilities ? Object.keys(poke.abilities).join(', ') : 'N/A';
-        const height = poke.height ?? 'N/A';
-        const weight = poke.weight ?? 'N/A';
 
-        // Variant handling
-        const baseName = poke.baseName || poke.name;
-        const variants = data[baseName] && data[baseName].variants ? data[baseName].variants : {};
-        let variantOptions = "";
+        // Stats (no bullet points, no effort)
+        const statsHTML = poke.stats
+          ? Object.entries(poke.stats).map(([k, v]) => 
+              `<p><strong>${k}:</strong> ${v.base_stat}</p>`
+            ).join('')
+          : '';
+
+        // Variants dropdown
+        const variants = basePoke.variants || {};
+        let variantOptions = '';
         if (Object.keys(variants).length > 0) {
           variantOptions = `<select id="variant-select">
             <option value="">Base Form</option>
-            ${Object.entries(variants)
-              .map(([vName, v]) =>
-                `<option value="${vName}"${vName === poke.name ? " selected" : ""}>${v.name.charAt(0).toUpperCase() + v.name.slice(1)}</option>`
-              )
-              .join("")}
+            ${Object.entries(variants).map(([vName, v]) =>
+              `<option value="${vName}"${vName === poke.name ? ' selected' : ''}>
+                ${v.name.charAt(0).toUpperCase() + v.name.slice(1)}
+              </option>`
+            ).join('')}
           </select>`;
         }
 
+        // Render details
         detailsEl.innerHTML = `
           <div class="half">
             <div class="namesection">
-              <h1>${poke.name ? poke.name.charAt(0).toUpperCase() + poke.name.slice(1) : 'N/A'}</h1>
-              <p><strong>ID:</strong> ${String(id).padStart(3, '0')}</p>
+              <h1>${poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</h1>
+              <p><strong>ID:</strong> ${String(poke.id).padStart(3, '0')}</p>
             </div>
-            
             <div class="pokemon-image-bg">
-              <img src="${poke.image || ''}" alt="${poke.name || 'Unknown'}">
+              <img src="${poke.image || ''}" alt="${poke.name}">
             </div>
             <div id="cry-container">
-            <button style="padding: 5px;" id="prev-pokemon">⬅ Previous Pokémon</button>
-            <button id="play-cry">🔊 Play Cry</button>
-            <button style="padding: 5px;" id="next-pokemon">Next Pokémon➡ </button>
-            <audio id="audio-cry" preload="auto" src="${poke.cry || ''}"></audio>
+              <button id="prev-pokemon">⬅ Previous Pokémon</button>
+              <button id="play-cry">🔊 Play Cry</button>
+              <button id="next-pokemon">Next Pokémon➡</button>
+              <audio id="audio-cry" preload="auto" src="${poke.cries || ''}"></audio>
+            </div>
           </div>
-          </div>
+
           <div class="half">
-          <div class="chart">
-            <canvas id="statsChart"></canvas>
-          </div>
-          ${variantOptions}
-          <p><strong>Types:</strong> ${types}</p>
-          <p><strong>Abilities:</strong> ${abilities}</p>
-          <p><strong>Height:</strong> ${height}</p>
-          <p><strong>Weight:</strong> ${weight}</p>
+            ${variantOptions}
+            <p><strong>Types:</strong> ${types}</p>
+            <p><strong>Abilities:</strong> ${abilities}</p>
+            <p><strong>Height:</strong> ${poke.height || 'N/A'}</p>
+            <p><strong>Weight:</strong> ${poke.weight || 'N/A'}</p>
+            <p><strong>Base XP:</strong> ${poke.base_experience || 'N/A'}</p>
+            <div class="stats">${statsHTML}</div>
           </div>
         `;
 
@@ -72,36 +80,45 @@
         const audioEl = document.getElementById('audio-cry');
         const playBtn = document.getElementById('play-cry');
         playBtn.addEventListener('click', () => {
-          audioEl.currentTime = 0;
-          audioEl.play().catch(err => console.error('Cry failed to play', err));
+          if (audioEl.src) {
+            audioEl.currentTime = 0;
+            audioEl.play().catch(err => console.error('Cry failed to play', err));
+          } else {
+            console.warn('No cry audio available for this Pokémon.');
+          }
         });
 
         // Navigation buttons
         document.getElementById('prev-pokemon').addEventListener('click', () => {
-          if (id > 1) window.location.href = `pokemon.html?id=${id - 1}`;
+          const prevId = basePoke.id - 1;
+          if (prevId > 0) window.location.href = `pokemon.html?id=${prevId}`;
         });
-
         document.getElementById('next-pokemon').addEventListener('click', () => {
-          if (id < 1025) window.location.href = `pokemon.html?id=${id + 1}`;
+          const nextId = basePoke.id + 1;
+          window.location.href = `pokemon.html?id=${nextId}`;
         });
 
         // Variant change handling
-        const variantSelect = document.getElementById("variant-select");
+        const variantSelect = document.getElementById('variant-select');
         if (variantSelect) {
-          variantSelect.addEventListener("change", (e) => {
+          variantSelect.addEventListener('change', (e) => {
             const vName = e.target.value;
+            let newPoke;
             if (!vName) {
-              // Render base form
-              window.location.href = `pokemon.html?id=${data[baseName].id}`;
+              newPoke = basePoke;
             } else {
-              // Render selected variant
-              window.location.href = `pokemon.html?id=${variants[vName].id}`;
+              newPoke = basePoke.variants[vName];
             }
+            if (newPoke) renderPokemon(newPoke);
           });
         }
-      })
-      .catch(err => {
-        console.error(err);
-        detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
-      });
-  })();
+      }
+
+      // Initial render
+      renderPokemon(poke);
+    })
+    .catch(err => {
+      console.error(err);
+      detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
+    });
+})();
