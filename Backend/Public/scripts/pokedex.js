@@ -8,11 +8,10 @@ const pageInfo = document.getElementById('page-info');
 const pageSearch = document.getElementById('page-search');
 const goPageBtn = document.getElementById('go-page-btn');
 const searchDropdown = document.getElementById('search-dropdown');
-const egghatch = document.getElementById('go-to')
+const egghatch = document.getElementById('go-to');
 let allPokemon = [];
 let filteredPokemon = [];
 
-// --- Restore page from URL (?page=) or localStorage ---
 const urlParams = new URLSearchParams(location.search);
 const urlPage = parseInt(urlParams.get('page'), 10);
 const savedPage = parseInt(localStorage.getItem('lastPokedexPage'), 10);
@@ -112,7 +111,6 @@ function renderPage() {
   prevBtn.disabled = currentPage === 1;
   nextBtn.disabled = end >= filteredPokemon.length;
 
-  // Persist current page & reflect it in URL
   localStorage.setItem('lastPokedexPage', String(currentPage));
   const params = new URLSearchParams(location.search);
   params.set('page', String(currentPage));
@@ -142,12 +140,11 @@ goPageBtn.onclick = () => {
   }
 };
 
-// Make it global for inline onclick
 function goToDetails(id) {
   const page = localStorage.getItem('lastPokedexPage') || String(currentPage) || '1';
   window.location.href = `pokemon.html?id=${id}&page=${page}`;
 }
-window.goToDetails = goToDetails; // ensure global for inline handlers
+window.goToDetails = goToDetails;
 
 document.addEventListener('click', e => {
   if (!searchDropdown.contains(e.target) && e.target !== searchbar) {
@@ -162,7 +159,6 @@ function showDropdown() {
     return;
   }
 
-  // (limit to 10 results)
   const results = allPokemon.filter(p =>
     p.info.name?.toLowerCase().includes(query)
   ).slice(0, 6);
@@ -171,7 +167,6 @@ function showDropdown() {
     searchDropdown.innerHTML = '';
     return;
   }
-
 
   let wrapper = searchDropdown.querySelector(".dropdown-wrapper");
   if (!wrapper) {
@@ -201,7 +196,7 @@ function showDropdown() {
       <span style="margin-left:auto;">${typeHTML}</span>
     `;
 
-    wrapper.appendChild(item); // 👈 puts new items at the bottom
+    wrapper.appendChild(item);
   });
 }
 
@@ -211,40 +206,35 @@ function on() {
 function off() {
   document.getElementById("overlay").style.display = "none";
 }
+
 (function () {
   const audio = document.getElementById('bg-music');
   const STORAGE_KEY = 'bg-music-currentTime';
   let autoPlayBlocked = false;
 
-  // 1) Restore position and try to start as soon as metadata is ready
   audio.addEventListener('loadedmetadata', () => {
     const saved = parseFloat(localStorage.getItem(STORAGE_KEY)) || 0;
     if (saved < audio.duration) {
       audio.currentTime = saved;
     }
     audio.play().catch(_ => {
-      // Autoplay was blocked, we'll resume on user gesture
       autoPlayBlocked = true;
       console.log('Autoplay blocked; will resume when you interact.');
     });
   });
 
-  // 2) Keep saving currentTime as it plays
   audio.addEventListener('timeupdate', () => {
     localStorage.setItem(STORAGE_KEY, audio.currentTime);
   });
 
-  // 3) Save one more time if they close/refresh mid-audio
   window.addEventListener('beforeunload', () => {
     localStorage.setItem(STORAGE_KEY, audio.currentTime);
   });
 
-  // 4) If autoplay was blocked, resume on any user interaction
   function resumeOnFirstInteraction() {
     if (autoPlayBlocked && audio.paused) {
-      audio.play().catch(_ => { });  // silent fail if still blocked
+      audio.play().catch(_ => { });
       autoPlayBlocked = false;
-      // clean up listeners
       document.removeEventListener('click', resumeOnFirstInteraction);
       document.removeEventListener('keydown', resumeOnFirstInteraction);
       document.removeEventListener('touchstart', resumeOnFirstInteraction);
@@ -258,4 +248,20 @@ function off() {
 
 egghatch.addEventListener("click", () => {
   location.href='egg.html'
-})
+});
+
+// --- Volume mixer functionality ---
+(function(){
+  const audio = document.getElementById('bg-music');
+  const volumeSlider = document.getElementById('volume-slider');
+  const VOLUME_KEY = 'bg-music-volume';
+
+  const savedVol = parseFloat(localStorage.getItem(VOLUME_KEY));
+  audio.volume = !isNaN(savedVol) ? savedVol : 0.5;
+  volumeSlider.value = audio.volume;
+
+  volumeSlider.addEventListener('input', () => {
+    audio.volume = parseFloat(volumeSlider.value);
+    localStorage.setItem(VOLUME_KEY, audio.volume);
+  });
+})();
