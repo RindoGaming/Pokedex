@@ -56,7 +56,7 @@ function fetch_json_multi($urls) {
 
 // === Variant Builder ===
 function build_variant_entry($var_data) {
-    global $cry_base_url; // Base URL for cries
+    global $cry_base_url; // Use global variable for local cries folder
 
     $abilities_v = $types_v = $stats_v = $forms_v = [];
 
@@ -80,13 +80,8 @@ function build_variant_entry($var_data) {
     foreach ($var_data['forms'] as $f)
         $forms_v[] = ['name'=>$f['name'],'url'=>$f['url']];
 
-    // Normalize name for Pokémon Showdown cry
-    // Lowercase, replace spaces with dashes, remove invalid characters but keep dash
-    $name_normalized = strtolower($var_data['name']);
-    $name_normalized = str_replace(' ', '-', $name_normalized); 
-    $name_normalized = preg_replace('/[^a-z0-9\-]/', '', $name_normalized);
-
-    $cry_file_name = $name_normalized . ".mp3";
+    // Normalize name for filename (lowercase, remove non-alphanumeric)
+    $cry_file_name = strtolower(preg_replace('/[^a-z0-9]/', '', $var_data['name'])) . ".wav";
     $cry_url = $cry_base_url . $cry_file_name;
 
     return [
@@ -105,7 +100,6 @@ function build_variant_entry($var_data) {
         'cries'=>$cry_url
     ];
 }
-
 
 // === Load Cache ===
 $all_pokemon = [];
