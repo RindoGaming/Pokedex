@@ -21798,7 +21798,11 @@
                 "height": "10.5 m",
                 "weight": "740 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10072.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/steelix-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/steelixmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -22104,7 +22108,11 @@
                 "height": "0.5 m",
                 "weight": "3.9 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10234.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/qwilfish-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/qwilfishhisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -22250,7 +22258,11 @@
                 "height": "2 m",
                 "weight": "125 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10046.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/scizor-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/scizormega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -22474,7 +22486,11 @@
                 "height": "1.7 m",
                 "weight": "62.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10047.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/heracross-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/heracrossmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -22630,7 +22646,11 @@
                 "height": "0.9 m",
                 "weight": "27 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10235.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sneasel-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sneaselhisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -23237,7 +23257,11 @@
                 "height": "0.6 m",
                 "weight": "0.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10173.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/corsola-galar.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/corsolagalar.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -23845,7 +23869,11 @@
                 "height": "1.9 m",
                 "weight": "49.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10048.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/houndoom-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/houndoommega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -25298,7 +25326,11 @@
                 "height": "2.5 m",
                 "weight": "255 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10049.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/tyranitar-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/tyranitarmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -25790,7 +25822,11 @@
                 "height": "1.9 m",
                 "weight": "55.2 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10065.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sceptile-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sceptilemega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -26074,7 +26110,11 @@
                 "height": "1.9 m",
                 "weight": "52 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10050.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/blaziken-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/blazikenmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -26358,7 +26398,11 @@
                 "height": "1.9 m",
                 "weight": "102 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10064.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/swampert-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/swampertmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -26661,7 +26705,11 @@
                 "height": "0.4 m",
                 "weight": "17.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10174.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zigzagoon-galar.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zigzagoongalar.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -26814,7 +26862,11 @@
                 "height": "0.5 m",
                 "weight": "32.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10175.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/linoone-galar.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/linoonegalar.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -28229,7 +28281,11 @@
                 "height": "1.6 m",
                 "weight": "48.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10051.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gardevoir-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gardevoirmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -29746,7 +29802,11 @@
                 "height": "0.5 m",
                 "weight": "161 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10066.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sableye-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sableyemega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -29892,7 +29952,11 @@
                 "height": "1 m",
                 "weight": "23.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10052.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mawile-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mawilemega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -30191,7 +30255,11 @@
                 "height": "2.2 m",
                 "weight": "395 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10053.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/aggron-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/aggronmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -30405,7 +30473,11 @@
                 "height": "1.3 m",
                 "weight": "31.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10054.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/medicham-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/medichammega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -30620,7 +30692,11 @@
                 "height": "1.8 m",
                 "weight": "44 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10055.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/manectric-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/manectricmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -31352,7 +31428,11 @@
                 "height": "2.5 m",
                 "weight": "130.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10070.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sharpedo-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sharpedomega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -31726,7 +31806,11 @@
                 "height": "2.5 m",
                 "weight": "320.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10087.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/camerupt-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cameruptmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -32594,7 +32678,11 @@
                 "height": "1.5 m",
                 "weight": "20.6 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10067.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/altaria-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/altariamega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -33887,7 +33975,11 @@
                 "height": "0.3 m",
                 "weight": "0.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10013.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/castform-sunny.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/castformsunny.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "castform-rainy": {
                 "id": 10014,
@@ -33951,7 +34043,11 @@
                 "height": "0.3 m",
                 "weight": "0.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10014.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/castform-rainy.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/castformrainy.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "castform-snowy": {
                 "id": 10015,
@@ -34015,7 +34111,11 @@
                 "height": "0.3 m",
                 "weight": "0.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10015.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/castform-snowy.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/castformsnowy.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -34300,7 +34400,11 @@
                 "height": "1.2 m",
                 "weight": "13 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10056.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/banette-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/banettemega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -34723,7 +34827,11 @@
                 "height": "1.2 m",
                 "weight": "49 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10057.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/absol-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/absolmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -35008,7 +35116,11 @@
                 "height": "2.1 m",
                 "weight": "350.2 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10074.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/glalie-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/glaliemega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -35881,7 +35993,11 @@
                 "height": "1.8 m",
                 "weight": "112.6 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10089.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/salamence-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/salamencemega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -36168,7 +36284,11 @@
                 "height": "2.5 m",
                 "weight": "942.9 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10076.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/metagross-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/metagrossmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -36514,7 +36634,11 @@
                 "height": "1.8 m",
                 "weight": "52 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10062.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/latias-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/latiasmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -36650,7 +36774,11 @@
                 "height": "2.3 m",
                 "weight": "70 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10063.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/latios-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/latiosmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -36780,7 +36908,11 @@
                 "height": "9.8 m",
                 "weight": "430 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10077.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/kyogre-primal.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/kyogreprimal.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -36913,7 +37045,11 @@
                 "height": "5 m",
                 "weight": "999.7 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10078.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/groudon-primal.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/groudonprimal.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -37049,7 +37185,11 @@
                 "height": "10.8 m",
                 "weight": "392 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10079.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rayquaza-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rayquazamega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -37247,7 +37387,11 @@
                 "height": "1.7 m",
                 "weight": "60.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10001.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/deoxys-attack.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/deoxysattack.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "deoxys-defense": {
                 "id": 10002,
@@ -37311,7 +37455,11 @@
                 "height": "1.7 m",
                 "weight": "60.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10002.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/deoxys-defense.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/deoxysdefense.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "deoxys-speed": {
                 "id": 10003,
@@ -37375,7 +37523,11 @@
                 "height": "1.7 m",
                 "weight": "60.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10003.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/deoxys-speed.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/deoxysspeed.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -39420,7 +39572,11 @@
                 "height": "0.5 m",
                 "weight": "6.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10004.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/wormadam-sandy.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/wormadamsandy.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "wormadam-trash": {
                 "id": 10005,
@@ -39492,7 +39648,11 @@
                 "height": "0.5 m",
                 "weight": "6.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10005.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/wormadam-trash.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/wormadamtrash.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -40678,7 +40838,11 @@
                 "height": "1.3 m",
                 "weight": "28.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10088.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lopunny-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lopunnymega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -42014,7 +42178,11 @@
                 "height": "1.9 m",
                 "weight": "95 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10058.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/garchomp-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/garchompmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -42310,7 +42478,11 @@
                 "height": "1.3 m",
                 "weight": "57.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10059.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lucario-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lucariomega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -43269,7 +43441,11 @@
                 "height": "2.7 m",
                 "weight": "185 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10060.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/abomasnow-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/abomasnowmega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -44461,7 +44637,11 @@
                 "height": "1.6 m",
                 "weight": "56.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10068.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gallade-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gallademega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -44818,7 +44998,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10008.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotom-heat.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotomheat.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "rotom-wash": {
                 "id": 10009,
@@ -44885,7 +45069,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10009.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotom-wash.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotomwash.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "rotom-frost": {
                 "id": 10010,
@@ -44952,7 +45140,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10010.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotom-frost.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotomfrost.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "rotom-fan": {
                 "id": 10011,
@@ -45019,7 +45211,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10011.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotom-fan.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotomfan.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "rotom-mow": {
                 "id": 10012,
@@ -45086,7 +45282,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10012.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotom-mow.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rotommow.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -45427,7 +45627,11 @@
                 "height": "7 m",
                 "weight": "848.7 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10245.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/dialga-origin.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/dialgaorigin.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -45573,7 +45777,11 @@
                 "height": "6.3 m",
                 "weight": "659 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10246.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/palkia-origin.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/palkiaorigin.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -45852,7 +46060,11 @@
                 "height": "6.9 m",
                 "weight": "650 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10007.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/giratina-origin.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/giratinaorigin.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -46245,7 +46457,11 @@
                 "height": "0.4 m",
                 "weight": "5.2 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10006.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/shaymin-sky.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/shayminsky.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -47159,7 +47375,11 @@
                 "height": "1.5 m",
                 "weight": "58.2 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10236.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/samurott-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/samurotthisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -49315,7 +49535,11 @@
                 "height": "1.5 m",
                 "weight": "32 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10069.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/audino-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/audinomega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -50773,7 +50997,11 @@
                 "height": "1.2 m",
                 "weight": "19.2 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10237.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lilligant-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lilliganthisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -50923,7 +51151,11 @@
                 "height": "1 m",
                 "weight": "18 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10016.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/basculin-blue-striped.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/basculinbluestriped.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "basculin-white-striped": {
                 "id": 10247,
@@ -50997,7 +51229,11 @@
                 "height": "1 m",
                 "weight": "18 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10247.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/basculin-white-striped.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/basculinwhitestriped.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -51371,7 +51607,11 @@
                 "height": "0.7 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10176.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/darumaka-galar.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/darumakagalar.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -51514,7 +51754,11 @@
                 "height": "1.3 m",
                 "weight": "92.9 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10017.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/darmanitan-zen.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/darmanitanzen.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "darmanitan-galar-standard": {
                 "id": 10177,
@@ -51583,7 +51827,11 @@
                 "height": "1.7 m",
                 "weight": "120 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10177.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/darmanitan-galar-standard.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/darmanitangalarstandard.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "darmanitan-galar-zen": {
                 "id": 10178,
@@ -51655,7 +51903,11 @@
                 "height": "1.7 m",
                 "weight": "120 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10178.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/darmanitan-galar-zen.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/darmanitangalarzen.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -52253,7 +52505,11 @@
                 "height": "0.5 m",
                 "weight": "1.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10179.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/yamask-galar.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/yamaskgalar.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -52835,7 +53091,11 @@
                 "height": "21 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10207.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/garbodor-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/garbodorgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -52968,7 +53228,11 @@
                 "height": "0.7 m",
                 "weight": "12.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10238.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zorua-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zoruahisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -53101,7 +53365,11 @@
                 "height": "1.6 m",
                 "weight": "73 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10239.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zoroark-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zoroarkhisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -56702,7 +56970,11 @@
                 "height": "0.7 m",
                 "weight": "20.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10180.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/stunfisk-galar.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/stunfiskgalar.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -57548,7 +57820,11 @@
                 "height": "1.7 m",
                 "weight": "43.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10240.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/braviary-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/braviaryhisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -58546,7 +58822,11 @@
                 "height": "1.4 m",
                 "weight": "63 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10019.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/tornadus-therian.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/tornadustherian.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -58687,7 +58967,11 @@
                 "height": "3 m",
                 "weight": "61 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10020.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/thundurus-therian.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/thundurustherian.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -58964,7 +59248,11 @@
                 "height": "1.3 m",
                 "weight": "68 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10021.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/landorus-therian.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/landorustherian.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -59100,7 +59388,11 @@
                 "height": "3.3 m",
                 "weight": "325 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10022.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/kyurem-black.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/kyuremblack.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "kyurem-white": {
                 "id": 10023,
@@ -59167,7 +59459,11 @@
                 "height": "3.6 m",
                 "weight": "325 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10023.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/kyurem-white.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/kyuremwhite.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -59303,7 +59599,11 @@
                 "height": "1.4 m",
                 "weight": "48.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10024.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/keldeo-resolute.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/keldeoresolute.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -59439,7 +59739,11 @@
                 "height": "0.6 m",
                 "weight": "6.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10018.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/meloetta-pirouette.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/meloettapirouette.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -60230,7 +60534,11 @@
                 "height": "1.5 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10116.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/greninja-battle-bond.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/greninjabattlebond.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "greninja-ash": {
                 "id": 10117,
@@ -60297,7 +60605,11 @@
                 "height": "1.5 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10117.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/greninja-ash.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/greninjaash.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -61518,7 +61830,11 @@
                 "height": "0.2 m",
                 "weight": "0.9 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10061.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/floette-eternal.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/floetteeternal.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -62223,7 +62539,11 @@
                 "height": "0.6 m",
                 "weight": "8.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10025.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/meowstic-female.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/meowsticfemale.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -62495,7 +62815,11 @@
                 "height": "1.7 m",
                 "weight": "53 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10026.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/aegislash-blade.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/aegislashblade.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -64348,7 +64672,11 @@
                 "height": "0.7 m",
                 "weight": "68.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10241.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sliggoo-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sliggoohisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -64501,7 +64829,11 @@
                 "height": "1.7 m",
                 "weight": "334.1 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10242.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/goodra-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/goodrahisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -64886,7 +65218,11 @@
                 "height": "0.3 m",
                 "weight": "3.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10027.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/pumpkaboo-small.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/pumpkaboosmall.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "pumpkaboo-large": {
                 "id": 10028,
@@ -64963,7 +65299,11 @@
                 "height": "0.5 m",
                 "weight": "7.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10028.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/pumpkaboo-large.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/pumpkaboolarge.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "pumpkaboo-super": {
                 "id": 10029,
@@ -65040,7 +65380,11 @@
                 "height": "0.8 m",
                 "weight": "15 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10029.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/pumpkaboo-super.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/pumpkaboosuper.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -65196,7 +65540,11 @@
                 "height": "0.7 m",
                 "weight": "9.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10030.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gourgeist-small.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gourgeistsmall.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "gourgeist-large": {
                 "id": 10031,
@@ -65273,7 +65621,11 @@
                 "height": "1.1 m",
                 "weight": "14 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10031.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gourgeist-large.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gourgeistlarge.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "gourgeist-super": {
                 "id": 10032,
@@ -65350,7 +65702,11 @@
                 "height": "1.7 m",
                 "weight": "39 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10032.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gourgeist-super.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gourgeistsuper.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -65578,7 +65934,11 @@
                 "height": "1.4 m",
                 "weight": "262.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10243.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/avalugg-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/avalugghisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -66007,7 +66367,11 @@
                 "height": "1.2 m",
                 "weight": "33.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10118.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zygarde-10-power-construct.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zygarde10powerconstruct.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "zygarde-50-power-construct": {
                 "id": 10119,
@@ -66074,7 +66438,11 @@
                 "height": "5 m",
                 "weight": "305 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10119.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zygarde-50-power-construct.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zygarde50powerconstruct.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "zygarde-complete": {
                 "id": 10120,
@@ -66141,7 +66509,11 @@
                 "height": "4.5 m",
                 "weight": "610 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10120.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zygarde-complete.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zygardecomplete.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "zygarde-10": {
                 "id": 10181,
@@ -66208,7 +66580,11 @@
                 "height": "1.2 m",
                 "weight": "33.5 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zygarde-10.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zygarde10.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -66344,7 +66720,11 @@
                 "height": "1.1 m",
                 "weight": "27.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10075.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/diancie-mega.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/dianciemega.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -66480,7 +66860,11 @@
                 "height": "6.5 m",
                 "weight": "490 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10086.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/hoopa-unbound.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/hoopaunbound.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -66840,7 +67224,11 @@
                 "height": "1.6 m",
                 "weight": "37 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10244.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/decidueye-hisui.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/decidueyehisui.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -67725,7 +68113,11 @@
                 "height": "1.4 m",
                 "weight": "60 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10121.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gumshoos-totem.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gumshoostotem.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -67994,7 +68386,11 @@
                 "height": "2.6 m",
                 "weight": "147.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10122.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/vikavolt-totem.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/vikavolttotem.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -68283,7 +68679,11 @@
                 "height": "0.6 m",
                 "weight": "3.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10123.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/oricorio-pom-pom.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/oricoriopompom.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "oricorio-pau": {
                 "id": 10124,
@@ -68350,7 +68750,11 @@
                 "height": "0.6 m",
                 "weight": "3.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10124.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/oricorio-pau.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/oricoriopau.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "oricorio-sensu": {
                 "id": 10125,
@@ -68417,7 +68821,11 @@
                 "height": "0.6 m",
                 "weight": "3.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10125.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/oricorio-sensu.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/oricoriosensu.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -68651,7 +69059,11 @@
                 "height": "0.4 m",
                 "weight": "2 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10150.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ribombee-totem.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ribombeetotem.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -68791,7 +69203,11 @@
                 "height": "0.5 m",
                 "weight": "9.2 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10151.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rockruff-own-tempo.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rockruffowntempo.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -68941,7 +69357,11 @@
                 "height": "1.1 m",
                 "weight": "25 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10126.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lycanroc-midnight.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lycanrocmidnight.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "lycanroc-dusk": {
                 "id": 10152,
@@ -69005,7 +69425,11 @@
                 "height": "0.8 m",
                 "weight": "25 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10152.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lycanroc-dusk.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lycanrocdusk.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -69135,7 +69559,11 @@
                 "height": "8.2 m",
                 "weight": "78.6 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10127.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/wishiwashi-school.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/wishiwashischool.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -69660,7 +70088,11 @@
                 "height": "3.1 m",
                 "weight": "217.5 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/araquanid-totem.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/araquanidtotem.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -69870,7 +70302,11 @@
                 "height": "1.5 m",
                 "weight": "58 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lurantis-totem.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/lurantistotem.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -70245,7 +70681,11 @@
                 "height": "2.1 m",
                 "weight": "81 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/salazzle-totem.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/salazzletotem.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -71535,7 +71975,11 @@
                 "height": "0.3 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10130.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-orange-meteor.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniororangemeteor.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-yellow-meteor": {
                 "id": 10131,
@@ -71602,7 +72046,11 @@
                 "height": "0.3 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10131.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-yellow-meteor.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minioryellowmeteor.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-green-meteor": {
                 "id": 10132,
@@ -71669,7 +72117,11 @@
                 "height": "0.3 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10132.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-green-meteor.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorgreenmeteor.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-blue-meteor": {
                 "id": 10133,
@@ -71736,7 +72188,11 @@
                 "height": "0.3 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10133.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-blue-meteor.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorbluemeteor.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-indigo-meteor": {
                 "id": 10134,
@@ -71803,7 +72259,11 @@
                 "height": "0.3 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10134.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-indigo-meteor.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorindigometeor.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-violet-meteor": {
                 "id": 10135,
@@ -71870,7 +72330,11 @@
                 "height": "0.3 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10135.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-violet-meteor.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorvioletmeteor.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-red": {
                 "id": 10136,
@@ -71937,7 +72401,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10136.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-red.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorred.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-orange": {
                 "id": 10137,
@@ -72004,7 +72472,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10137.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-orange.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniororange.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-yellow": {
                 "id": 10138,
@@ -72071,7 +72543,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10138.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-yellow.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minioryellow.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-green": {
                 "id": 10139,
@@ -72138,7 +72614,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10139.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-green.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorgreen.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-blue": {
                 "id": 10140,
@@ -72205,7 +72685,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10140.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-blue.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorblue.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-indigo": {
                 "id": 10141,
@@ -72272,7 +72756,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10141.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-indigo.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorindigo.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "minior-violet": {
                 "id": 10142,
@@ -72339,7 +72827,11 @@
                 "height": "0.3 m",
                 "weight": "0.3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10142.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/minior-violet.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miniorviolet.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -72628,7 +73120,11 @@
                 "height": "0.6 m",
                 "weight": "13 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/togedemaru-totem.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/togedemarutotem.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -72764,7 +73260,11 @@
                 "height": "0.2 m",
                 "weight": "0.7 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10143.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mimikyu-busted.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mimikyubusted.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "mimikyu-totem-disguised": {
                 "id": 10144,
@@ -72831,7 +73331,11 @@
                 "height": "0.4 m",
                 "weight": "2.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10144.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mimikyu-totem-disguised.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mimikyutotemdisguised.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "mimikyu-totem-busted": {
                 "id": 10145,
@@ -72898,7 +73402,11 @@
                 "height": "0.4 m",
                 "weight": "2.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10145.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mimikyu-totem-busted.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mimikyutotembusted.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -73431,7 +73939,11 @@
                 "height": "2.4 m",
                 "weight": "207.5 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/kommo-o-totem.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/kommoototem.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -74595,7 +75107,11 @@
                 "height": "3.8 m",
                 "weight": "460 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10155.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/necrozma-dusk.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/necrozmadusk.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "necrozma-dawn": {
                 "id": 10156,
@@ -74662,7 +75178,11 @@
                 "height": "4.2 m",
                 "weight": "350 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10156.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/necrozma-dawn.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/necrozmadawn.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "necrozma-ultra": {
                 "id": 10157,
@@ -74729,7 +75249,11 @@
                 "height": "7.5 m",
                 "weight": "230 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10157.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/necrozma-ultra.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/necrozmaultra.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -74865,7 +75389,11 @@
                 "height": "1 m",
                 "weight": "80.5 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10147.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/magearna-original.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/magearnaoriginal.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -75462,7 +75990,11 @@
                 "height": "25 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10208.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/melmetal-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/melmetalgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -75742,7 +76274,11 @@
                 "height": "28 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10209.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rillaboom-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/rillaboomgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -76022,7 +76558,11 @@
                 "height": "27 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10210.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cinderace-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cinderacegmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -76302,7 +76842,11 @@
                 "height": "40 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10211.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/inteleon-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/inteleongmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -76748,7 +77292,11 @@
                 "height": "14 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10212.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/corviknight-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/corviknightgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -77057,7 +77605,11 @@
                 "height": "14 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10213.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/orbeetle-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/orbeetlegmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -77738,7 +78290,11 @@
                 "height": "24 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10214.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/drednaw-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/drednawgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -78187,7 +78743,11 @@
                 "height": "42 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10215.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/coalossal-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/coalossalgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -78421,7 +78981,11 @@
                 "height": "24 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10216.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/flapple-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/flapplegmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -78577,7 +79141,11 @@
                 "height": "24 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10217.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/appletun-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/appletungmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -78802,7 +79370,11 @@
                 "height": "22 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10218.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sandaconda-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/sandacondagmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -78938,7 +79510,11 @@
                 "height": "0.8 m",
                 "weight": "18 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cramorant-gulping.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cramorantgulping.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "cramorant-gorging": {
                 "id": 10183,
@@ -79005,7 +79581,11 @@
                 "height": "0.8 m",
                 "weight": "18 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cramorant-gorging.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/cramorantgorging.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -79379,7 +79959,11 @@
                 "height": "1.6 m",
                 "weight": "40 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10184.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/toxtricity-low-key.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/toxtricitylowkey.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "toxtricity-amped-gmax": {
                 "id": 10219,
@@ -79456,7 +80040,11 @@
                 "height": "24 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10219.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/toxtricity-amped-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/toxtricityampedgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "toxtricity-low-key-gmax": {
                 "id": 10228,
@@ -79533,7 +80121,11 @@
                 "height": "24 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10228.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/toxtricity-low-key-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/toxtricitylowkeygmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -79767,7 +80359,11 @@
                 "height": "75 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10220.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/centiskorch-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/centiskorchgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -80361,7 +80957,11 @@
                 "height": "26 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10221.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/hatterene-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/hatterenegmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -80673,7 +81273,11 @@
                 "height": "32 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10222.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/grimmsnarl-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/grimmsnarlgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -81570,7 +82174,11 @@
                 "height": "30 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10223.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/alcremie-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/alcremiegmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -82051,7 +82659,11 @@
                 "height": "1.4 m",
                 "weight": "89 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10185.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/eiscue-noice.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/eiscuenoice.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -82207,7 +82819,11 @@
                 "height": "0.9 m",
                 "weight": "28 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10186.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/indeedee-female.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/indeedeefemale.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -82343,7 +82959,11 @@
                 "height": "0.3 m",
                 "weight": "3 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10187.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/morpeko-hangry.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/morpekohangry.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -82553,7 +83173,11 @@
                 "height": "23 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10224.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/copperajah-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/copperajahgmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -83021,7 +83645,11 @@
                 "height": "43 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10225.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/duraludon-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/duraludongmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -83388,7 +84016,11 @@
                 "height": "2.8 m",
                 "weight": "355 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10188.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zacian-crowned.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zaciancrowned.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -83521,7 +84153,11 @@
                 "height": "2.9 m",
                 "weight": "785 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10189.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zamazenta-crowned.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zamazentacrowned.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -83657,7 +84293,11 @@
                 "height": "100 m",
                 "weight": "0 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10190.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/eternatus-eternamax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/eternatuseternamax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -83858,7 +84498,11 @@
                 "height": "1.9 m",
                 "weight": "105 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10191.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/urshifu-rapid-strike.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/urshifurapidstrike.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "urshifu-single-strike-gmax": {
                 "id": 10226,
@@ -83925,7 +84569,11 @@
                 "height": "29 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10226.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/urshifu-single-strike-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/urshifusinglestrikegmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "urshifu-rapid-strike-gmax": {
                 "id": 10227,
@@ -83992,7 +84640,11 @@
                 "height": "26 m",
                 "weight": "1000 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10227.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/urshifu-rapid-strike-gmax.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/urshifurapidstrikegmax.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -84128,7 +84780,11 @@
                 "height": "1.8 m",
                 "weight": "70 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10192.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zarude-dada.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/zarudedada.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -84524,7 +85180,11 @@
                 "height": "2.4 m",
                 "weight": "809.1 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10193.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/calyrex-ice.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/calyrexice.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "calyrex-shadow": {
                 "id": 10194,
@@ -84591,7 +85251,11 @@
                 "height": "2.4 m",
                 "weight": "53.6 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10194.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/calyrex-shadow.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/calyrexshadow.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -84893,7 +85557,11 @@
                 "height": "2.4 m",
                 "weight": "290 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10272.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ursaluna-bloodmoon.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ursalunabloodmoon.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -85049,7 +85717,11 @@
                 "height": "3 m",
                 "weight": "110 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10248.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/basculegion-female.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/basculegionfemale.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -85346,7 +86018,11 @@
                 "height": "1.6 m",
                 "weight": "48 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10249.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/enamorus-therian.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/enamorustherian.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -86210,7 +86886,11 @@
                 "height": "1 m",
                 "weight": "120 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10254.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/oinkologne-female.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/oinkolognefemale.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -86949,7 +87629,11 @@
                 "height": "0.3 m",
                 "weight": "2.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10257.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/maushold-family-of-three.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/mausholdfamilyofthree.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -87464,7 +88148,11 @@
                 "height": "0.6 m",
                 "weight": "2.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10260.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/squawkabilly-blue-plumage.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/squawkabillyblueplumage.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "squawkabilly-yellow-plumage": {
                 "id": 10261,
@@ -87541,7 +88229,11 @@
                 "height": "0.6 m",
                 "weight": "2.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10261.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/squawkabilly-yellow-plumage.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/squawkabillyyellowplumage.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "squawkabilly-white-plumage": {
                 "id": 10262,
@@ -87618,7 +88310,11 @@
                 "height": "0.6 m",
                 "weight": "2.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10262.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/squawkabilly-white-plumage.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/squawkabillywhiteplumage.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -90131,7 +90827,11 @@
                 "height": "1.8 m",
                 "weight": "97.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10256.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/palafin-hero.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/palafinhero.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -91228,7 +91928,11 @@
                 "height": "0.3 m",
                 "weight": "8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10258.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/tatsugiri-droopy.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/tatsugiridroopy.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "tatsugiri-stretchy": {
                 "id": 10259,
@@ -91300,7 +92004,11 @@
                 "height": "0.3 m",
                 "weight": "8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10259.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/tatsugiri-stretchy.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/tatsugiristretchy.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -91684,7 +92392,11 @@
                 "height": "4.5 m",
                 "weight": "47.4 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10255.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/dudunsparce-three-segment.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/dudunsparcethreesegment.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -92927,7 +93639,11 @@
                 "height": "0.1 m",
                 "weight": "1 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10263.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gimmighoul-roaming.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/gimmighoulroaming.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -93539,7 +94255,11 @@
                 "height": "3.5 m",
                 "weight": "303 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/koraidon-limited-build.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/koraidonlimitedbuild.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "koraidon-sprinting-build": {
                 "id": 10265,
@@ -93606,7 +94326,11 @@
                 "height": "3.5 m",
                 "weight": "303 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/koraidon-sprinting-build.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/koraidonsprintingbuild.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "koraidon-swimming-build": {
                 "id": 10266,
@@ -93673,7 +94397,11 @@
                 "height": "3.5 m",
                 "weight": "303 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/koraidon-swimming-build.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/koraidonswimmingbuild.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "koraidon-gliding-build": {
                 "id": 10267,
@@ -93740,7 +94468,11 @@
                 "height": "3.5 m",
                 "weight": "303 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/koraidon-gliding-build.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/koraidonglidingbuild.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -93876,7 +94608,11 @@
                 "height": "2.8 m",
                 "weight": "240 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miraidon-low-power-mode.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miraidonlowpowermode.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "miraidon-drive-mode": {
                 "id": 10269,
@@ -93943,7 +94679,11 @@
                 "height": "2.8 m",
                 "weight": "240 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miraidon-drive-mode.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miraidondrivemode.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "miraidon-aquatic-mode": {
                 "id": 10270,
@@ -94010,7 +94750,11 @@
                 "height": "2.8 m",
                 "weight": "240 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miraidon-aquatic-mode.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miraidonaquaticmode.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "miraidon-glide-mode": {
                 "id": 10271,
@@ -94077,7 +94821,11 @@
                 "height": "2.8 m",
                 "weight": "240 kg",
                 "image": null,
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miraidon-glide-mode.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/miraidonglidemode.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -94797,7 +95545,11 @@
                 "height": "1.2 m",
                 "weight": "39.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10273.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ogerpon-wellspring-mask.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ogerponwellspringmask.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "ogerpon-hearthflame-mask": {
                 "id": 10274,
@@ -94864,7 +95616,11 @@
                 "height": "1.2 m",
                 "weight": "39.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10274.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ogerpon-hearthflame-mask.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ogerponhearthflamemask.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "ogerpon-cornerstone-mask": {
                 "id": 10275,
@@ -94931,7 +95687,11 @@
                 "height": "1.2 m",
                 "weight": "39.8 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10275.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ogerpon-cornerstone-mask.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/ogerponcornerstonemask.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
@@ -95489,7 +96249,11 @@
                 "height": "0.3 m",
                 "weight": "16 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10276.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/terapagos-terastal.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/terapagosterastal.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             },
             "terapagos-stellar": {
                 "id": 10277,
@@ -95553,7 +96317,11 @@
                 "height": "1.7 m",
                 "weight": "77 kg",
                 "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/10277.png",
+<<<<<<< HEAD
                 "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/terapagos-stellar.mp3"
+=======
+                "cries": "https:\/\/play.pokemonshowdown.com\/audio\/cries\/terapagosstellar.wav"
+>>>>>>> 251e4c0a16cc451a7e82475dcaa6c1beb1bec2bd
             }
         }
     },
