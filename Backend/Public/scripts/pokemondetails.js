@@ -62,36 +62,45 @@
           poke.stats && poke.stats[stat] ? poke.stats[stat].base_stat : 0
         );
 
-        // Render details
-        detailsEl.innerHTML = `
-          <div class="half">
-            <div class="namesection">
-              <h1>${poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</h1>
-              <p><strong>ID:</strong> ${String(poke.id).padStart(3, '0')}</p>
-              ${variantOptions}
-            </div>
-            <div class="pokemon-image-bg">
-              <img src="${poke.image || 'img/Spr_3r_000.png'}" alt="${poke.name}">
-            </div>
-            <div id="cry-container">
-              <button id="prev-pokemon">⬅ Previous Pokémon</button>
-              <button id="play-cry">🔊 Play Cry</button>
-              <button id="next-pokemon">Next Pokémon➡</button>
-              <audio id="audio-cry" preload="auto" src="${poke.cries || ''}"></audio>
-            </div>
-          </div>
+// Render details
+detailsEl.innerHTML = `
+  <div class="half">
+    <div class="namesection">
+      <h1>${poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</h1>
+      <p><strong>ID:</strong> ${String(poke.id).padStart(3, '0')}</p>
+      ${variantOptions}
+    </div>
+    <div class="pokemon-image-bg">
+      <img id="poke-img" src="${poke.image || 'img/Spr_3r_000.png'}" alt="${poke.name}" style="cursor:pointer">
+    </div>
+    <div id="cry-container">
+      <button id="prev-pokemon">⬅ Previous Pokémon</button>
+      <button id="play-cry">🔊 Play Cry</button>
+      <button id="next-pokemon">Next Pokémon➡</button>
+      <audio id="audio-cry" preload="auto" src="${poke.cries || ''}"></audio>
+    </div>
+  </div>
+  <div class="half">
+    <div class="typesection">
+      <strong>Types:</strong> ${typesHTML}
+    </div>
+    <div id="chart"></div>
+    <p><strong>Abilities:</strong> ${abilities}</p>
+    <p><strong>Height:</strong> ${poke.height || 'N/A'}</p>
+    <p><strong>Weight:</strong> ${poke.weight || 'N/A'}</p>
+    <p><strong>Base XP:</strong> ${poke.base_experience || 'N/A'}</p>
+  </div>
+`;
 
-          <div class="half">
-            <div class="typesection">
-              <strong>Types:</strong> ${typesHTML}
-            </div>
-            <div id="chart"></div>
-            <p><strong>Abilities:</strong> ${abilities}</p>
-            <p><strong>Height:</strong> ${poke.height || 'N/A'}</p>
-            <p><strong>Weight:</strong> ${poke.weight || 'N/A'}</p>
-            <p><strong>Base XP:</strong> ${poke.base_experience || 'N/A'}</p>
-          </div>
-        `;
+// Shiny toggle logic
+const pokeImg = document.getElementById('poke-img');
+let isShiny = false;
+
+pokeImg.addEventListener('click', () => {
+  if (!poke.shiny) return; // fallback if shiny sprite missing
+  isShiny = !isShiny;
+  pokeImg.src = isShiny ? poke.shiny : poke.image;
+});
 
         let options = {
           series: [{
