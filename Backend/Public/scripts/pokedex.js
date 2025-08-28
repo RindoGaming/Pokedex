@@ -265,3 +265,10 @@ egghatch.addEventListener("click", () => {
     localStorage.setItem(VOLUME_KEY, audio.volume);
   });
 })();
+
+// --- Enter key triggers Go button on number bar ---
+pageSearch.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    goPageBtn.click();
+  }
+});
