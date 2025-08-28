@@ -10,6 +10,7 @@ Front-end Planning
 | Pixel art for the old versions.           | Low        | 2 hrs            | ✔️ Done |
 | User friendly info page.                  | Medium     | 2 hrs            | 🟡 WIP |
 | Pokemon type chart.                       | Medium     | 8 hrs            |         |
+| showing the stats of all the diffrent pokemon | Medium     | 8 hrs            |         |
 
 
 | Task                              | Priority | Time Estimate | What I Can Do (X)                                                                  | Need                                                           | Why                                                                           |
@@ -25,8 +26,8 @@ Front-end Planning
 | Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Hendrik | User friendly info page. 🟡 | User friendly info page. 🟡 | planning| styling| styling | styling | styling | styling | styling | styling | styling | styling |
-| Jarno | read me and priority making ✔️ | styling| styling| styling| styling | styling | styling | styling | planning | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
-| Senn | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Story 7 (4u, High) | Story 7 (4u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 1 (8u, High) | Story 4 (2u, Low) | Story 6 (2u, Low) | Story 9 (2u, Low) |  |
+| Jarno | read me and priority making ✔️ | styling| styling| styling| styling | styling | styling | styling | planning | showing the stats of all the diffrent pokemon| showing the stats of all the diffrent pokemon |  |
+| Senn | styling | styling | styling | styling | egg animtations | egg animations | egg animantions | styling | styling | styling | styling |  |
 
 
 
