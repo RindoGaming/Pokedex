@@ -7,22 +7,21 @@ const pokedex = document.getElementById('pokedex');
     const pageInfo = document.getElementById('page-info');
     const pageSearch = document.getElementById('page-search');
     const goPageBtn = document.getElementById('go-page-btn');
-    const searchDropdown = document.getElementById('search-dropdown');
 
-let allPokemon = [];
-let filteredPokemon = [];
-let currentPage = 1;
-const pageSize = 24;
+    let allPokemon = [];
+    let filteredPokemon = [];
+    let currentPage = 1;
+    const pageSize = 24;
 
-fetch('pokemon_cache.json')
-  .then(r => r.json())
-  .then(data => {
-    allPokemon = Object.entries(data)
-      .map(([key, poke]) => ({
-        id: poke.id ?? parseInt(key, 10),
-        info: poke
-      }))
-      .sort((a, b) => a.id - b.id);
+    fetch('pokemon_cache.json')
+      .then(r => r.json())
+      .then(data => {
+        allPokemon = Object.entries(data)
+          .map(([key, poke]) => ({
+            id: poke.id ?? parseInt(key, 10),
+            info: poke
+          }))
+          .sort((a, b) => a.id - b.id);
 
         const types = new Set();
         allPokemon.forEach(p => {
@@ -32,17 +31,17 @@ fetch('pokemon_cache.json')
      
 
 
-    [...types].sort().forEach(t => {
-      [type1Filter, type2Filter].forEach(sel => {
-        const opt = document.createElement('option');
-        opt.value = t;
-        opt.textContent = t[0].toUpperCase() + t.slice(1);
-        sel.appendChild(opt);
-      });
-    });
+        [...types].sort().forEach(t => {
+          [type1Filter, type2Filter].forEach(sel => {
+            const opt = document.createElement('option');
+            opt.value = t;
+            opt.textContent = t[0].toUpperCase() + t.slice(1);
+            sel.appendChild(opt);
+          });
+        });
 
-    filteredPokemon = [...allPokemon];
-    renderPage();
+        filteredPokemon = [...allPokemon];
+        renderPage();
 
         type1Filter.onchange = type2Filter.onchange = () => {
           currentPage = 1;
@@ -51,7 +50,6 @@ fetch('pokemon_cache.json')
         searchbar.oninput = () => {
           currentPage = 1;
           applyFilters();
-          showDropdown();
         };
       })
       .catch(_ => pokedex.innerHTML = '<p>Failed to load Pokédex.</p>');
@@ -79,24 +77,24 @@ fetch('pokemon_cache.json')
         return true;
       });
 
-  renderPage();
-}
+      renderPage();
+    }
 
-function renderPage() {
-  pokedex.innerHTML = '';
-  const start = (currentPage - 1) * pageSize;
-  const end = start + pageSize;
-  const pageItems = filteredPokemon.slice(start, end);
+    function renderPage() {
+      pokedex.innerHTML = '';
+      const start = (currentPage - 1) * pageSize;
+      const end = start + pageSize;
+      const pageItems = filteredPokemon.slice(start, end);
 
-  pageItems.forEach(p => {
-    const padded = String(p.id).padStart(3, '0');
-    const types = p.info.types ? Object.keys(p.info.types) : [];
-    const typeHTML = types.map(t => `<span class="type ${t}">${t}</span>`).join(' ');
-    const name = p.info.name
-      ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
-      : 'N/A';
+      pageItems.forEach(p => {
+        const padded = String(p.id).padStart(3, '0');
+        const types = p.info.types ? Object.keys(p.info.types) : [];
+        const typeHTML = types.map(t => `<span class="type ${t}">${t}</span>`).join(' ');
+        const name = p.info.name
+          ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
+          : 'N/A';
 
-    pokedex.innerHTML += `
+        pokedex.innerHTML += `
           <div class="pokemon" onclick="goToDetails(${p.id})">
             <img src="${p.info.image || ''}" alt="${name}">
             <p><strong>ID:</strong> ${padded}</p>
@@ -104,77 +102,35 @@ function renderPage() {
             <div>${typeHTML}</div>
           </div>
         `;
-  });
+      });
 
-  pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredPokemon.length / pageSize)}`;
-  prevBtn.disabled = currentPage === 1;
-  nextBtn.disabled = end >= filteredPokemon.length;
-}
+      pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredPokemon.length / pageSize)}`;
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = end >= filteredPokemon.length;
+    }
 
-prevBtn.onclick = () => {
-  if (currentPage > 1) {
-    currentPage--;
-    renderPage();
-  }
-};
+    prevBtn.onclick = () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage();
+      }
+    };
 
-nextBtn.onclick = () => {
-  if ((currentPage * pageSize) < filteredPokemon.length) {
-    currentPage++;
-    renderPage();
-  }
-};
+    nextBtn.onclick = () => {
+      if ((currentPage * pageSize) < filteredPokemon.length) {
+        currentPage++;
+        renderPage();
+      }
+    };
 
-goPageBtn.onclick = () => {
-  const page = parseInt(pageSearch.value, 10);
-  if (!isNaN(page) && page > 0 && page <= Math.ceil(filteredPokemon.length / pageSize)) {
-    currentPage = page;
-    renderPage();
-  }
-};
+    goPageBtn.onclick = () => {
+      const page = parseInt(pageSearch.value, 10);
+      if (!isNaN(page) && page > 0 && page <= Math.ceil(filteredPokemon.length / pageSize)) {
+        currentPage = page;
+        renderPage();
+      }
+    };
 
     function goToDetails(id) {
       window.location.href = `pokemon.html?id=${id}`;
-    }
-
-    document.addEventListener('click', e => {
-      if (!searchDropdown.contains(e.target) && e.target !== searchbar) {
-        searchDropdown.innerHTML = '';
-      }
-    });
-
-    function showDropdown() {
-      const query = searchbar.value.trim().toLowerCase();
-      if (!query) {
-        searchDropdown.innerHTML = '';
-        return;
-      }
-      // Filter for dropdown (limit to 10 results)
-      const results = allPokemon.filter(p => 
-        p.info.name?.toLowerCase().includes(query)
-      ).slice(0, 10);
-
-      if (results.length === 0) {
-        searchDropdown.innerHTML = '';
-        return;
-      }
-
-      searchDropdown.innerHTML = `
-        <div style="position:absolute; background:#fff; border:1px solid #ccc; width:100%; z-index:10;">
-          ${results.map(p => {
-            const types = p.info.types ? Object.keys(p.info.types) : [];
-            const typeHTML = types.map(t => `<span class="type ${t}" style="margin-left:4px;">${t}</span>`).join('');
-            const name = p.info.name
-              ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
-              : 'N/A';
-            return `
-              <div class="dropdown-item" style="display:flex; align-items:center; padding:4px; cursor:pointer;" onclick="goToDetails(${p.id}); searchDropdown.innerHTML='';">
-                <img src="${p.info.image || ''}" alt="${name}" style="width:40px; height:40px; object-fit:contain; margin-right:8px;">
-                <span style="flex:1;">${name}</span>
-                <span style="margin-left:auto;">${typeHTML}</span>
-              </div>
-            `;
-          }).join('')}
-        </div>
-      `;
     }
