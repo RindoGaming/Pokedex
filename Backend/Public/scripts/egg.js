@@ -13,12 +13,12 @@ const hatchHistory = {};
 
 hatchBtn.onclick = async function () {
     img.classList.toggle("image-shaking")
-    // hatchBtn.disabled = true;
+    hatchBtn.disabled = true;
     setTimeout(() => {
         hatchBtn.disabled = false;
     }, 2505);
 
-    img.src = "img/Gebarsten Ei met Groene Vlekken.png";
+    img.src = "/backend/public/egg/stage-1.png";
     img.alt = "Egg";
     setTimeout(() => {
         resultDiv.textContent = "Hatching...";
@@ -150,3 +150,9 @@ function updateHistory() {
   document.addEventListener('touchstart', resumeOnFirstInteraction);
 
 })();
+const egghatch = document.getElementById('go-to');
+egghatch.addEventListener("click", () => {
+  location.href = 'index.html'
+  console.log(`hi`);
+  
+})

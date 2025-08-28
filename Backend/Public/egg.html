@@ -6,33 +6,34 @@
     <title>Pokémon Egg Hatcher</title>
     <link rel="stylesheet" href="style/style-egg.css">
     <script src="scripts/egg.js" defer></script>
-      <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 
 <body>
-<img src="left-icon-background-one.svg" alt="pokeball" class="pokeball">
+    <img src="left-icon-background-one.svg" alt="pokeball" class="pokeball">
 
     <h1>Pokémon Egg Hatcher</h1>
 
     <div id="counter-container">
-        <img id="pokemon-img" src="img/Gebarsten Ei met Groene Vlekken.png" alt="Egg">
+        <img id="pokemon-img" src="egg/stage-1.png" alt="Egg">
         <div id="hatch-count">0</div>
         <audio id="audio-cry" preload="auto"></audio>
         <audio id="egg-cracking" src="audio/egg-cracking-6844-VEED.mp3" preload="auto"></audio>
     </div>
     <br>
-    <button id="test" onclick="location.href='index.html';" class="btn">Go to Pokédex</button>
     <button id="hatch-btn" class="btn">Hatch Egg!</button>
     <div id="result"></div>
     <div id="history"></div>
     <img src="img/comic-boom-explosion-2-1-1024x754.png" id="reveal" alt="comic explosion" class="hidden egg">
     <img src="" id="reveal-pokemon" alt="pokemon" class="hidden reveal-pokemon">
-    
-    <audio id="bg-music" src="game-corner.mp3" loop style="display:none;"></audio>
 
+    <audio id="bg-music" src="game-corner.mp3" loop style="display:none;"></audio>
+    <div class="go-to" id="go-to">
+        <img src="img//188940.png" alt="pokedex">
+    </div>
 </body>
 
 </html>

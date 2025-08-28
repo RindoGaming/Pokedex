@@ -15,16 +15,14 @@
 
 <body>
 
-<img
-  src="pokedex.png"
-  style="
+  <img src="pokedex.png" style="
     display: block;
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
     height: auto;
-  "
->
+">
+  </img>
   <div class="main-background-section">
     <div id="pokedex"></div>
   </div>
@@ -35,7 +33,7 @@
     <button id="next-btn">Next ➡</button>
   </div>
 
-  <div style="text-align:center; margin-top:10px;">
+  <div style="text-align:center; margin-top:10px;" class="number-bar">
     <input class="searching" type="number" id="page-search" min="1" style="width:100px;" placeholder="Page">
     <button class="searchgo" id="go-page-btn">Go</button>
   </div>
@@ -57,7 +55,7 @@
   </div>
   <div id="overlay">
     <input type="text" id="searchbar" autocomplete="off" style=" width:260px; padding: 10px" class="searchbar"
-      placeholder="Search by name or ID...">
+      placeholder="Search by name, ability or ID...">
     <div id="search-dropdown" style="position: fixed;top: 55vh;"></div>
     <div class="close" onclick="off()">
       <h1 class="circlebg">x</h1>
@@ -66,11 +64,13 @@
 
   <audio id="bg-music" src="Pokemon.mp3" loop style="display:none;"></audio>
 
-  <div style="text-align:center; margin:15px;">
+  <div style="text-align:center; margin:15px;" class="volume-mixer">
     <label for="volume-slider" style="color:white;">🔊 Volume:</label>
-    <input type="range" id="volume-slider" min="0" max="1" step="0.01" style="width:200px;">
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" style="width:150px;">
   </div>
 
   <div class="go-to" id="go-to">
     <img src="img/egg.png" alt="egggg">
   </div>
+</body>
+</html>
