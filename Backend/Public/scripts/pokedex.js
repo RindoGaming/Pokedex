@@ -1,12 +1,13 @@
 const pokedex = document.getElementById('pokedex');
-const type1Filter = document.getElementById('type1-filter');
-const type2Filter = document.getElementById('type2-filter');
-const searchbar = document.getElementById('searchbar');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const pageInfo = document.getElementById('page-info');
-const pageSearch = document.getElementById('page-search');
-const goPageBtn = document.getElementById('go-page-btn');
+    const type1Filter = document.getElementById('type1-filter');
+    const type2Filter = document.getElementById('type2-filter');
+    const searchbar = document.getElementById('searchbar');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const pageInfo = document.getElementById('page-info');
+    const pageSearch = document.getElementById('page-search');
+    const goPageBtn = document.getElementById('go-page-btn');
+    const searchDropdown = document.getElementById('search-dropdown');
 
 let allPokemon = [];
 let filteredPokemon = [];
@@ -23,10 +24,13 @@ fetch('pokemon_cache.json')
       }))
       .sort((a, b) => a.id - b.id);
 
-    const types = new Set();
-    allPokemon.forEach(p => {
-      if (p.info.types) Object.keys(p.info.types).forEach(t => types.add(t));
-    });
+        const types = new Set();
+        allPokemon.forEach(p => {
+          if (p.info.types) Object.keys(p.info.types).forEach(t => types.add(t));
+        });
+
+     
+
 
     [...types].sort().forEach(t => {
       [type1Filter, type2Filter].forEach(sel => {
@@ -40,32 +44,40 @@ fetch('pokemon_cache.json')
     filteredPokemon = [...allPokemon];
     renderPage();
 
-    type1Filter.onchange = type2Filter.onchange = () => {
-      currentPage = 1;
-      applyFilters();
-    };
-    searchbar.oninput = () => {
-      currentPage = 1;
-      applyFilters();
-    };
-  })
-  .catch(_ => pokedex.innerHTML = '<p>Failed to load Pokédex.</p>');
+        type1Filter.onchange = type2Filter.onchange = () => {
+          currentPage = 1;
+          applyFilters();
+        };
+        searchbar.oninput = () => {
+          currentPage = 1;
+          applyFilters();
+          showDropdown();
+        };
+      })
+      .catch(_ => pokedex.innerHTML = '<p>Failed to load Pokédex.</p>');
 
-function applyFilters() {
-  const t1 = type1Filter.value;
-  const t2 = type2Filter.value;
-  const query = searchbar.value.trim().toLowerCase();
+    function applyFilters() {
+      const t1 = type1Filter.value;
+      const t2 = type2Filter.value;
+      const query = searchbar.value.trim().toLowerCase();
+      console.log(
+        `Applying filters: Type1=${t1}, Type2=${t2}, Query='${query}'`
+      );
+      
+      filteredPokemon = allPokemon.filter(p => {
+        const ts = p.info.types ? Object.keys(p.info.types) : [];
+        const nameMatch = p.info.name?.toLowerCase().includes(query);
+        const abilityMatch = Object.keys(p.info.abilities || {}).some(a =>
+            a.toLowerCase().includes(query)
+        );
+        const idMatch = String(p.id).padStart(3, '0').includes(query) || String(p.id).includes(query);
 
-  filteredPokemon = allPokemon.filter(p => {
-    const ts = p.info.types ? Object.keys(p.info.types) : [];
-    const nameMatch = p.info.name?.toLowerCase().includes(query);
-    const idMatch = String(p.id).padStart(3, '0').includes(query) || String(p.id).includes(query);
+        if (query && !nameMatch && !idMatch && !abilityMatch) return false;
+        if (t1 && !ts.includes(t1)) return false;
+        if (t2 && !ts.includes(t2)) return false;
 
-    if (query && !nameMatch && !idMatch) return false;
-    if (t1 && !ts.includes(t1)) return false;
-    if (t2 && !ts.includes(t2)) return false;
-    return true;
-  });
+        return true;
+      });
 
   renderPage();
 }
@@ -121,14 +133,48 @@ goPageBtn.onclick = () => {
   }
 };
 
-function goToDetails(id) {
-  window.location.href = `pokemon.html?id=${id}`;
-}
+    function goToDetails(id) {
+      window.location.href = `pokemon.html?id=${id}`;
+    }
 
-function on() {
-  document.getElementById("overlay").style.display = "flex";
-}
+    document.addEventListener('click', e => {
+      if (!searchDropdown.contains(e.target) && e.target !== searchbar) {
+        searchDropdown.innerHTML = '';
+      }
+    });
 
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
+    function showDropdown() {
+      const query = searchbar.value.trim().toLowerCase();
+      if (!query) {
+        searchDropdown.innerHTML = '';
+        return;
+      }
+      // Filter for dropdown (limit to 10 results)
+      const results = allPokemon.filter(p => 
+        p.info.name?.toLowerCase().includes(query)
+      ).slice(0, 10);
+
+      if (results.length === 0) {
+        searchDropdown.innerHTML = '';
+        return;
+      }
+
+      searchDropdown.innerHTML = `
+        <div style="position:absolute; background:#fff; border:1px solid #ccc; width:100%; z-index:10;">
+          ${results.map(p => {
+            const types = p.info.types ? Object.keys(p.info.types) : [];
+            const typeHTML = types.map(t => `<span class="type ${t}" style="margin-left:4px;">${t}</span>`).join('');
+            const name = p.info.name
+              ? p.info.name.charAt(0).toUpperCase() + p.info.name.slice(1)
+              : 'N/A';
+            return `
+              <div class="dropdown-item" style="display:flex; align-items:center; padding:4px; cursor:pointer;" onclick="goToDetails(${p.id}); searchDropdown.innerHTML='';">
+                <img src="${p.info.image || ''}" alt="${name}" style="width:40px; height:40px; object-fit:contain; margin-right:8px;">
+                <span style="flex:1;">${name}</span>
+                <span style="margin-left:auto;">${typeHTML}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }

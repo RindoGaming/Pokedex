@@ -23,8 +23,17 @@
 
       function renderPokemon(poke) {
         // Types and abilities
-        const types = poke.types ? Object.keys(poke.types).join(', ') : 'N/A';
-        const abilities = poke.abilities ? Object.keys(poke.abilities).join(', ') : 'N/A';
+        let typesHTML = 'N/A';
+        if (poke.types) {
+          typesHTML = Object.keys(poke.types)
+            .map(type => `<span class="type ${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</span>`)
+            .join(' ');
+        }
+        const abilities = poke.abilities
+          ? Object.keys(poke.abilities)
+              .map(a => a.charAt(0).toUpperCase() + a.slice(1))
+              .join(', ')
+          : 'N/A';
 
         // Stats (no bullet points, no effort)
         const statsHTML = poke.stats
@@ -53,40 +62,16 @@
           poke.stats && poke.stats[stat] ? poke.stats[stat].base_stat : 0
         );
 
-        // Remove previous chart if exists
-        const chartContainer = document.querySelector("#chart");
-        if (chartContainer) {
-          chartContainer.innerHTML = "";
-        }
-
-        var options = {
-          series: [{
-            name: 'Stats',
-            data: statData,
-          }],
-          chart: {
-            height: 350,
-            type: 'radar',
-          },
-          yaxis: {
-            stepSize: 51
-          },
-          xaxis: {
-            categories: ['HP', 'Attack', 'Defence', 'Speed', 'Sp. Def', 'Sp. Atk']
-          }
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
         // Render details
         detailsEl.innerHTML = `
           <div class="half">
             <div class="namesection">
               <h1>${poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</h1>
               <p><strong>ID:</strong> ${String(poke.id).padStart(3, '0')}</p>
+              ${variantOptions}
             </div>
             <div class="pokemon-image-bg">
-              <img src="${poke.image || ''}" alt="${poke.name}">
+              <img src="${poke.image || 'img/Spr_3r_000.png'}" alt="${poke.name}">
             </div>
             <div id="cry-container">
               <button id="prev-pokemon">⬅ Previous Pokémon</button>
@@ -97,15 +82,56 @@
           </div>
 
           <div class="half">
-            ${variantOptions}
-            <p><strong>Types:</strong> ${types}</p>
+            <div class="typesection">
+              <strong>Types:</strong> ${typesHTML}
+            </div>
+            <div id="chart"></div>
             <p><strong>Abilities:</strong> ${abilities}</p>
             <p><strong>Height:</strong> ${poke.height || 'N/A'}</p>
             <p><strong>Weight:</strong> ${poke.weight || 'N/A'}</p>
             <p><strong>Base XP:</strong> ${poke.base_experience || 'N/A'}</p>
-            <div class="stats">${statsHTML}</div>
           </div>
         `;
+
+        let options = {
+          series: [{
+            name: 'Stats',
+            data: statData,
+          }],
+          chart: {
+            height: 350,
+            type: 'radar',
+            toolbar: {
+              show: false
+            }
+          },
+          plotOptions: {
+          radar: {
+            polygons: {
+              strokeColors: '#9e9e9eff',
+              fill: {
+                colors: ['#d2e2ffff', '#d2c7ffff']
+              }
+            }
+          }
+        },
+          yaxis: {
+            show: false,
+            min: 0,
+            max: 255
+          },
+          colors: ['#FF4560'],
+          xaxis: {
+            categories: ['HP', 'Attack', 'Defence', 'Speed', 'Sp. Def', 'Sp. Atk'],
+            labels: {
+            style: {
+           colors: ['#000', '#000', '#000', '#000', '#000', '#000'],
+          }
+  }
+}
+        };
+        let chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
 
         // Audio playback
         const audioEl = document.getElementById('audio-cry');
