@@ -47,6 +47,37 @@
           </select>`;
         }
 
+        // Extract stat values in the correct order for the chart
+        const statOrder = ['hp', 'attack', 'defense', 'speed', 'special-defense', 'special-attack'];
+        const statData = statOrder.map(stat =>
+          poke.stats && poke.stats[stat] ? poke.stats[stat].base_stat : 0
+        );
+
+        // Remove previous chart if exists
+        const chartContainer = document.querySelector("#chart");
+        if (chartContainer) {
+          chartContainer.innerHTML = "";
+        }
+
+        var options = {
+          series: [{
+            name: 'Stats',
+            data: statData,
+          }],
+          chart: {
+            height: 350,
+            type: 'radar',
+          },
+          yaxis: {
+            stepSize: 51
+          },
+          xaxis: {
+            categories: ['HP', 'Attack', 'Defence', 'Speed', 'Sp. Def', 'Sp. Atk']
+          }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
         // Render details
         detailsEl.innerHTML = `
           <div class="half">
@@ -109,7 +140,9 @@
             } else {
               newPoke = basePoke.variants[vName];
             }
-            if (newPoke) renderPokemon(newPoke);
+            if (newPoke) {
+              renderPokemon(newPoke);
+            }
           });
         }
       }
