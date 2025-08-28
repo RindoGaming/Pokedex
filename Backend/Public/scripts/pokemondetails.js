@@ -97,11 +97,23 @@ detailsEl.innerHTML = `
 // Shiny toggle logic
 const pokeImg = document.getElementById('poke-img');
 let isShiny = false;
+let shinyAudio = document.getElementById('shiny-audio');
+if (!shinyAudio) {
+  shinyAudio = document.createElement('audio');
+  shinyAudio.id = 'shiny-audio';
+  shinyAudio.src = 'audio/shiny.mp3';
+  shinyAudio.preload = 'auto';
+  document.body.appendChild(shinyAudio);
+}
 
 pokeImg.addEventListener('click', () => {
   if (!poke.shiny) return; // fallback if shiny sprite missing
   isShiny = !isShiny;
   pokeImg.src = isShiny ? poke.shiny : poke.image;
+  if (isShiny) {
+    shinyAudio.currentTime = 0;
+    shinyAudio.play().catch(() => {});
+  }
 });
 
         let options = {
