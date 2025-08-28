@@ -86,10 +86,12 @@
               <strong>Types:</strong> ${typesHTML}
             </div>
             <div id="chart"></div>
-            <p><strong>Abilities:</strong> ${abilities}</p>
-            <p><strong>Height:</strong> ${poke.height || 'N/A'}</p>
-            <p><strong>Weight:</strong> ${poke.weight || 'N/A'}</p>
-            <p><strong>Base XP:</strong> ${poke.base_experience || 'N/A'}</p>
+            <div class="boxes">
+              <div class="box"><p><strong>Abilities:</strong> ${abilities}</p></div>
+              <div class="box"><p><strong>Base XP:</strong> ${poke.base_experience || 'N/A'}</p></div>
+              <div class="box"><p><strong>Height:</strong> ${poke.height || 'N/A'}</p></div>
+              <div class="box"><p><strong>Weight:</strong> ${poke.weight || 'N/A'}</p></div>
+            </div>
           </div>
         `;
 
