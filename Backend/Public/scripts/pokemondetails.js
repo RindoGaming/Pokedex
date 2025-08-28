@@ -106,10 +106,26 @@
         // Shiny toggle logic
         const pokeImg = document.getElementById('poke-img');
         let isShiny = false;
+        // Create shiny audio element
+        let shinyAudio = document.getElementById('shiny-audio');
+        if (!shinyAudio) {
+          shinyAudio = document.createElement('audio');
+          shinyAudio.id = 'shiny-audio';
+          shinyAudio.src = 'audio/shiny.mp3';
+          shinyAudio.preload = 'auto';
+          document.body.appendChild(shinyAudio);
+        }
         pokeImg.addEventListener('click', () => {
           if (!poke.shiny) return;
           isShiny = !isShiny;
-          pokeImg.src = isShiny ? poke.shiny : poke.image;
+          pokeImg.src = "img/9201ca103be3621c2b032f2151ff210e_w200.gif"
+          setTimeout(() => {
+            pokeImg.src = isShiny ? poke.shiny : poke.image;
+          }, 400);
+          if (isShiny) {
+            shinyAudio.currentTime = 0;
+            shinyAudio.play().catch(() => {});
+          }
         });
 
         // Radar chart
@@ -161,7 +177,11 @@
           variantSelect.addEventListener('change', (e) => {
             const vName = e.target.value;
             let newPoke = !vName ? basePoke : basePoke.variants[vName];
-            if (newPoke) renderPokemon(newPoke);
+            setTimeout(() => {
+              
+              if (newPoke) renderPokemon(newPoke);
+            }, 200);
+            pokeImg.src = "img/9201ca103be3621c2b032f2151ff210e_w200.gif"
           });
         }
       }
@@ -173,4 +193,60 @@
       console.error(err);
       detailsEl.innerHTML = '<p>Error loading Pokémon data.</p>';
     });
+})();
+(function(){
+  const audio       = document.getElementById('bg-music');
+  const STORAGE_KEY = 'bg-music-currentTime';
+  const VOLUME_KEY  = 'bg-music-volume';
+  let autoPlayBlocked = false;
+
+  // --- Volume Mixer Setup ---
+  const volumeSlider = document.getElementById('volume-slider');
+  // Restore volume from storage or default to 0.5
+  const savedVol = parseFloat(localStorage.getItem(VOLUME_KEY));
+  audio.volume = !isNaN(savedVol) ? savedVol : 0.5;
+  if (volumeSlider) volumeSlider.value = audio.volume;
+
+  // Handle volume changes
+  if (volumeSlider) {
+    volumeSlider.addEventListener('input', () => {
+      audio.volume = parseFloat(volumeSlider.value);
+      localStorage.setItem(VOLUME_KEY, audio.volume);
+    });
+  }
+
+  // --- Audio Position Restore & Save ---
+  audio.addEventListener('loadedmetadata', () => {
+    const saved = parseFloat(localStorage.getItem(STORAGE_KEY)) || 0;
+    if (saved < audio.duration) {
+      audio.currentTime = saved;
+    }
+    audio.play().catch(_ => {
+      autoPlayBlocked = true;
+      console.log('Autoplay blocked; will resume when you interact.');
+    });
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    localStorage.setItem(STORAGE_KEY, audio.currentTime);
+  });
+
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem(STORAGE_KEY, audio.currentTime);
+  });
+
+  // --- Resume on User Interaction if Blocked ---
+  function resumeOnFirstInteraction() {
+    if (autoPlayBlocked && audio.paused) {
+      audio.play().catch(_=>{});
+      autoPlayBlocked = false;
+      document.removeEventListener('click',      resumeOnFirstInteraction);
+      document.removeEventListener('keydown',    resumeOnFirstInteraction);
+      document.removeEventListener('touchstart', resumeOnFirstInteraction);
+    }
+  }
+  document.addEventListener('click',      resumeOnFirstInteraction);
+  document.addEventListener('keydown',    resumeOnFirstInteraction);
+  document.addEventListener('touchstart', resumeOnFirstInteraction);
+
 })();

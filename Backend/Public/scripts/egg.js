@@ -13,7 +13,7 @@ const hatchHistory = {};
 
 hatchBtn.onclick = async function () {
     img.classList.toggle("image-shaking")
-    hatchBtn.disabled = true;
+    // hatchBtn.disabled = true;
     setTimeout(() => {
         hatchBtn.disabled = false;
     }, 2505);
@@ -106,3 +106,47 @@ function updateHistory() {
         historyDiv.classList.remove('history-grid');
     }
 }
+(function(){
+  const audio      = document.getElementById('bg-music');
+  const STORAGE_KEY = 'bg-music-currentTime';
+  let autoPlayBlocked = false;
+
+  // 1) Restore position and try to start as soon as metadata is ready
+  audio.addEventListener('loadedmetadata', () => {
+    const saved = parseFloat(localStorage.getItem(STORAGE_KEY)) || 0;
+    if (saved < audio.duration) {
+      audio.currentTime = saved;
+    }
+    audio.play().catch(_ => {
+      // Autoplay was blocked, we'll resume on user gesture
+      autoPlayBlocked = true;
+      console.log('Autoplay blocked; will resume when you interact.');
+    });
+  });
+
+  // 2) Keep saving currentTime as it plays
+  audio.addEventListener('timeupdate', () => {
+    localStorage.setItem(STORAGE_KEY, audio.currentTime);
+  });
+
+  // 3) Save one more time if they close/refresh mid-audio
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem(STORAGE_KEY, audio.currentTime);
+  });
+
+  // 4) If autoplay was blocked, resume on any user interaction
+  function resumeOnFirstInteraction() {
+    if (autoPlayBlocked && audio.paused) {
+      audio.play().catch(_=>{});  // silent fail if still blocked
+      autoPlayBlocked = false;
+      // clean up listeners
+      document.removeEventListener('click',      resumeOnFirstInteraction);
+      document.removeEventListener('keydown',    resumeOnFirstInteraction);
+      document.removeEventListener('touchstart', resumeOnFirstInteraction);
+    }
+  }
+  document.addEventListener('click',      resumeOnFirstInteraction);
+  document.addEventListener('keydown',    resumeOnFirstInteraction);
+  document.addEventListener('touchstart', resumeOnFirstInteraction);
+
+})();
