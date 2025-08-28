@@ -96,6 +96,15 @@ select {
     font-size: 1.2em
 }
 
+.volume-mixer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+  width: 200px;     /* shrink size */
+  height: 30px;     /* cleaner look */
+}
+
 .pokemon p {
     margin: 4px 0;
     font-size: .9em
