@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <title>Select Pokémon</title>
   <link rel="stylesheet" href="select.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
@@ -25,8 +25,7 @@
         <option value="">All Types</option>
       </select>
       <input type="number" id="id-search" placeholder="ID…" min="1" title="Search by National Dex ID" />
-      <input id="move-search" list="move-list" placeholder="Search by move/ability…"
-        title="Search by ability (from cache)" />
+      <input id="move-search" list="move-list" placeholder="Search by move/ability…" title="Search by ability (from cache)" />
       <datalist id="move-list"></datalist>
 
       <select id="gen-filter" title="Generation">
@@ -62,6 +61,35 @@
     <img src="/Backend/Public/img/188940.png" alt="egggg">
   </div>
   <script src="select.js"></script>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="1-33. Festival Plaza (Day).mp3" loop autoplay muted></audio>
+
+  <!-- Button Sound Effect -->
+  <audio id="button-sfx" src="Sound.mp3" preload="auto"></audio>
+
+  <!-- Volume Control -->
+  <div id="volume-container" style="position:fixed; bottom:10px; right:10px; background:#fff; padding:5px; border-radius:8px;">
+    <label for="volume-slider">🔊</label>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" />
+  </div>
+
+  <script>
+    const bgMusic = document.getElementById("bg-music");
+    const volumeSlider = document.getElementById("volume-slider");
+
+    window.addEventListener("load", () => {
+      bgMusic.play().then(() => {
+        bgMusic.muted = false;
+      }).catch(() => {
+        console.log("Autoplay blocked; waiting for user interaction");
+      });
+    });
+
+    volumeSlider.addEventListener("input", () => {
+      bgMusic.volume = volumeSlider.value;
+    });
+  </script>
 </body>
 
 </html>
