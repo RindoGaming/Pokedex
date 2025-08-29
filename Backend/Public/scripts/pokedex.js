@@ -254,20 +254,36 @@ battle.addEventListener('click', () => {
   location.href='Battle/select.html'
 })
 // --- Volume mixer functionality ---
-(function(){
+function initVolumeMixer() {
   const audio = document.getElementById('bg-music');
   const volumeSlider = document.getElementById('volume-slider');
   const VOLUME_KEY = 'bg-music-volume';
 
+  if (!audio || !volumeSlider) return;
+
+  // Load saved volume or default to 0.5
   const savedVol = parseFloat(localStorage.getItem(VOLUME_KEY));
   audio.volume = !isNaN(savedVol) ? savedVol : 0.5;
   volumeSlider.value = audio.volume;
 
+  // Update track fill on input
+  const updateTrack = (val) => {
+    const percent = val * 100;
+    volumeSlider.style.background = `linear-gradient(to right, red 0%, red ${percent}%, #555 ${percent}%, #555 100%)`;
+  };
+  updateTrack(audio.volume);
+
+  // Slider input event
   volumeSlider.addEventListener('input', () => {
-    audio.volume = parseFloat(volumeSlider.value);
-    localStorage.setItem(VOLUME_KEY, audio.volume);
+    const vol = parseFloat(volumeSlider.value);
+    audio.volume = vol;
+    localStorage.setItem(VOLUME_KEY, vol);
+    updateTrack(vol);
   });
-})();
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initVolumeMixer);
 
 // --- Enter key triggers Go button on number bar ---
 pageSearch.addEventListener('keydown', (e) => {
