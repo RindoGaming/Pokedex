@@ -98,8 +98,8 @@ caspar
 
 hendrik
 -
--
--
+- Goed samen werken
+- De manier waarop wij samen werkte
 
 jarno
 -
