@@ -1,5 +1,8 @@
 # Pokedex
 
+                                ---link---
+-----------> https://rindogaming.github.io/Pokedex/Backend/Public/index.html <-----------
+
 
 Front-end Planning
 
@@ -39,15 +42,15 @@ Back-end Planning
 | --------------------------------- | ---------- | ---------------- | ------- |
 | Pokémon Species Documentation     | High       | 8 hrs            | ✔️ Done |
 | Pokémon Characteristics Database  | High       | 6 hrs            | ✔️ Done |
-| PokéAPI → Firebase Connection     | High       | 8 hrs            | 🟡 WIP  |
+| PokéAPI → Firebase Connection     | High       | 8 hrs            | ✔️ Done|
 | Database Structure Definition     | High       | 4 hrs            | ✔️ Done |
 | Evolution Chain Analysis          | Medium     | 6 hrs            | ✔️ Done|
-| Generation and Version Tracking   | Medium     | 6 hrs            | 🟡 WIP|
+| Encounters and sprites Tracking   | Medium     | 6 hrs            | ✔️ Done|
 | Primary/Secondary Type Filtering  | High       | 5 hrs            | ✔️ Done|
 | Caching System for Local Data     | High       | 6 hrs            | ✔️ Done|
 | Egg Hatching Gambling System      | Medium     | 8 hrs            | ✔️ Done|
 | Pokémon Detail Page               | High       | 7 hrs            | ✔️ Done|
-| Improve Frontend Caching          | High       | 6 hrs            | 🟡 WIP |
+| Improve Frontend Caching          | High       | 6 hrs            | ✔️ Done|
 | Extended Pokémon Details          | High       | 8 hrs            | ✔️ Done|
 | Support All Pokémon Forms         | High       | 10 hrs           | ✔️ Done|
 
@@ -71,10 +74,49 @@ Back-end Planning
 
 | Persoon/Tijd | Di 9:00-11:00 | Di 11:00-13:00 | Di 13:00-15:00 | Di 15:00-17:00 | Wo 9:00-11:00 | Wo 11:00-13:00 | Wo 13:00-14:00 | Wo 15:00-17:00 | Do 9:00-11:00 | Do 11:00-13:00 | Do 13:00-15:00 | Do 15:00-17:00 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Alex | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | All pokemon form support ✔️| All pokemon form support ✔️| Pokemon charactaristic database (high, 6h) ✔️ | Pokemon charactaristic database ✔️ (6u, high) | Pokemon habitat study (4u, Medium) | Story 8 (4u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) | Story 5 (8u, Medium) |
-| Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) ✔️| Cache fix ✔️| Cache fix ✔️| Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️ | Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Database structure definition (2u, Low) ✔️| Data logging and monitoring (2u, Low) 🚧| Generation and version tracking (2u, Low) 🟡|  |
-| Caspar | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Evolution chain analysis (4u, High) ✔️|  Evolution chain analysis (4u, High) ✔️ | Pokemon species documentation (8u, High) ✔️ | Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Database structure definition (2u, Low)🟡 | generation and version tracking (2u, Low) 🟡| egg hatching more (2u, Low) 🟡|  |
+| Alex | Pokémon Characteristics Database (6u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | All pokemon form support ✔️| All pokemon form support ✔️| Pokemon charactaristic database (high, 6h) ✔️ | Pokemon charactaristic database ✔️ (6u, high) | Encounters and sprites ✔️| Battle (4u, Medium) ✔️| Battle (4u, Medium) ✔️| Select your pokemon (8u, Medium) ✔️| Select your pokemon (8u, Medium) ✔️| Filters for selecting (8u, Medium) ✔️|
+| Jay | Planning, read me and priority making ✔️ | Database Structure Definition(4u, High) ✔️| Cache fix ✔️| Cache fix ✔️| Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️ | Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Database structure definition (2u, Low) ✔️| Data logging and monitoring (2u, Low) 🚧| encounters and sprites (2u, Low) ✔️ |  |
+| Caspar | PokéAPI → Firebase Connection(8u, High) ✔️ | Pokémon Characteristics Database (6u, High) ✔️ | Evolution chain analysis (4u, High) ✔️|  Evolution chain analysis (4u, High) ✔️ | Pokemon species documentation (8u, High) ✔️ | Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Pokemon species documentation (8u, High) ✔️| Database structure definition (2u, Low)🟡 | encounters and sprites (2u, Low) ✔️ | egg hatching more (2u, Low) ✔️|  |
 
 In progress → 🟡
 Scrapped -> 🚧
 Done → ✔
+
+---------------------------------------------------------------------------------
+# Retrospective
+
+![Retro](retro.png)
+
+# Mee nemen naar het volgende project
+
+Alex 
+-
+- Een persoon neemt de leiding.
+- Tijd beter inschatten.
+
+Caspar
+-
+- Samen werking
+- Hendrik en Jarno de planning laten maken 😎
+
+Hendrik
+-
+- Goed samen werken.
+- De manier waarop wij samen werkte.
+
+Jarno
+-
+- Zorgen dat er betere communicatie is.
+- Planning wat beter organiseren.
+
+Jay
+-
+- Refactoring code at the end of the day/ hour of the day.
+- Better time management in both planning and execution.
+
+Senn
+-
+-  De planning wordt door 1 persoon gedaan.
+-  Meer chatgpt gebruiken.
+
+

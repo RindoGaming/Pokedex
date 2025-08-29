@@ -60,6 +60,57 @@ function fetch_json_multi($urls)
     return $results;
 }
 
+// === Fetch Encounters ===
+function fetch_encounters($pokemon_id) {
+    $url = "https://pokeapi.co/api/v2/pokemon/{$pokemon_id}/encounters";
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $resp = curl_exec($ch);
+    curl_close($ch);
+
+    if (!$resp) return [];
+
+    $data = json_decode($resp, true);
+    $encounters = [];
+
+    foreach ($data as $enc) {
+        $area = $enc['location_area']['name'];
+        $version_details = [];
+
+        foreach ($enc['version_details'] as $vd) {
+            $details = [];
+            foreach ($vd['encounter_details'] as $ed) {
+                $details[] = [
+                    'min_level' => $ed['min_level'],
+                    'max_level' => $ed['max_level'],
+                    'condition_values' => array_map(fn($cv) => $cv['name'], $ed['condition_values']),
+                    'chance' => $ed['chance'],
+                    'method' => $ed['method']['name']
+                ];
+            }
+            $version_details[$vd['version']['name']] = $details;
+        }
+
+        $encounters[$area] = $version_details;
+    }
+
+    return $encounters;
+}
+
+// === Sprite Collector ===
+function collect_sprites($sprites) {
+    $all_sprites = [];
+
+    foreach ($sprites as $key => $value) {
+        if (is_string($value)) {
+            $all_sprites[$key] = $value;
+        } elseif (is_array($value)) {
+            $all_sprites[$key] = collect_sprites($value);
+        }
+    }
+    return $all_sprites;
+}
+
 // === Variant Builder ===
 function build_variant_entry($var_data)
 {
@@ -95,8 +146,9 @@ function build_variant_entry($var_data)
     $cry_file_name = $name_normalized . ".mp3";
     $cry_url = $cry_base_url . $cry_file_name;
 
-    // Shiny sprite URL
-    $shiny_sprite = $var_data['sprites']['front_shiny'] ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{$var_data['id']}.png";
+    // Shiny fallback
+    $shiny_sprite = $var_data['sprites']['front_shiny']
+        ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{$var_data['id']}.png";
 
     return [
         'id' => $var_data['id'],
@@ -106,15 +158,21 @@ function build_variant_entry($var_data)
         'stats' => $stats_v,
         'base_experience' => $var_data['base_experience'],
         'forms' => $forms_v,
-        'species' => ['name' => $var_data['species']['name'], 'url' => $var_data['species']['url']],
+        'species' => [
+            'name' => $var_data['species']['name'],
+            'url' => $var_data['species']['url']
+        ],
         'is_default' => false,
         'height' => $var_data['height'] / 10 . " m",
         'weight' => $var_data['weight'] / 10 . " kg",
         'image' => $var_data['sprites']['front_default'] ?? null,
         'shiny' => $shiny_sprite,
+        'sprites' => collect_sprites($var_data['sprites']),
+        'encounters' => fetch_encounters($var_data['id']),
         'cries' => $cry_url
     ];
 }
+
 
 // === Load Cache ===
 $all_pokemon = [];
@@ -184,6 +242,8 @@ for ($start = 1; $start <= $total_pokemon; $start += $batch_size) {
                 'weight' => $data['weight'] / 10 . " kg",
                 'image' => $data['sprites']['front_default'] ?? null,
                 'shiny' => $data['sprites']['front_shiny'] ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{$data['id']}.png",
+                'sprites' => collect_sprites($data['sprites']),
+                'encounters' => fetch_encounters($data['id']),
                 'cries' => $cry_url,
                 'variants' => []
             ];
