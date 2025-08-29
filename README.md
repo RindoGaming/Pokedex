@@ -90,7 +90,7 @@ Done → ✔
 
 Alex 
 -
--Een persoon neemt de leiding en dat blijft zo
+-Een persoon neemt de leiding
 -Tijd beter inschatten
 
 Caspar
@@ -100,8 +100,8 @@ Caspar
 
 Hendrik
 -
--
--
+- Goed samen werken
+- De manier waarop wij samen werkte
 
 Jarno
 -
