@@ -183,7 +183,6 @@ function runAway() {
 
 function endGame(winner) {
   document.getElementById("battle-text").textContent = `${winner} wins the battle!`;
-  document.querySelectorAll(".control-btn").forEach(b => b.disabled = true);
 }
 
 const music = document.getElementById("bg-music");
