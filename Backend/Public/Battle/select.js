@@ -295,6 +295,13 @@ function addToTeam(p, which) {
     flashError(`That ${toTitle(p.name)} is already on the ${which === "player" ? "Player" : "Enemy"} team.`);
     return;
   }
+
+  const sfx = document.getElementById("button-sfx");
+  if (sfx) {
+    sfx.currentTime = 0; 
+    sfx.play();
+  }
+
   team.push({ id: p.id, name: p.name, image: p.image, types: p.types, stats: p.stats, abilities: p.abilities });
   persistTeams();
   renderTeams();
@@ -377,7 +384,6 @@ async function init() {
       window.location.href = "battle.html";
     });
 
-    // First render
     renderList();
   } catch (e) {
     console.error(e);
