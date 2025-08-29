@@ -12,13 +12,13 @@ let hatchCount = 0;
 const hatchHistory = {};
 
 hatchBtn.onclick = async function () {
+  // img.src = "/backend/public/stage-1.png";
     img.classList.toggle("image-shaking")
     hatchBtn.disabled = true;
     setTimeout(() => {
         hatchBtn.disabled = false;
     }, 2505);
 
-    img.src = "/backend/public/stage-1.png";
     img.alt = "Egg";
     setTimeout(() => {
         resultDiv.textContent = "Hatching...";
@@ -169,3 +169,19 @@ egghatch.addEventListener("click", () => {
   console.log(`hi`);
   
 })
+const volumeSlider = document.getElementById('volume-slider');
+const bgMusic = document.getElementById('bg-music');
+
+if (volumeSlider && bgMusic) {
+
+    bgMusic.volume = volumeSlider.value;
+    volumeSlider.addEventListener('input', () => {
+        bgMusic.volume = volumeSlider.value;
+    });
+
+    document.addEventListener('click', () => {
+        if (bgMusic.paused) {
+            bgMusic.play().catch(err => console.log('Autoplay blocked:', err));
+        }
+    }, { once: true });
+}

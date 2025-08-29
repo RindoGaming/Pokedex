@@ -100,47 +100,47 @@ body {
 
     20% {
         transform: translate(-3px, 0px) rotate(6deg);
-        content: url("/backend/Public/stage-1.png");
+        content: url("/Backend/Public/style/stage-1.png");
     }
 
     30% {
         transform: translate(3px, 2px) rotate(0deg);
-        content: url("/backend/Public/stage-1.png");
+        content: url("stage-1.png");
     }
 
     40% {
         transform: translate(1px, -1px) rotate(6deg);
-        content: url("/backend/Public/stage-1.png");
+        content: url("stage-1.png");
     }
 
     50% {
         transform: translate(-1px, 2px) rotate(-6deg);
-        content: url("/backend/Public/stage-2.png");
+        content: url("stage-2.png");
     }
 
     60% {
         transform: translate(-3px, 1px) rotate(0deg);
-        content: url("/backend/Public/stage-2.png");
+        content: url("stage-2.png");
     }
 
     70% {
         transform: translate(3px, 1px) rotate(-6deg);
-        content: url("/backend/Public/stage-2.png");
+        content: url("stage-2.png");
     }
 
     80% {
         transform: translate(-1px, -1px) rotate(6deg);
-        content: url("/backend/Public/stage-3.png");
+        content: url("stage-3.png");
     }
 
     90% {
         transform: translate(1px, 2px) rotate(0deg);
-        content: url("/backend/Public/stage-3.png");
+        content: url("stage-3.png");
     }
 
     100% {
         transform: translate(1px, -2px) rotate(-6deg);
-        content: url("/backend/Public/stage-3.png");
+        content: url("stage-3.png");
     }
 }
 
@@ -212,4 +212,23 @@ body {
  width: 20vh;
  filter: brightness(0.9);
  cursor: pointer;
+}
+
+#volume-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;
+}
+
+#volume-slider {
+    width: 100px;
+    cursor: pointer;
 }
