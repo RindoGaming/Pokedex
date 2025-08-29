@@ -81,3 +81,33 @@ Back-end Planning
 In progress → 🟡
 Scrapped -> 🚧
 Done → ✔
+
+---------------------------------------------------------------------------------
+
+mee nemen naar het volgende project
+
+alex 
+-
+-
+
+caspar
+-
+-
+
+hendrik
+-
+-
+
+jarno
+-
+-
+
+jay
+-
+-
+
+senn
+-
+-
+
+
