@@ -389,7 +389,7 @@ document.addEventListener("DOMContentLoaded", init);
 
 const egghatch = document.getElementById('go-to');
 egghatch.addEventListener("click", () => {
-  location.href = 'index.html'
+  location.href = '../index.html'
   console.log(`hi`);
   
 })
