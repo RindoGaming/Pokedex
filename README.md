@@ -1,6 +1,5 @@
 # Pokedex
 
-                                ---link---
 -----------> https://rindogaming.github.io/Pokedex/Backend/Public/index.html <-----------
 
 
