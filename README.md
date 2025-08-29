@@ -88,7 +88,7 @@ Done → ✔
 
 alex 
 -
--Een persoon neemt de leiding en dat blijft zo
+-Een persoon neemt de leiding
 -Tijd beter inschatten
 
 caspar
