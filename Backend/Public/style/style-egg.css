@@ -41,14 +41,13 @@ body {
 #history {
     margin-top: 5px;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center;
-    height: 250px;
-    overflow-y: scroll;
-    scrollbar-color: gray rgba(255, 166, 0, 0);
-    scrollbar-width: thin;
-    
+    /* Remove fixed height and scrolling */
+    height: auto;
+    overflow-y: visible;
+    /* Remove scrollbar styles */
 }
 
 
