@@ -315,3 +315,26 @@ select {
  filter: brightness(0.9);
  cursor: pointer;
 }
+
+
+.go-to-left {
+    background-color: beige;
+    position: fixed;
+    top: 20vh;
+    left: 0vh;
+    width: 15vh;
+    height: 22vh;
+    border-radius: 0px 7.5vh 7.5vh 0px ;
+    transition: all 0.5s ease-in-out;
+}
+.go-to-left > img {
+    position: relative;
+    top: 3vh;
+    right: 2vh;
+    width: 15vh;
+}
+.go-to-left:hover {
+ width: 20vh;
+ filter: brightness(0.9);
+ cursor: pointer;
+}
