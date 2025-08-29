@@ -49,8 +49,13 @@ hatchBtn.onclick = async function () {
             hatchCount++;
             hatchCountDiv.textContent = hatchCount;
 
+            const types = {};
+            data.types.forEach(t => {
+                types[t.type.name] = true;
+            });
+
             if (!hatchHistory[name]) {
-                hatchHistory[name] = { count: 1, sprite };
+                hatchHistory[name] = { count: 1, sprite, types };
             } else {
                 hatchHistory[name].count++;
             }
@@ -94,9 +99,17 @@ function updateHistory() {
             const item = document.createElement('div');
             item.className = 'history-item';
 
+            let typesHTML = '';
+            if (data.types) {
+                typesHTML = Object.keys(data.types)
+                  .map(type => `<span class="type ${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</span>`)
+                  .join(' ');
+            }
+
             item.innerHTML = `
                         <img src="${data.sprite}" alt="${name}">
                         <span>${name}</span>
+                        <div class="types">${typesHTML}</div>
                         <div class="count">Hatched ${data.count} time${data.count > 1 ? 's' : ''}</div>
                     `;
             historyDiv.appendChild(item);

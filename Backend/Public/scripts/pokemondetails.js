@@ -393,7 +393,7 @@ const superEffective = Object.entries(multipliers)
   .filter(([type, mult]) => mult >= 2)
   .map(([type, mult]) => `${type} (${mult}x)`);
 
-// Add encounters, generation, and sprite gallery into the type-effectiveness card
+// Encounters, generation, and sprite gallery into the type-effectiveness card
 function addExtraInfoToCard(pokemon) {
   const GEN_RANGES = [
   { key: "gen1", label: "Gen 1 (Kanto)", min: 1, max: 151 },
