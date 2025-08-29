@@ -106,7 +106,7 @@ Hendrik
 Jarno
 -
 - Zorgen dat er betere communicatie is.
-- Planning wat beter organiseren.
+- Planning wat beter organiseren
 
 Jay
 -
