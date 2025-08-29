@@ -95,8 +95,8 @@ Alex
 
 Caspar
 -
--
--
+- Samen werking
+- Hendrik en Jarno de planning laten maken 😎
 
 Hendrik
 -
