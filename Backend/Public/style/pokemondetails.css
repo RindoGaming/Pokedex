@@ -124,7 +124,7 @@ body h1 {
     }
     .back-button {
       display: inline-block;
-      margin-top: 20px;
+      margin-bottom: 20px;
       padding: 10px 16px;
       background: #d32f2f;
       color: #fff;

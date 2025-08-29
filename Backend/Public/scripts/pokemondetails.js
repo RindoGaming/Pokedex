@@ -450,8 +450,7 @@ if (pokemon.versions) {
 
 
   // Sprite gallery
-    let spriteHTML = '<div class="sprite-gallery">';
-    spriteHTML += '<h4>Sprites</h4>';
+    let spriteHTML = '<h4>Sprites</h4><div class="sprite-gallery">';
     const addSpritesRecursively = (sprites, path = []) => {
       for (const key in sprites) {
         if (typeof sprites[key] === 'string') {
