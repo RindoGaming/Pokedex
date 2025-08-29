@@ -44,11 +44,11 @@ body {
     grid-template-columns: repeat(7, 1fr);
     gap: 20px;
     justify-items: center;
-    height: 450px;
+    height: 250px;
     overflow-y: scroll;
     scrollbar-color: gray rgba(255, 166, 0, 0);
     scrollbar-width: thin;
-
+    
 }
 
 
@@ -58,6 +58,15 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform .2s
 }
 
 .history-item img {
