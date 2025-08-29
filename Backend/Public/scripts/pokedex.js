@@ -251,7 +251,7 @@ egghatch.addEventListener("click", () => {
 });
 const battle = document.getElementById('go-to-left')
 battle.addEventListener('click', () => {
-  location.href='/Backend/Public/Battle/select.html'
+  location.href='Battle/select.html'
 })
 // --- Volume mixer functionality ---
 (function(){
