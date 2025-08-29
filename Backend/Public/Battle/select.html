@@ -25,7 +25,8 @@
         <option value="">All Types</option>
       </select>
       <input type="number" id="id-search" placeholder="ID…" min="1" title="Search by National Dex ID" />
-      <input id="move-search" list="move-list" placeholder="Search by move/ability…" title="Search by ability (from cache)" />
+      <input id="move-search" list="move-list" placeholder="Search by move/ability…"
+        title="Search by ability (from cache)" />
       <datalist id="move-list"></datalist>
 
       <select id="gen-filter" title="Generation">
@@ -57,19 +58,15 @@
       <button id="start-battle">Start Battle</button>
     </div>
   </div>
-    <div class="go-to" id="go-to">
+  <div class="go-to" id="go-to">
     <img src="/Backend/Public/img/188940.png" alt="egggg">
   </div>
   <script src="select.js"></script>
 
-  <!-- Background Music -->
   <audio id="bg-music" src="1-33. Festival Plaza (Day).mp3" loop autoplay muted></audio>
-
-  <!-- Button Sound Effect -->
   <audio id="button-sfx" src="Sound.mp3" preload="auto"></audio>
-
-  <!-- Volume Control -->
-  <div id="volume-container" style="position:fixed; bottom:10px; right:10px; background:#fff; padding:5px; border-radius:8px;">
+  <div id="volume-container"
+    style="position:fixed; bottom:10px; right:10px; background:#fff; padding:5px; border-radius:8px;">
     <label for="volume-slider">🔊</label>
     <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" />
   </div>
