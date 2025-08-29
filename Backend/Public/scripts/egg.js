@@ -156,3 +156,19 @@ egghatch.addEventListener("click", () => {
   console.log(`hi`);
   
 })
+const volumeSlider = document.getElementById('volume-slider');
+const bgMusic = document.getElementById('bg-music');
+
+if (volumeSlider && bgMusic) {
+
+    bgMusic.volume = volumeSlider.value;
+    volumeSlider.addEventListener('input', () => {
+        bgMusic.volume = volumeSlider.value;
+    });
+
+    document.addEventListener('click', () => {
+        if (bgMusic.paused) {
+            bgMusic.play().catch(err => console.log('Autoplay blocked:', err));
+        }
+    }, { once: true });
+}
