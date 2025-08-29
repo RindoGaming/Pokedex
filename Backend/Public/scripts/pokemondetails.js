@@ -450,18 +450,19 @@ if (pokemon.versions) {
 
 
   // Sprite gallery
-  let spriteHTML = '<div class="sprite-gallery"><h4>Sprites</h4>';
-  const addSpritesRecursively = (sprites, path = []) => {
-    for (const key in sprites) {
-      if (typeof sprites[key] === 'string') {
-        spriteHTML += `<img src="${sprites[key]}" alt="${pokemon.name} ${key}" class="sprite-img">`;
-      } else if (typeof sprites[key] === 'object') {
-        addSpritesRecursively(sprites[key], path.concat(key));
+    let spriteHTML = '<div class="sprite-gallery">';
+    spriteHTML += '<h4>Sprites</h4>';
+    const addSpritesRecursively = (sprites, path = []) => {
+      for (const key in sprites) {
+        if (typeof sprites[key] === 'string') {
+          spriteHTML += `<img src="${sprites[key]}" alt="${pokemon.name} ${key}" class="sprite-img">`;
+        } else if (typeof sprites[key] === 'object') {
+          addSpritesRecursively(sprites[key], path.concat(key));
+        }
       }
-    }
-  };
-  if (pokemon.sprites) addSpritesRecursively(pokemon.sprites);
-  spriteHTML += '</div>';
+    };
+    if (pokemon.sprites) addSpritesRecursively(pokemon.sprites);
+    spriteHTML += '</div>';
 
   // Wrap all extra info
   const wrapper = document.createElement('div');

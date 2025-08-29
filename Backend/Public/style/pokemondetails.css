@@ -219,8 +219,8 @@ body h1 {
 }
 
 .extra-info .sprite-gallery {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 4px;
   flex: 2 1 450px; /* flexible but contained */
   max-width: 100%;
