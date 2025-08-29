@@ -83,15 +83,16 @@ Scrapped -> 🚧
 Done → ✔
 
 ---------------------------------------------------------------------------------
+# Retrospective
 
 ![Retro](retro.png)
 
-# mee nemen naar het volgende project
+# Mee nemen naar het volgende project
 
 Alex 
 -
--Een persoon neemt de leiding
--Tijd beter inschatten
+- Een persoon neemt de leiding.
+- Tijd beter inschatten.
 
 Caspar
 -
@@ -100,18 +101,18 @@ Caspar
 
 Hendrik
 -
-- Goed samen werken
-- De manier waarop wij samen werkte
+- Goed samen werken.
+- De manier waarop wij samen werkte.
 
 Jarno
 -
 - Zorgen dat er betere communicatie is.
-- Planning wat beter organiseren
+- Planning wat beter organiseren.
 
 Jay
 -
--
--
+- Refactoring code at the end of the day/ hour of the day.
+- Better time management in both planning and execution.
 
 Senn
 -
