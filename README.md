@@ -1,6 +1,5 @@
 # Pokedex
 
-                                ---link---
 -----------> https://rindogaming.github.io/Pokedex/Backend/Public/index.html <-----------
 
 
@@ -12,8 +11,8 @@ Front-end Planning
 | First 3 generations a pokedex.            | Medium     | 4 hrs            | ✔️ Done |
 | Pixel art for the old versions.           | Low        | 2 hrs            | ✔️ Done |
 | User friendly info page.                  | Medium     | 2 hrs            |  🚧 Scrapped |
-| Pokemon type chart.                       | Medium     | 8 hrs            |         |
-| showing the stats of all the different pokemon | Medium     | 8 hrs            |         |
+| Pokemon type chart.                       | Medium     | 8 hrs            | ✔️ done |
+| showing the stats of all the different pokemon | Medium     | 8 hrs       | ✔️ done |
 
 
 | Task                              | Priority | Time Estimate | What I Can Do (X)                                                                  | Need                                                           | Why                                                                           |
