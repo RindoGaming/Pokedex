@@ -245,3 +245,27 @@ h1, h2, h3 {
 @media (max-width: 600px) {
   .pokemon-list { grid-template-columns: repeat(2, 1fr); }
 }
+
+.go-to {
+    background-color: beige;
+    position: fixed;
+    top: 20vh;
+    right: 0vh;
+    width: 10vh;
+    height: 22vh;
+    border-radius: 7.5vh 0px 0px 7.5vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.go-to>img {
+    position: relative;
+    top: 3vh;
+    left: 2vh;
+    width: 15vh;
+}
+
+.go-to:hover {
+    width: 20vh;
+    filter: brightness(0.9);
+    cursor: pointer;
+}

@@ -389,5 +389,3 @@ const multipliers = getMultipliers(defendingTypes);
 const superEffective = Object.entries(multipliers)
   .filter(([type, mult]) => mult >= 2)
   .map(([type, mult]) => `${type} (${mult}x)`);
-
-console.log('Super effective:', superEffective.join(', '));
