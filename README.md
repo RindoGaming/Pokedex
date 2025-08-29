@@ -119,4 +119,5 @@ Senn
 -  De planning wordt door 1 persoon gedaan.
 -  Meer chatgpt gebruiken.
 
+<img width="2544" height="1348" alt="image" src="https://github.com/user-attachments/assets/54f4603b-ba5d-4e52-88d6-eb9d779f3424" />
 
