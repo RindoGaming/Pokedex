@@ -239,7 +239,6 @@ function renderPagination(totalPages) {
   };
   row.appendChild(prev);
 
-  // Page box
   const pageBox = document.createElement("div");
   pageBox.className = "page-box";
 
