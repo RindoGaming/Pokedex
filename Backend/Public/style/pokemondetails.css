@@ -47,6 +47,7 @@ body h1 {
       padding-bottom: 20px;
       max-width: 1500px;
       margin: 0 auto;
+      margin-bottom: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       background: repeating-linear-gradient(45deg, #FFFFFF,
                 #FFFFFF 10px,
@@ -187,3 +188,16 @@ body h1 {
     border-radius: 8px;
     overflow: hidden;
 }
+    .effect-details {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding-bottom: 15px;
+      max-width: 1500px;
+      margin: 0 auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: repeating-linear-gradient(45deg, #FFFFFF,
+                #FFFFFF 10px,
+                #F5F5F5 10px,
+                #F5F5F5 20px);
+    }
