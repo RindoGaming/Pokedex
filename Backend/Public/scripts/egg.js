@@ -12,13 +12,13 @@ let hatchCount = 0;
 const hatchHistory = {};
 
 hatchBtn.onclick = async function () {
+  // img.src = "/backend/public/stage-1.png";
     img.classList.toggle("image-shaking")
     hatchBtn.disabled = true;
     setTimeout(() => {
         hatchBtn.disabled = false;
     }, 2505);
 
-    img.src = "/backend/public/stage-1.png";
     img.alt = "Egg";
     setTimeout(() => {
         resultDiv.textContent = "Hatching...";

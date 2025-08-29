@@ -91,7 +91,7 @@ body {
 
     20% {
         transform: translate(-3px, 0px) rotate(6deg);
-        content: url("stage-1.png");
+        content: url("/Backend/Public/style/stage-1.png");
     }
 
     30% {
