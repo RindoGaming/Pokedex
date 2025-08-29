@@ -249,7 +249,10 @@ function off() {
 egghatch.addEventListener("click", () => {
   location.href='egg.html'
 });
-
+const battle = document.getElementById('go-to-left')
+battle.addEventListener('click', () => {
+  location.href='/Backend/Public/Battle/select.html'
+})
 // --- Volume mixer functionality ---
 (function(){
   const audio = document.getElementById('bg-music');
