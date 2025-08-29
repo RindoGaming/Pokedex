@@ -84,30 +84,36 @@ Done → ✔
 
 ---------------------------------------------------------------------------------
 
-mee nemen naar het volgende project
+# mee nemen naar het volgende project
 
 alex 
+-
 -
 -
 
 caspar
 -
 -
+-
 
 hendrik
+-
 -
 -
 
 jarno
 -
 -
+-
 
 jay
+-
 -
 -
 
 senn
 -
--
+-  de planning wordt door 1 persoon gedaan
+-  meer chatgpt gebruiken
 
 
