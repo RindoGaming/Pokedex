@@ -185,6 +185,8 @@
           });
         }
 
+        
+
         // Type effectiveness display with multipliers
         function getMultipliers(defendingTypes) {
           const allTypes = Object.keys(typeChart);
@@ -389,3 +391,59 @@ const multipliers = getMultipliers(defendingTypes);
 const superEffective = Object.entries(multipliers)
   .filter(([type, mult]) => mult >= 2)
   .map(([type, mult]) => `${type} (${mult}x)`);
+
+  // Add encounters, generation, and sprite gallery into the type-effectiveness card
+function addExtraInfoToCard(pokemon) {
+    const card = document.querySelector('.type-effectiveness');
+    if (!card) return;
+
+    // Clear previous extra info
+    const existingExtra = card.querySelector('.extra-info');
+    if (existingExtra) existingExtra.remove();
+
+    // Build encounters HTML
+    let encountersHTML = '<div class="encounters"><h4>Encounters</h4>';
+    if (pokemon.encounters && Object.keys(pokemon.encounters).length > 0) {
+        for (const area in pokemon.encounters) {
+            encountersHTML += `<strong>${area}:</strong><ul>`;
+            for (const version in pokemon.encounters[area]) {
+                pokemon.encounters[area][version].forEach(detail => {
+                    encountersHTML += `<li>${version} - ${detail.method} (Lv ${detail.min_level}-${detail.max_level}, Chance: ${detail.chance}%)</li>`;
+                });
+            }
+            encountersHTML += '</ul>';
+        }
+    } else {
+        encountersHTML += '<p>None found</p>';
+    }
+    encountersHTML += '</div>';
+
+    // Generation info
+    let generationHTML = '';
+    if (pokemon.species && pokemon.species.url) {
+        const id = pokemon.id; // You can also parse from URL if needed
+        generationHTML = `<div class="generation"><h4>Generation</h4><p>Generation ${pokemon.generation || 'Unknown'}</p></div>`;
+    }
+
+    // Sprite gallery
+    let spriteHTML = '<div class="sprite-gallery"><h4>Sprites</h4>';
+    const addSpritesRecursively = (sprites, path = []) => {
+        for (const key in sprites) {
+            if (typeof sprites[key] === 'string') {
+                spriteHTML += `<img src="${sprites[key]}" alt="${pokemon.name} ${key}" class="sprite-img">`;
+            } else if (typeof sprites[key] === 'object') {
+                addSpritesRecursively(sprites[key], path.concat(key));
+            }
+        }
+    };
+    if (pokemon.sprites) addSpritesRecursively(pokemon.sprites);
+    spriteHTML += '</div>';
+
+    // Wrap all extra info
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('extra-info');
+    wrapper.innerHTML = encountersHTML + generationHTML + spriteHTML;
+
+    // Append to the card
+    card.appendChild(wrapper);
+}
