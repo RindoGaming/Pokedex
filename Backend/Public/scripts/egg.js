@@ -18,12 +18,12 @@ hatchBtn.onclick = async function () {
         hatchBtn.disabled = false;
     }, 2505);
 
-    img.src = "/backend/public/egg/stage-1.png";
+    img.src = "/backend/public/stage-1.png";
     img.alt = "Egg";
     setTimeout(() => {
         resultDiv.textContent = "Hatching...";
         img.classList.toggle("image-shaking")
-        img.src = "/backend/public/egg/stage-3.png"
+        img.src = "/backend/public/stage-3.png"
     }, 2000);
     const id = Math.floor(Math.random() * 1025) + 1;
     try {
