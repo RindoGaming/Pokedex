@@ -202,3 +202,52 @@ body h1 {
                 #F5F5F5 20px);
     }
 
+.extra-info {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%; /* stay inside the card */
+}
+
+.extra-info .encounters {
+  flex: 1 1 300px; /* allow shrinking */
+  min-width: 250px;
+}
+
+.extra-info .sprite-gallery {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 4px;
+  flex: 2 1 450px; /* flexible but contained */
+  max-width: 100%;
+}
+
+.extra-info .sprite-gallery img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.extra-info .generation {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.extra-info .generation p {
+  margin: 0;
+}
+
+.extra-info .encounters ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.extra-info .encounters li {
+  margin-bottom: 4px;
+}

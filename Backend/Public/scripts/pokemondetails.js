@@ -73,35 +73,35 @@
 
         // Render details
         detailsEl.innerHTML = `
-  <div class="half">
-    <div class="namesection">
-      <h1>${poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</h1>
-      <p><strong>ID:</strong> ${String(poke.id).padStart(3, '0')}</p>
-      ${variantOptions}
-    </div>
-    <div class="pokemon-image-bg">
-      <img id="poke-img" src="${poke.image || 'img/Spr_3r_000.png'}" alt="${poke.name}" style="cursor:pointer">
-    </div>
-    <div id="cry-container">
-      <button id="prev-pokemon">⬅ Previous Pokémon</button>
-      <button id="play-cry">🔊 Play Cry</button>
-      <button id="next-pokemon">Next Pokémon➡</button>
-      <audio id="audio-cry" preload="auto" src="${poke.cries || ''}"></audio>
-    </div>
-  </div>
-  <div class="half">
-    <div class="typesection">
-      <strong>Types:</strong> ${typesHTML}
-    </div>
-    <div id="chart"></div>
-    <div class="boxes">
-      <div class="box"><p><strong>Abilities:</strong> ${abilities}</p></div>
-      <div class="box"><p><strong>Base XP:</strong> ${poke.base_experience || 'N/A'}</p></div>
-      <div class="box"><p><strong>Height:</strong> ${poke.height || 'N/A'}</p></div>
-      <div class="box"><p><strong>Weight:</strong> ${poke.weight || 'N/A'}</p></div>
-    </div>
-  </div>
-`;
+        <div class="half">
+        <div class="namesection">
+        <h1>${poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</h1>
+        <p><strong>ID:</strong> ${String(poke.id).padStart(3, '0')}</p>
+        ${variantOptions}
+        </div>
+        <div class="pokemon-image-bg">
+        <img id="poke-img" src="${poke.image || 'img/Spr_3r_000.png'}" alt="${poke.name}" style="cursor:pointer">
+        </div>
+        <div id="cry-container">
+        <button id="prev-pokemon">⬅ Previous Pokémon</button>
+        <button id="play-cry">🔊 Play Cry</button>
+        <button id="next-pokemon">Next Pokémon➡</button>
+        <audio id="audio-cry" preload="auto" src="${poke.cries || ''}"></audio>
+        </div>
+        </div>
+        <div class="half">
+        <div class="typesection">
+        <strong>Types:</strong> ${typesHTML}
+        </div>
+        <div id="chart"></div>
+        <div class="boxes">
+        <div class="box"><p><strong>Abilities:</strong> ${abilities}</p></div>
+        <div class="box"><p><strong>Base XP:</strong> ${poke.base_experience || 'N/A'}</p></div>
+        <div class="box"><p><strong>Height:</strong> ${poke.height || 'N/A'}</p></div>
+        <div class="box"><p><strong>Weight:</strong> ${poke.weight || 'N/A'}</p></div>
+        </div>
+      </div>
+        `;
 
         // Shiny toggle logic
         const pokeImg = document.getElementById('poke-img');
@@ -185,7 +185,7 @@
           });
         }
 
-        
+
 
         // Type effectiveness display with multipliers
         function getMultipliers(defendingTypes) {
@@ -272,6 +272,7 @@
         }
 
         showTypeEffectiveness(Object.keys(poke.types));
+        addExtraInfoToCard(poke);
       }
 
       // Initial render
@@ -341,24 +342,24 @@
 
 // Defensive type chart: for each defending type, what attacking types are 2x, 0.5x, 0x
 const typeChart = {
-  normal:   { weak: ["fighting"], resist: [], immune: ["ghost"] },
-  fire:     { weak: ["water", "ground", "rock"], resist: ["fire", "grass", "ice", "bug", "steel", "fairy"], immune: [] },
-  water:    { weak: ["electric", "grass"], resist: ["fire", "water", "ice", "steel"], immune: [] },
+  normal: { weak: ["fighting"], resist: [], immune: ["ghost"] },
+  fire: { weak: ["water", "ground", "rock"], resist: ["fire", "grass", "ice", "bug", "steel", "fairy"], immune: [] },
+  water: { weak: ["electric", "grass"], resist: ["fire", "water", "ice", "steel"], immune: [] },
   electric: { weak: ["ground"], resist: ["electric", "flying", "steel"], immune: [] },
-  grass:    { weak: ["fire", "ice", "poison", "flying", "bug"], resist: ["water", "grass", "electric", "ground"], immune: [] },
-  ice:      { weak: ["fire", "fighting", "rock", "steel"], resist: ["ice"], immune: [] },
+  grass: { weak: ["fire", "ice", "poison", "flying", "bug"], resist: ["water", "grass", "electric", "ground"], immune: [] },
+  ice: { weak: ["fire", "fighting", "rock", "steel"], resist: ["ice"], immune: [] },
   fighting: { weak: ["flying", "psychic", "fairy"], resist: ["bug", "rock", "dark"], immune: [] },
-  poison:   { weak: ["ground", "psychic"], resist: ["grass", "fighting", "poison", "bug", "fairy"], immune: [] },
-  ground:   { weak: ["water", "grass", "ice"], resist: ["poison", "rock"], immune: ["electric"] },
-  flying:   { weak: ["electric", "ice", "rock"], resist: ["grass", "fighting", "bug"], immune: ["ground"] },
-  psychic:  { weak: ["bug", "ghost", "dark"], resist: ["fighting", "psychic"], immune: [] },
-  bug:      { weak: ["fire", "flying", "rock"], resist: ["grass", "fighting", "ground"], immune: [] },
-  rock:     { weak: ["water", "grass", "fighting", "ground", "steel"], resist: ["normal", "fire", "poison", "flying"], immune: [] },
-  ghost:    { weak: ["ghost", "dark"], resist: ["poison", "bug"], immune: ["normal", "fighting"] },
-  dragon:   { weak: ["ice", "dragon", "fairy"], resist: ["fire", "water", "electric", "grass"], immune: [] },
-  dark:     { weak: ["fighting", "bug", "fairy"], resist: ["ghost", "dark"], immune: ["psychic"] },
-  steel:    { weak: ["fire", "fighting", "ground"], resist: ["normal", "grass", "ice", "flying", "psychic", "bug", "rock", "dragon", "steel", "fairy"], immune: ["poison"] },
-  fairy:    { weak: ["poison", "steel"], resist: ["fighting", "bug", "dark"], immune: ["dragon"] }
+  poison: { weak: ["ground", "psychic"], resist: ["grass", "fighting", "poison", "bug", "fairy"], immune: [] },
+  ground: { weak: ["water", "grass", "ice"], resist: ["poison", "rock"], immune: ["electric"] },
+  flying: { weak: ["electric", "ice", "rock"], resist: ["grass", "fighting", "bug"], immune: ["ground"] },
+  psychic: { weak: ["bug", "ghost", "dark"], resist: ["fighting", "psychic"], immune: [] },
+  bug: { weak: ["fire", "flying", "rock"], resist: ["grass", "fighting", "ground"], immune: [] },
+  rock: { weak: ["water", "grass", "fighting", "ground", "steel"], resist: ["normal", "fire", "poison", "flying"], immune: [] },
+  ghost: { weak: ["ghost", "dark"], resist: ["poison", "bug"], immune: ["normal", "fighting"] },
+  dragon: { weak: ["ice", "dragon", "fairy"], resist: ["fire", "water", "electric", "grass"], immune: [] },
+  dark: { weak: ["fighting", "bug", "fairy"], resist: ["ghost", "dark"], immune: ["psychic"] },
+  steel: { weak: ["fire", "fighting", "ground"], resist: ["normal", "grass", "ice", "flying", "psychic", "bug", "rock", "dragon", "steel", "fairy"], immune: ["poison"] },
+  fairy: { weak: ["poison", "steel"], resist: ["fighting", "bug", "dark"], immune: ["dragon"] }
 };
 
 // Returns an object: { type: multiplier }
@@ -392,58 +393,81 @@ const superEffective = Object.entries(multipliers)
   .filter(([type, mult]) => mult >= 2)
   .map(([type, mult]) => `${type} (${mult}x)`);
 
-  // Add encounters, generation, and sprite gallery into the type-effectiveness card
+// Add encounters, generation, and sprite gallery into the type-effectiveness card
 function addExtraInfoToCard(pokemon) {
-    const card = document.querySelector('.type-effectiveness');
-    if (!card) return;
+  const GEN_RANGES = [
+  { key: "gen1", label: "Gen 1 (Kanto)", min: 1, max: 151 },
+  { key: "gen2", label: "Gen 2 (Johto)", min: 152, max: 251 },
+  { key: "gen3", label: "Gen 3 (Hoenn)", min: 252, max: 386 },
+  { key: "gen4", label: "Gen 4 (Sinnoh)", min: 387, max: 493 },
+  { key: "gen5", label: "Gen 5 (Unova)", min: 494, max: 649 },
+  { key: "gen6", label: "Gen 6 (Kalos)", min: 650, max: 721 },
+  { key: "gen7", label: "Gen 7 (Alola)", min: 722, max: 809 },
+  { key: "gen8", label: "Gen 8 (Galar/Hisui)", min: 810, max: 905 },
+  { key: "gen9", label: "Gen 9 (Paldea+)", min: 906, max: 20000 }
+];
 
-    // Clear previous extra info
-    const existingExtra = card.querySelector('.extra-info');
-    if (existingExtra) existingExtra.remove();
+  const card = document.querySelector('.type-effectiveness');
+  if (!card) return;
 
-    // Build encounters HTML
-    let encountersHTML = '<div class="encounters"><h4>Encounters</h4>';
-    if (pokemon.encounters && Object.keys(pokemon.encounters).length > 0) {
-        for (const area in pokemon.encounters) {
-            encountersHTML += `<strong>${area}:</strong><ul>`;
-            for (const version in pokemon.encounters[area]) {
-                pokemon.encounters[area][version].forEach(detail => {
-                    encountersHTML += `<li>${version} - ${detail.method} (Lv ${detail.min_level}-${detail.max_level}, Chance: ${detail.chance}%)</li>`;
-                });
-            }
-            encountersHTML += '</ul>';
-        }
-    } else {
-        encountersHTML += '<p>None found</p>';
+  // Clear previous extra info
+  const existingExtra = card.querySelector('.extra-info');
+  if (existingExtra) existingExtra.remove();
+
+  // Build encounters HTML
+  let encountersHTML = '<div class="encounters"><h4>Encounters</h4>';
+  if (pokemon.encounters && Object.keys(pokemon.encounters).length > 0) {
+    for (const area in pokemon.encounters) {
+      encountersHTML += `<strong>${area}:</strong><ul>`;
+      for (const version in pokemon.encounters[area]) {
+        pokemon.encounters[area][version].forEach(detail => {
+          encountersHTML += `<li>${version} - ${detail.method} (Lv ${detail.min_level}-${detail.max_level}, Chance: ${detail.chance}%)</li>`;
+        });
+      }
+      encountersHTML += '</ul>';
     }
-    encountersHTML += '</div>';
+  } else {
+    encountersHTML += '<p>None found</p>';
+  }
+  encountersHTML += '</div>';
 
-    // Generation info
-    let generationHTML = '';
-    if (pokemon.species && pokemon.species.url) {
-        const id = pokemon.id; // You can also parse from URL if needed
-        generationHTML = `<div class="generation"><h4>Generation</h4><p>Generation ${pokemon.generation || 'Unknown'}</p></div>`;
+// Generation info
+let generationHTML = '';
+if (pokemon.versions) {
+  const genKeys = Object.keys(pokemon.versions);
+  let genLabel = 'Unknown';
+
+  // Find the first matching GEN_RANGES label
+  for (const gen of GEN_RANGES) {
+    if (genKeys.some(k => k.includes(gen.key))) {
+      genLabel = gen.label;
+      break;
     }
+  }
 
-    // Sprite gallery
-    let spriteHTML = '<div class="sprite-gallery"><h4>Sprites</h4>';
-    const addSpritesRecursively = (sprites, path = []) => {
-        for (const key in sprites) {
-            if (typeof sprites[key] === 'string') {
-                spriteHTML += `<img src="${sprites[key]}" alt="${pokemon.name} ${key}" class="sprite-img">`;
-            } else if (typeof sprites[key] === 'object') {
-                addSpritesRecursively(sprites[key], path.concat(key));
-            }
-        }
-    };
-    if (pokemon.sprites) addSpritesRecursively(pokemon.sprites);
-    spriteHTML += '</div>';
+  generationHTML = `<div class="generation"><h4>Generation</h4><p>${genLabel}</p></div>`;
+}
 
-    // Wrap all extra info
-    const wrapper = document.createElement('div');
-    wrapper.classList.add('extra-info');
-    wrapper.innerHTML = encountersHTML + generationHTML + spriteHTML;
 
-    // Append to the card
-    card.appendChild(wrapper);
+  // Sprite gallery
+  let spriteHTML = '<div class="sprite-gallery"><h4>Sprites</h4>';
+  const addSpritesRecursively = (sprites, path = []) => {
+    for (const key in sprites) {
+      if (typeof sprites[key] === 'string') {
+        spriteHTML += `<img src="${sprites[key]}" alt="${pokemon.name} ${key}" class="sprite-img">`;
+      } else if (typeof sprites[key] === 'object') {
+        addSpritesRecursively(sprites[key], path.concat(key));
+      }
+    }
+  };
+  if (pokemon.sprites) addSpritesRecursively(pokemon.sprites);
+  spriteHTML += '</div>';
+
+  // Wrap all extra info
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('extra-info');
+  wrapper.innerHTML = encountersHTML + generationHTML + spriteHTML;
+
+  // Append to the card
+  card.appendChild(wrapper);
 }
