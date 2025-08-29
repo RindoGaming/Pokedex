@@ -84,36 +84,38 @@ Done → ✔
 
 ---------------------------------------------------------------------------------
 
+![Retro](retro.png)
+
 # mee nemen naar het volgende project
 
-alex 
+Alex 
 -
 -
 -
 
-caspar
+Caspar
 -
 -
 -
 
-hendrik
+Hendrik
 -
 -
 -
 
-jarno
+Jarno
+-
+- Zorgen dat er betere communicatie is.
+- Planning wat beter organiseren.
+
+Jay
 -
 -
 -
 
-jay
+Senn
 -
--
--
-
-senn
--
--  de planning wordt door 1 persoon gedaan
--  meer chatgpt gebruiken
+-  De planning wordt door 1 persoon gedaan.
+-  Meer chatgpt gebruiken.
 
 
