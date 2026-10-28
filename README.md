@@ -13,7 +13,7 @@ Front-end Planning
 | User friendly info page.                  | Medium     | 2 hrs            |  🚧 Scrapped |
 | Pokemon type chart.                       | Medium     | 8 hrs            | ✔️ done |
 | showing the stats of all the different pokemon | Medium     | 8 hrs       | ✔️ done |
-
+e
 
 | Task                              | Priority | Time Estimate | What I Can Do (X)                                                                  | Need                                                           | Why                                                                           |
 | --------------------------------- | -------- | ------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------- |
